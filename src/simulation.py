@@ -150,26 +150,8 @@ Interventions = InterventionsManager()
 
 @st.cache
 def load_disease_transition():
-    df = pd.read_csv("./data/disease_transitions_cuba.csv")
-    data = collections.defaultdict(lambda: [])
-
-    for i, row in df.iterrows():
-        age = row["Age"]
-        sex = row["Sex"]
-        state_from = row["StateFrom"]
-        state_to = row["StateTo"]
-
-        data[(age, sex, state_from)].append(
-            dict(
-                state=state_to,
-                count=row["Count"],
-                mean=row["MeanDays"],
-                std=row["StdDays"],
-            )
-        )
-
-    return dict(data)
-
+    return pd.read_csv("./data/transitions.csv")
+    
 
 class TransitionEstimator:
     def __init__(self):
@@ -177,12 +159,12 @@ class TransitionEstimator:
 
     def transition(self, from_state, age, sex):
         age = (age // 5) * 5
+        df = self.data[(self.data["Age"] == age) & (self.data["StateFrom"] == from_state) & (self.data["Sex"] == sex)]
 
-        if (age, sex, from_state) not in self.data:
+        if len(df) == 0:
             raise ValueError(f"No transitions for {from_state}, age={age}, sex={sex}.")
 
-        df = self.data[(age, sex, from_state)]
-        return pd.DataFrame(df).sort_values("count")
+        return pd.DataFrame(df).sort_values("Count")
 
 
 TRANSITIONS = TransitionEstimator()
@@ -280,11 +262,11 @@ class Person:
         """
         df = TRANSITIONS.transition(self.state, self.age, self.sex)
         # calcular el estado de transición y el tiempo
-        to_state = random.choices(df["state"].values, weights=df["count"].values, k=1)[
+        to_state = random.choices(df["StateTo"].values, weights=df["Count"].values, k=1)[
             0
         ]
-        state_data = df.set_index("state").to_dict("index")[to_state]
-        time = random.normalvariate(state_data["mean"], state_data["std"])
+        state_data = df.set_index("StateTo").to_dict("index")[to_state]
+        time = random.normalvariate(state_data["MeanDays"], state_data["StdDays"])
 
         return to_state, int(time)
 
@@ -345,6 +327,9 @@ class Region:
             p.set_state(StatePerson.I)
             self._individuals.append(p)
 
+    def __len__(self):
+        return len(self._individuals)
+
     @property
     def population(self):
         return self._population
@@ -387,10 +372,11 @@ class SimulationParameters:
 
 
 class Simulation:
-    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters) -> None:
+    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters, container) -> None:
         self.regions = regions
         self.contact = contact
         self.parameters = parameters
+        self.container = container
 
     # método de tranmisión espacial, teniendo en cuenta la localidad
     def run(self):
@@ -411,21 +397,23 @@ class Simulation:
         simulation_time = self.parameters.days
 
         # estadísticas de la simulación
-        progress = st.progress(0)
-        day = st.empty()
-        sick_count = st.empty()
-        all_count = st.empty()
+        with self.container:
+            progress = st.progress(0)
+            progress_person = st.progress(0)
+            day = st.empty()
+            sick_count = st.empty()
+            all_count = st.empty()
 
-        chart = st.altair_chart(
-            alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
-            .mark_line()
-            .encode(
-                y=alt.Y("personas:Q", title="Individuals"),
-                x=alt.X("dia:Q", title="Days of simulation"),
-                color=alt.Color("estado:N", title="State"),
-            ),
-            use_container_width=True,
-        )
+            chart = st.altair_chart(
+                alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
+                .mark_line()
+                .encode(
+                    y=alt.Y("personas:Q", title="Individuals"),
+                    x=alt.X("dia:Q", title="Days of simulation"),
+                    color=alt.Color("estado:N", title="State"),
+                ),
+                use_container_width=True,
+            )
 
         # por cada paso de la simulación
         for i in range(simulation_time):
@@ -438,12 +426,14 @@ class Simulation:
                 # llegadas del estranjero
                 self._simulate_arrivals(region)
                 # por cada persona
-                for ind in region:
+                individuals = list(region)
+                for j, ind in enumerate(individuals):
                     # actualizar estado de la persona
                     ind.next_step()
                     if ind.is_infectious:
                         self._simulate_spread(ind)
 
+                    progress_person.progress(j / len(individuals))
                     total_individuals += 1
                     by_state[ind.state] += 1
 
