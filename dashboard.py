@@ -1,7 +1,7 @@
 import streamlit as st
 
 from src import data
-from src.simulation import Simulation
+from src.simulation import Simulation, SimulationParameters, Region
 
 
 st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide', initial_sidebar_state='auto')
@@ -17,10 +17,18 @@ def main():
         with st.beta_expander("Matrices de contacto"):
             st.write(contact)
 
-    total_days = st.sidebar.number_input("Días a simular", 1, 1000, 90)
+    parameters = SimulationParameters(
+        days=st.sidebar.number_input("Días a simular", 1, 1000, 90),
+        foreigner_arrivals=st.sidebar.number_input("Llegada de extranjeros", 0.0, 10000.0, 100.0),
+        chance_of_infection=st.sidebar.number_input("Probabilidad de infección", 0.0, 1.0, 0.1),
+    )
 
-    sim = Simulation(total_days)
-    sim.run()
+    region = Region(1000, st.sidebar.number_input("Infectados iniciales", 1, 1000, 10))
+
+    sim = Simulation([region], contact, parameters)
+
+    if main_container.button("🚀 Simular"):
+        sim.run()
 
 
 if __name__ == "__main__":

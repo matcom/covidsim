@@ -1,6 +1,8 @@
 import collections
 import random
 from typing import Dict, List
+from dataclasses import dataclass
+
 
 import altair as alt
 import numpy as np
@@ -213,193 +215,10 @@ class StatePerson:
     F = "F"
 
 
-# método de tranmisión espacial, teniendo en cuenta la localidad
-def spatial_transmision(regions, social, status, distance, parameters):
-    """
-    Método de transmisión espacial, teniendo en cuenta la localidad.
-
-    Args:
-        - regions: regiones consideradas en la simulación.
-        - social: es el conjunto de grafos que describen las redes en cada región.
-        - status: contiene característucas y el estado de salud en cada región, osea las medidas.
-        - distance: almacena la distancia entre cada par de regiones.
-        - parameters: parameters del modelo epidemiológico para cada individuo.
-
-    Returns:
-        - output: es el estado actualizado de cada persona.
-    """
-
-    simulation_time = PARAMETERS["DAYS_TO_SIMULATE"]
-
-    # estadísticas de la simulación
-    progress = st.progress(0)
-    day = st.empty()
-    sick_count = st.empty()
-    all_count = st.empty()
-
-    chart = st.altair_chart(
-        alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
-        .mark_line()
-        .encode(
-            y=alt.Y("personas:Q", title="Individuals"),
-            x=alt.X("dia:Q", title="Days of simulation"),
-            color=alt.Color("estado:N", title="State"),
-        ),
-        use_container_width=True,
-    )
-
-    # por cada paso de la simulación
-    for i in range(simulation_time):
-
-        total_individuals = 0
-        by_state = collections.defaultdict(lambda: 0)
-        Interventions.day = i + 1
-
-        # por cada región
-        for region in regions:
-            # llegadas del estranjero
-            arrivals(region)
-            # por cada persona
-            for ind in region:
-                # actualizar estado de la persona
-                ind.next_step()
-                if ind.is_infectious:
-                    compute_spread(ind, social, status)
-
-                total_individuals += 1
-                by_state[ind.state] += 1
-
-            interventions(region, status)
-            # movimientos
-            for n_region in regions:
-                if n_region != region:
-                    # calcular personas que se mueven de una region a otras
-                    transportations(n_region, region, distance)
-
-        progress.progress((i + 1) / simulation_time)
-        sick_count.markdown(f"#### Individuos simulados: {total_individuals}")
-        all_count.code(dict(by_state))
-        day.markdown(f"#### Día: {i+1}")
-
-        chart.add_rows(
-            [dict(dia=i + 1, personas=v, estado=k) for k, v in by_state.items()]
-        )
-
-
-def arrivals(region):
-    if Interventions.is_airport_open():
-        people = np.random.poisson(PARAMETERS["FOREIGNER_ARRIVALS"])
-
-        for _ in range(people):
-            p = region.spawn(random.randint(20, 80))
-            p.set_state(StatePerson.F)
-
-
-def interventions(region, status):
-    """Modifica el estado de las medidas y como influyen estas en la población.
-
-       Los cambios se almacenan en status
-    """
-    # si se está testeando activamente
-    p = Interventions.is_testing_active()
-
-    if p > 0:
-        for ind in region:
-            if ind.state in [StatePerson.L, StatePerson.A] and random.uniform(0, 1) < p:
-                ind.set_state(StatePerson.H)
-
-
-def transportations(n_region, region, distance):
-    """Las personas que se mueven de n_region a region.
-    """
-    pass
-
-
-def compute_spread(ind, social, status):
-    """Calcula que personas serán infectadas por 'ind' en el paso actual de la simulación.
-    """
-    connections = eval_connections(social, ind)
-
-    for other in connections:
-        if other.state != StatePerson.S:
-            continue
-
-        if eval_infections(ind):
-            other.set_state(StatePerson.L)
-
-
-def eval_connections(
-    social: Dict[str, Dict[int, Dict[int, float]]], person: "Person"
-) -> List["Person"]:
-    """Devuelve las conexiones que tuvo una persona en un step de la simulación.
-    """
-
-    the_age = person.age
-
-    if the_age % 5 != 0:
-        the_age = the_age // 5 * 5
-
-    p_social = Interventions.is_social_distance()
-
-    if random.uniform(0, 1) < Interventions.is_reduce_aglomeration():
-        p_social *= (
-            2  # Cada cierta cantidad de días, un día te toca ver el doble de personas
-        )
-
-    # contactos en la calle
-    other_ages = social["other"][the_age]
-
-    for age, lam in other_ages.items():
-        people = np.random.poisson(lam * p_social)
-
-        for i in range(people):
-            yield person.region.spawn(age)
-
-    # contactos en la escuela
-    if Interventions.is_school_open():
-        other_ages = social["schools"][the_age]
-
-        for age, lam in other_ages.items():
-            people = np.random.poisson(lam * p_social)
-
-            for i in range(people):
-                yield person.region.spawn(age)
-
-    # contactos en el trabajo
-    if age < 18:
-        return
-
-    p_work = Interventions.is_workforce()
-
-    if random.uniform(0, 1) < p_work:
-        other_ages = social["work"][the_age]
-
-        for age, lam in other_ages.items():
-            people = np.random.poisson(lam * p_work * p_social)
-
-            for i in range(people):
-                yield person.region.spawn(age)
-
-
-def eval_infections(person) -> bool:
-    """Determina si una persona cualquiera se infesta o no, dado que se cruza con "person". 
-
-       En general depende del estado en el que se encuentra person y las probabilidades de ese estado
-    """
-
-    p = PARAMETERS["CHANCE_OF_INFECTION"]
-
-    if Interventions.is_use_masks():
-        # usar mascarillas reduce en un 50% la probabilidad de infección
-        p *= 0.5
-
-    return random.uniform(0, 1) < p
-
-
 class Person:
     total = 0
 
-    def __init__(self, region, age, sex):
+    def __init__(self, region: "Region", age:int, sex:str):
         """Crea una nueva persona que por defecto está en el estado de suseptible al virus.
         """
         Person.total += 1
@@ -558,6 +377,206 @@ class Region:
         """Incrementa la cantidad de personas qeu pasan a formar parte de los recuperados
         """
         self._recovered += count
+
+
+@dataclass
+class SimulationParameters:
+    days:int
+    foreigner_arrivals:float
+    chance_of_infection:float
+
+
+class Simulation:
+    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters) -> None:
+        self.regions = regions
+        self.contact = contact
+        self.parameters = parameters
+
+    # método de tranmisión espacial, teniendo en cuenta la localidad
+    def run(self):
+        """
+        Método de transmisión espacial, teniendo en cuenta la localidad.
+
+        Args:
+            - regions: regiones consideradas en la simulación.
+            - social: es el conjunto de grafos que describen las redes en cada región.
+            - status: contiene característucas y el estado de salud en cada región, osea las medidas.
+            - distance: almacena la distancia entre cada par de regiones.
+            - parameters: parameters del modelo epidemiológico para cada individuo.
+
+        Returns:
+            - output: es el estado actualizado de cada persona.
+        """
+
+        simulation_time = self.parameters.days
+
+        # estadísticas de la simulación
+        progress = st.progress(0)
+        day = st.empty()
+        sick_count = st.empty()
+        all_count = st.empty()
+
+        chart = st.altair_chart(
+            alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
+            .mark_line()
+            .encode(
+                y=alt.Y("personas:Q", title="Individuals"),
+                x=alt.X("dia:Q", title="Days of simulation"),
+                color=alt.Color("estado:N", title="State"),
+            ),
+            use_container_width=True,
+        )
+
+        # por cada paso de la simulación
+        for i in range(simulation_time):
+
+            total_individuals = 0
+            by_state = collections.defaultdict(lambda: 0)
+
+            # por cada región
+            for region in self.regions:
+                # llegadas del estranjero
+                self._simulate_arrivals(region)
+                # por cada persona
+                for ind in region:
+                    # actualizar estado de la persona
+                    ind.next_step()
+                    if ind.is_infectious:
+                        self._simulate_spread(ind)
+
+                    total_individuals += 1
+                    by_state[ind.state] += 1
+
+                self._apply_interventions(region)
+                # movimientos
+                for n_region in self.regions:
+                    if n_region != region:
+                        # calcular personas que se mueven de una region a otras
+                        self._simulate_transportation(region, n_region)
+
+            progress.progress((i + 1) / simulation_time)
+            sick_count.markdown(f"#### Individuos simulados: {total_individuals}")
+            all_count.code(dict(by_state))
+            day.markdown(f"#### Día: {i+1}")
+
+            chart.add_rows(
+                [dict(dia=i + 1, personas=v, estado=k) for k, v in by_state.items()]
+            )
+
+
+    def _simulate_arrivals(self, region: Region):
+        if Interventions.is_airport_open():
+            people = np.random.poisson(self.parameters.foreigner_arrivals)
+
+            for _ in range(people):
+                p = region.spawn(random.randint(20, 80))
+                p.set_state(StatePerson.F)
+
+
+    def _apply_interventions(region, status):
+        """Modifica el estado de las medidas y como influyen estas en la población.
+
+        Los cambios se almacenan en status
+        """
+        # si se está testeando activamente
+        p = Interventions.is_testing_active()
+
+        if p > 0:
+            for ind in region:
+                if ind.state in [StatePerson.L, StatePerson.A] and random.uniform(0, 1) < p:
+                    ind.set_state(StatePerson.H)
+
+
+    def _simulate_transportation(n_region, region, distance):
+        """Las personas que se mueven de n_region a region.
+        """
+        pass
+
+
+    def _simulate_spread(self, ind):
+        """Calcula que personas serán infectadas por 'ind' en el paso actual de la simulación.
+        """
+        connections = self._eval_connections(ind)
+
+        for other in connections:
+            if other.state != StatePerson.S:
+                continue
+
+            if self._eval_infections(ind):
+                other.set_state(StatePerson.L)
+
+
+    def _eval_connections(
+        # social: Dict[str, Dict[int, Dict[int, float]]], person: "Person"
+        self,
+        person: Person
+    ) -> List["Person"]:
+        """Devuelve las conexiones que tuvo una persona en un step de la simulación.
+        """
+
+        the_age = person.age
+
+        if the_age % 5 != 0:
+            the_age = the_age // 5 * 5
+
+        p_social = Interventions.is_social_distance()
+
+        if random.uniform(0, 1) < Interventions.is_reduce_aglomeration():
+            p_social *= (
+                2  # Cada cierta cantidad de días, un día te toca ver el doble de personas
+            )
+
+        # quedarse con la submatrix de contacto de la edad correspondiente
+        social = self.contact[(self.contact['type']=='overall') & (self.contact['subject']==the_age)]
+
+        # contactos en la calle
+        other_ages: pd.DataFrame = social[social['location']=='all'][["other", "value"]]
+
+        for age, lam in other_ages.itertuples(index=False):
+            people = np.random.poisson(lam * p_social)
+
+            for i in range(people):
+                yield person.region.spawn(age)
+
+        # contactos en la escuela
+        if Interventions.is_school_open():
+            other_ages = social[social['location']=='school'][["other", "value"]]
+
+            for age, lam in other_ages.itertuples(index=False):
+                people = np.random.poisson(lam * p_social)
+
+                for i in range(people):
+                    yield person.region.spawn(age)
+
+        # contactos en el trabajo
+        if the_age < 18:
+            return
+
+        p_work = Interventions.is_workforce()
+
+        if random.uniform(0, 1) < p_work:
+            other_ages = social[social['location']=='work'][["other", "value"]]
+
+            for age, lam in other_ages.itertuples(index=False):
+                people = np.random.poisson(lam * p_work * p_social)
+
+                for i in range(people):
+                    yield person.region.spawn(age)
+
+
+    def _eval_infections(self, person:Person) -> bool:
+        """Determina si una persona cualquiera se infesta o no, dado que se cruza con "person". 
+
+        En general depende del estado en el que se encuentra person y las probabilidades de ese estado
+        """
+
+        p = self.parameters.chance_of_infection
+
+        if Interventions.is_use_masks():
+            # usar mascarillas reduce en un 50% la probabilidad de infección
+            p *= 0.5
+
+        return random.uniform(0, 1) < p
 
 
 def run():

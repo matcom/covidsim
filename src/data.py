@@ -9,6 +9,10 @@ def load_contact_matrices():
     data = pd.read_csv(
         Path(__file__).parent.parent / "data" / "contact.csv",
         names=["country", "type", "location", "age_subject", "age_other", "value"]
-    ).drop(columns=['country'])
+    )
 
-    return data
+    # quedarse con el rango inicial de la edad
+    data["subject"] = data["age_subject"].transform(lambda s: int(s.split(" to ")[0].strip("+")))
+    data["other"] = data["age_other"].transform(lambda s: int(s.split(" to ")[0].strip("+")))
+
+    return data.drop(columns=['country', "age_subject", "age_other"])
