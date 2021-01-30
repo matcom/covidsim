@@ -16,3 +16,13 @@ def load_contact_matrices():
     data["other"] = data["age_other"].transform(lambda s: int(s.split(" to ")[0].strip("+")))
 
     return data.drop(columns=['country', "age_subject", "age_other"])
+
+
+@st.cache
+def load_disease_transition():
+    return pd.read_csv("./data/transitions.csv")
+    
+
+@st.cache
+def load_states():
+    return pd.read_csv("./data/states.csv").set_index("label").to_dict("index")
