@@ -1,0 +1,10 @@
+label,starting,susceptible,testeable,infectious,temporal
+S,yes,yes,yes,no,no
+L,no,no,no,no,yes
+I,no,no,yes,yes,yes
+A,no,no,yes,yes,yes
+U,no,no,no,no,yes
+R,no,no,no,no,no
+H,no,no,no,no,yes
+D,no,no,no,no,no
+F,no,no,yes,yes,no

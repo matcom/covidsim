@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide', initial_sidebar_state='auto')
 
 from src import data
-from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator
+from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine
 
 
 def main():
@@ -16,8 +16,13 @@ def main():
         with st.beta_expander("Matrices de contacto"):
             st.write(contact)
 
+        with st.beta_expander("Máquina de Estados"):
+            state_machine = StateMachine()
+            st.write(state_machine.states)
+
         with st.beta_expander("Transiciones"):
             transitions = TransitionEstimator()
+            st.write(transitions.data)
 
     parameters = SimulationParameters(
         days=st.sidebar.number_input("Días a simular", 1, 1000, 90),
@@ -26,7 +31,7 @@ def main():
         initial_infected=st.sidebar.number_input("Infectados iniciales", 1, 1000, 10),
     )
 
-    region = Region(1000, transitions, parameters.initial_infected)
+    region = Region(1000, transitions, state_machine, parameters.initial_infected)
 
     sim = Simulation([region], contact, parameters, transitions, main_container)
 

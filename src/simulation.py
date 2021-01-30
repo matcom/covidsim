@@ -1,8 +1,8 @@
 import collections
 import random
-from typing import Dict, List
+from typing import Dict, Iterable, List
 from dataclasses import dataclass
-
+from .data import *
 
 import altair as alt
 import numpy as np
@@ -148,11 +148,6 @@ class InterventionsManager:
 Interventions = InterventionsManager()
 
 
-@st.cache
-def load_disease_transition():
-    return pd.read_csv("./data/transitions.csv")
-    
-
 class TransitionEstimator:
     def __init__(self):
         self.data = load_disease_transition()
@@ -167,35 +162,51 @@ class TransitionEstimator:
         return pd.DataFrame(df).sort_values("Count")
 
 
-class StatePerson:
-    """Estados en los que puede estar una persona.
-    """
+@dataclass
+class State:
+    label: str
+    starting: bool
+    susceptible: bool
+    testeable: bool
+    infectious: bool
+    temporal: bool
 
-    S = "S"
-    L = "L"
-    I = "I"
-    A = "A"
-    U = "U"
-    R = "R"
-    H = "H"
-    D = "D"
-    F = "F"
+
+class StateMachine:
+    def __init__(self) -> None:
+        self.states = load_states()
+        self._start = None
+
+        for state in iter(self):
+            if state.starting:
+                self._start = state
+                break        
+
+    @property
+    def start(self) -> State:
+        return self._start
+
+    def __iter__(self) -> Iterable[State]:
+        for k in self.states:
+            yield self[k]
+
+    def __getitem__(self, index) -> State:
+        return State(label=index, **{k:v == "yes" for k,v in self.states[index].items()})
 
 
 class Person:
     total = 0
 
-    def __init__(self, region: "Region", age:int, sex:str, transitions: TransitionEstimator):
+    def __init__(self, region: "Region", age:int, sex:str, transitions: TransitionEstimator, states: StateMachine):
         """Crea una nueva persona que por defecto está en el estado de suseptible al virus.
         """
         Person.total += 1
-        self.state = StatePerson.S
+        self.state_machine = states
+        self.state = self.state_machine.start
         self.next_state = None
         self.steps_remaining = None
         self.is_infectious = None
         self.transitions = transitions
-        # llamar método de estado inicial
-        self.set_state(StatePerson.S)
 
         # la persona conoce la region a la que pertenece
         self.region = region
@@ -203,27 +214,16 @@ class Person:
         self.sex = sex
         self.health_conditions = None
 
+        # llamar método de estado inicial
+        self.set_state(states.start)
+
     def next_step(self):
         """Ejecuta un step de tiempo para una persona.
         """
         if self.steps_remaining == 0:
             # actualizar state
             self.state = self.next_state
-
-            if self.state == StatePerson.L:
-                self.p_latent()
-            elif self.state == StatePerson.I:
-                self.p_infect()
-            elif self.state == StatePerson.A:
-                self.p_asintomatic()
-            elif self.state == StatePerson.H:
-                self.p_hospitalized()
-            elif self.state == StatePerson.U:
-                self.p_uci()
-            elif self.state == StatePerson.F:
-                self.p_foreigner()
-            else:
-                return False
+            self.next_state, self.steps_remaining = self._evaluate_transition()
             # en los estados restantes no hay transiciones
         else:
             # decrementar los steps que faltan para cambiar de estado
@@ -246,7 +246,10 @@ class Person:
     def _evaluate_transition(self):
         """Computa a qué estado pasar dado el estado actual y los valores de la tabla.
         """
-        df = self.transitions.transition(self.state, self.age, self.sex)
+        if not self.state.temporal:
+            return self.state, 1
+
+        df = self.transitions.transition(self.state.label, self.age, self.sex)
         # calcular el estado de transición y el tiempo
         to_state = random.choices(df["StateTo"].values, weights=df["Count"].values, k=1)[
             0
@@ -254,64 +257,22 @@ class Person:
         state_data = df.set_index("StateTo").to_dict("index")[to_state]
         time = random.normalvariate(state_data["MeanDays"], state_data["StdDays"])
 
-        return to_state, int(time)
-
-    def p_latent(self):
-        self.is_infectious = False
-        change_to_symptoms = 0.5
-
-        if random.uniform(0, 1) < change_to_symptoms:
-            self.next_state = StatePerson.A
-            self.steps_remaining = 0
-            return
-
-        # convertirse en sintomático en (2,14) dias
-        self.next_state = StatePerson.I
-        self.steps_remaining = random.randint(2, 14)
-
-    def p_foreigner(self):
-        self.is_infectious = True
-        self.next_state, self.steps_remaining = self._evaluate_transition()
-
-    def p_infect(self):
-        self.is_infectious = True
-        self.next_state, self.steps_remaining = self._evaluate_transition()
-
-    def p_asintomatic(self):
-        self.is_infectious = True
-        self.next_state = StatePerson.R
-        # tiempo en que un asintomático se cura
-        self.steps_remaining = random.randint(2, 14)
-
-    def p_recovered(self):
-        self.is_infectious = False
-        self.next_state, self.steps_remaining = self._evaluate_transition()
-
-    def p_hospitalized(self):
-        self.is_infectious = False
-        self.next_state, self.steps_remaining = self._evaluate_transition()
-
-    def p_uci(self):
-        self.is_infectious = False
-        self.next_state, self.steps_remaining = self._evaluate_transition()
-
-    def p_death(self):
-        self.is_infectious = False
-        self.next_state, self.steps_remaining = self._evaluate_transition()
+        return self.state_machine[to_state], int(time)
 
 
 class Region:
-    def __init__(self, population, transitions: TransitionEstimator, initial_infected=1):
+    def __init__(self, population, transitions: TransitionEstimator, states: StateMachine, initial_infected:int):
         self._recovered = 0
         self._population = population
         self._death = 0
         self._simulations = 0
         self.transitions = transitions
+        self.states = states
         self._individuals = []
 
         for i in range(initial_infected):
-            p = Person(self, random.randint(20, 80), random.choice(["MALE", "FEMALE"]), transitions)
-            p.set_state(StatePerson.I)
+            p = Person(self, random.randint(20, 80), random.choice(["MALE", "FEMALE"]), transitions, states)
+            p.set_state(states["I"])
             self._individuals.append(p)
 
     def __len__(self):
@@ -319,11 +280,11 @@ class Region:
 
     def __iter__(self):
         for i in list(self._individuals):
-            if i.state != StatePerson.S:
+            if i.state != self.states.start:
                 yield i
 
     def spawn(self, age) -> Person:
-        p = Person(self, age, random.choice(["MALE", "FEMALE"]), self.transitions)
+        p = Person(self, age, random.choice(["MALE", "FEMALE"]), self.transitions, self.states)
         self._individuals.append(p)
         return p
 
@@ -401,7 +362,7 @@ class Simulation:
 
                     progress_person.progress((j+1) / len(individuals))
                     total_individuals += 1
-                    by_state[ind.state] += 1
+                    by_state[ind.state.label] += 1
 
                 self._apply_interventions(region)
                 # movimientos
@@ -426,7 +387,7 @@ class Simulation:
 
             for _ in range(people):
                 p = region.spawn(random.randint(20, 80))
-                p.set_state(StatePerson.F)
+                p.set_state(region.states["F"])
 
 
     def _apply_interventions(region, status):
