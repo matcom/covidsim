@@ -348,21 +348,6 @@ class Region:
         self._individuals.append(p)
         return p
 
-    def increase_susceptibles(self, count):
-        """Incrementa la cantidad de personas qeu pasan a formar parte de la simulación
-        """
-        self._simulations += count
-
-    def increase_death(self, count):
-        """Incrementa la cantidad de personas qeu pasan a formar parte de los fallecidos
-        """
-        self._death += count
-
-    def increase_recovered(self, count):
-        """Incrementa la cantidad de personas qeu pasan a formar parte de los recuperados
-        """
-        self._recovered += count
-
 
 @dataclass
 class SimulationParameters:
