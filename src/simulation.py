@@ -205,7 +205,6 @@ class Person:
         self.state = self.state_machine.start
         self.next_state = None
         self.steps_remaining = None
-        self.is_infectious = None
         self.transitions = transitions
 
         # la persona conoce la region a la que pertenece
@@ -216,6 +215,10 @@ class Person:
 
         # llamar método de estado inicial
         self.set_state(states.start)
+
+    @property
+    def is_infectious(self):
+        return self.state.infectious
 
     def next_step(self):
         """Ejecuta un step de tiempo para una persona.
@@ -278,7 +281,7 @@ class Region:
     def __len__(self):
         return len(self._individuals)
 
-    def __iter__(self):
+    def __iter__(self) -> Iterable[Person]:
         for i in list(self._individuals):
             if i.state != self.states.start:
                 yield i
@@ -298,11 +301,20 @@ class SimulationParameters:
 
 
 class Simulation:
-    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters, transitions: TransitionEstimator, container) -> None:
+    def __init__(
+        self, 
+        regions:List[Region], 
+        contact, 
+        parameters:SimulationParameters, 
+        transitions: TransitionEstimator, 
+        state_machine: StateMachine,
+        container
+    ) -> None:
         self.regions = regions
         self.contact = contact
         self.parameters = parameters
         self.transitions = transitions
+        self.state_machine = state_machine
         self.container = container
 
     # método de tranmisión espacial, teniendo en cuenta la localidad
@@ -390,7 +402,7 @@ class Simulation:
                 p.set_state(region.states["F"])
 
 
-    def _apply_interventions(region, status):
+    def _apply_interventions(self, region: Region):
         """Modifica el estado de las medidas y como influyen estas en la población.
 
         Los cambios se almacenan en status
@@ -400,11 +412,11 @@ class Simulation:
 
         if p > 0:
             for ind in region:
-                if ind.state in [StatePerson.L, StatePerson.A] and random.uniform(0, 1) < p:
-                    ind.set_state(StatePerson.H)
+                if ind.state.infectious and ind.state.testeable and random.uniform(0, 1) < p:
+                    ind.set_state(self.state_machine["H"])
 
 
-    def _simulate_transportation(n_region, region, distance):
+    def _simulate_transportation(self, n_region, region, distance):
         """Las personas que se mueven de n_region a region.
         """
         pass
@@ -416,11 +428,11 @@ class Simulation:
         connections = self._eval_connections(ind)
 
         for other in connections:
-            if other.state != StatePerson.S:
+            if other.state != self.state_machine["S"]:
                 continue
 
             if self._eval_infections(ind):
-                other.set_state(StatePerson.L)
+                other.set_state(self.state_machine["L"])
 
 
     def _eval_connections(

@@ -33,7 +33,7 @@ def main():
 
     region = Region(1000, transitions, state_machine, parameters.initial_infected)
 
-    sim = Simulation([region], contact, parameters, transitions, main_container)
+    sim = Simulation([region], contact, parameters, transitions, state_machine, main_container)
 
     if main_container.button("🚀 Simular"):
         sim.run()
