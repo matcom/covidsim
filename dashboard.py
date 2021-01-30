@@ -1,10 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide', initial_sidebar_state='auto')
+
 from src import data
 from src.simulation import Simulation, SimulationParameters, Region, TRANSITIONS
-
-
-st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide', initial_sidebar_state='auto')
 
 
 def main():

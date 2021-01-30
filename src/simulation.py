@@ -330,14 +330,6 @@ class Region:
     def __len__(self):
         return len(self._individuals)
 
-    @property
-    def population(self):
-        return self._population
-
-    @property
-    def recovered(self):
-        return self._recovered
-
     def __iter__(self):
         for i in list(self._individuals):
             if i.state != StatePerson.S:
