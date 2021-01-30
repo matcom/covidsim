@@ -167,21 +167,6 @@ class TransitionEstimator:
         return pd.DataFrame(df).sort_values("Count")
 
 
-TRANSITIONS = TransitionEstimator()
-
-
-@st.cache
-def load_interaction_estimates(location):
-    df: pd.DataFrame = pd.read_csv(
-        "./data/contact_matrices.csv",
-        header=None,
-        names=[i for i in range(5, 85, 5)],
-    )
-    df["age"] = [i for i in range(5, 85, 5)]
-
-    return df.set_index("age").to_dict()
-
-
 class StatePerson:
     """Estados en los que puede estar una persona.
     """
@@ -200,7 +185,7 @@ class StatePerson:
 class Person:
     total = 0
 
-    def __init__(self, region: "Region", age:int, sex:str):
+    def __init__(self, region: "Region", age:int, sex:str, transitions: TransitionEstimator):
         """Crea una nueva persona que por defecto está en el estado de suseptible al virus.
         """
         Person.total += 1
@@ -208,6 +193,7 @@ class Person:
         self.next_state = None
         self.steps_remaining = None
         self.is_infectious = None
+        self.transitions = transitions
         # llamar método de estado inicial
         self.set_state(StatePerson.S)
 
@@ -260,7 +246,7 @@ class Person:
     def _evaluate_transition(self):
         """Computa a qué estado pasar dado el estado actual y los valores de la tabla.
         """
-        df = TRANSITIONS.transition(self.state, self.age, self.sex)
+        df = self.transitions.transition(self.state, self.age, self.sex)
         # calcular el estado de transición y el tiempo
         to_state = random.choices(df["StateTo"].values, weights=df["Count"].values, k=1)[
             0
@@ -315,15 +301,16 @@ class Person:
 
 
 class Region:
-    def __init__(self, population, initial_infected=1):
+    def __init__(self, population, transitions: TransitionEstimator, initial_infected=1):
         self._recovered = 0
         self._population = population
         self._death = 0
         self._simulations = 0
+        self.transitions = transitions
         self._individuals = []
 
         for i in range(initial_infected):
-            p = Person(self, random.randint(20, 80), random.choice(["MALE", "FEMALE"]))
+            p = Person(self, random.randint(20, 80), random.choice(["MALE", "FEMALE"]), transitions)
             p.set_state(StatePerson.I)
             self._individuals.append(p)
 
@@ -336,7 +323,7 @@ class Region:
                 yield i
 
     def spawn(self, age) -> Person:
-        p = Person(self, age, random.choice(["MALE", "FEMALE"]))
+        p = Person(self, age, random.choice(["MALE", "FEMALE"]), self.transitions)
         self._individuals.append(p)
         return p
 
@@ -346,13 +333,15 @@ class SimulationParameters:
     days:int
     foreigner_arrivals:float
     chance_of_infection:float
+    initial_infected:int
 
 
 class Simulation:
-    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters, container) -> None:
+    def __init__(self, regions:List[Region], contact, parameters:SimulationParameters, transitions: TransitionEstimator, container) -> None:
         self.regions = regions
         self.contact = contact
         self.parameters = parameters
+        self.transitions = transitions
         self.container = container
 
     # método de tranmisión espacial, teniendo en cuenta la localidad
