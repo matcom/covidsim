@@ -433,7 +433,7 @@ class Simulation:
                     if ind.is_infectious:
                         self._simulate_spread(ind)
 
-                    progress_person.progress(j / len(individuals))
+                    progress_person.progress((j+1) / len(individuals))
                     total_individuals += 1
                     by_state[ind.state] += 1
 
