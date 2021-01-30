@@ -21,8 +21,8 @@ def main():
 
     parameters = SimulationParameters(
         days=st.sidebar.number_input("Días a simular", 1, 1000, 90),
-        foreigner_arrivals=st.sidebar.number_input("Llegada de extranjeros", 0.0, 10000.0, 100.0),
-        chance_of_infection=st.sidebar.number_input("Probabilidad de infección", 0.0, 1.0, 0.1),
+        foreigner_arrivals=st.sidebar.number_input("Llegada de extranjeros", 0, 10000, 10),
+        chance_of_infection=st.sidebar.number_input("Probabilidad de infección", 0.0, 1.0, 0.01),
     )
 
     region = Region(1000, st.sidebar.number_input("Infectados iniciales", 1, 1000, 10))
