@@ -1,0 +1,1832 @@
+Cons,Edad,Sexo,País,Procede,Prov Diagno,Mcpio,Fuente infección,Fecha Arribo,FIS,FI,F. Conf,Tipo de Caso,Evolución,Fecha Alta,Recaida,Contacto de caso,# de contactos
+1,61,M,Italia,Italia,SS,Trinidad,Exterior,3/7/2020,3/9/2020,3/10/2020,3/11/2020,Primario,Fallecido,3/18/2020,,,
+2,60,F,Italia,Italia,SS,Trinidad,Exterior,3/7/2020,3/9/2020,3/10/2020,3/11/2020,Primario,Alta,4/18/2020,,,
+3,57,F,Italia,Italia,SS,Trinidad,Exterior,3/7/2020,3/9/2020,3/10/2020,3/11/2020,Primario,Alta,4/18/2020,,,
+4,25,M,Cuba,Cuba,VC,Santa Clara,Cont-Extranj,,3/8/2020,3/9/2020,3/12/2020,Secundario,Alta,3/25/2020,,,
+5,63,M,Cuba,España,LH,10 de octubre,Exterior,3/8/2020,3/12/2020,3/12/2020,3/16/2020,Primario,Fallecido,3/30/2020,,,
+6,38,M,Cuba,Italia,CM,Camaguey,Exterior,3/14/2020,3/13/2020,3/15/2020,3/17/2020,Primario,Alta,4/9/2020,,,
+7,65,M,Cubana,Cuba,LH,Guanabacoa,Cont-Cub-Extranj,,3/10/2020,3/10/2020,3/17/2020,Secundario,Alta,3/27/2020,,,
+8,25,M,Cuba,España,VC,Santa Clara,Exterior,3/8/2020,3/14/2020,3/15/2020,3/18/2020,Primario,Alta,3/29/2020,,,5
+9,67,F,Cuba,EEUU,VC,Santa Clara,Exterior,3/11/2020,3/12/2020,3/16/2020,3/19/2020,Primario,Alta,3/30/2020,,,5
+10,77,M,EEUU,EEUU,SS,Trinidad,Exterior,3/8/2020,3/14/2020,3/14/2020,3/18/2020,Primario,Evacuado,4/18/2020,,,10
+11,57,M,Canada,Canada,HO,Rafael Freyre,Exterior,3/14/2020,3/16/2020,3/16/2020,3/18/2020,Primario,Evacuado,4/6/2020,,,6
+12,69,M,Francia,Francia,GR,Bayamo,Exterior,3/9/2020,3/16/2020,3/16/2020,3/19/2020,Primario,Alta,4/8/2020,,,
+13,71,M,Italia,Italia,LT,Jesús Menéndez,Exterior,3/9/2020,3/14/2020,3/12/2020,3/19/2020,Primario,Alta,4/6/2020,,,
+14,37,F,Cuba,Italia,GR,Rio Cauto,Exterior,3/14/2020,3/14/2020,3/17/2020,3/19/2020,Primario,Alta,4/20/2020,,,
+15,34,M,España,España,LH,Playa,Exterior,3/13/2020,3/16/2020,3/17/2020,3/19/2020,Primario,Alta,3/30/2020,,,
+16,81,M,Canada,Canada,LH,Plaza,Exterior,3/10/2020,3/17/2020,3/18/2020,3/19/2020,Primario,Alta,4/5/2020,,,
+17,25,F,Belgíca,Belgíca,PR,Viñales,Exterior,3/11/2020,3/16/2020,3/15/2020,3/20/2020,Primario,Alta,3/30/2020,,,
+18,32,F,Cuba,Guyana,MT,Cardenas,Exterior,3/12/2020,3/15/2020,3/16/2020,3/20/2020,Primario,Alta,4/4/2020,,,
+19,32,M,Cubana,Francia,LH,Guanabacoa,Exterior,3/14/2020,3/15/2020,3/16/2020,3/20/2020,Primario,Alta,4/10/2020,,,16
+20,76,M,Cubana,España,LH,Boyeros,Exterior,3/15/2020,3/16/2020,3/17/2020,3/20/2020,Primario,Alta,4/7/2020,,,
+21,35,M,Cuba,España,SC,Palma soriano,Exterior,3/10/2020,3/16/2020,3/17/2020,3/20/2020,Primario,Alta,4/2/2020,,,
+22,57,M,Cuba,Cuba,LH,Centro Habana,Exterior,3/15/2020,3/12/2020,3/19/2020,3/20/2020,Primario,Alta,4/3/2020,,,
+23,52,M,China,China,AR,Mariel,Cont-Extranj,,3/18/2020,3/19/2020,3/20/2020,Secundario,Alta,3/29/2020,,,
+24,60,M,España,España,LH,Plaza,Exterior,3/15/2020,3/17/2020,3/18/2020,3/20/2020,Primario,Alta,3/31/2020,,,
+25,37,F,Cuba,Cuba,LT,Jesús Menéndez,Cont-Extranj-COVID-19,,3/18/2020,3/14/2020,3/20/2020,Secundario,Alta,4/6/2020,,1,
+26,94,F,Cubana,Cuba,LH,Plaza,Cont-Cub-Extranj,,3/15/2020,3/18/2020,3/21/2020,Secundario,Alta,3/31/2020,,,
+27,39,M,Cuba,Mexico,PR,Consolación del Sur,Exterior,3/8/2020,3/17/2020,3/17/2020,3/21/2020,Primario,Alta,4/2/2020,,,
+28,23,M,Cuba,Cuba,MT,Cardenas,Cont-Extranj,,3/16/2020,3/17/2020,3/21/2020,Primario,Alta,4/7/2020,,,
+29,1,M,España,España,GR,Guisa,Exterior,3/17/2020,3/19/2020,3/20/2020,3/21/2020,Primario,Alta,4/15/2020,,,
+30,19,F,Cuba,España,GR,Guisa,Exterior,3/17/2020,3/20/2020,3/21/2020,3/21/2020,Primario,Alta,4/28/2020,,29,
+31,27,M,Cuba,EEUU,SS,La Sierpe,Exterior,3/16/2020,3/17/2020,3/17/2020,3/21/2020,Primario,Alta,4/1/2020,,,24
+32,58,F,Cuba,Cuba,SS,Trinidad,Cont-Extranj-COVID-19,,3/18/2020,3/14/2020,3/21/2020,Secundario,Alta,4/1/2020,,,11
+33,56,F,Canada,Canada,LH,Plaza,Exterior,3/9/2020,3/16/2020,3/19/2020,3/21/2020,Primario,Alta,4/4/2020,,,
+34,76,M,Canada,Mexico,LH,Plaza,Exterior,3/10/2020,3/16/2020,3/19/2020,3/21/2020,Primario,Alta,4/5/2020,,,
+35,66,F,Canada,Canada,LH,Plaza,Exterior,3/14/2020,3/16/2020,3/19/2020,3/21/2020,Primario,Alta,3/30/2020,,,
+36,45,M,Rusia,Rusia,LH,Habana del Este,Exterior,3/12/2020,3/20/2020,3/21/2020,3/22/2020,Primario,Fallecido,3/26/2020,,,
+37,91,F,Cubana,Cuba,LH,Plaza,Cont-Extranj-COVID-19,,3/18/2020,3/22/2020,3/22/2020,Secundario,Alta,4/4/2020,,34,
+38,57,M,Cuba,España,HO,Banes,Exterior,3/16/2020,3/19/2020,3/20/2020,3/22/2020,Primario,Alta,4/10/2020,,,
+39,57,M,Francia,Francia,VC,Santa Clara,Exterior,3/9/2020,3/17/2020,3/19/2020,3/22/2020,Primario,Alta,4/2/2020,,,
+40,31,M,Cuba,España,VC,Camajuani,Exterior,3/14/2020,3/19/2020,3/19/2020,3/22/2020,Primario,Alta,4/4/2020,,,
+41,57,F,Cuba/España,España,LH,Plaza,Exterior,3/15/2020,3/15/2020,3/18/2020,3/23/2020,Primario,Alta,4/9/2020,,,
+42,60,F,Cubana,España,LH,Cotorro,Exterior,3/15/2020,3/15/2020,3/19/2020,3/23/2020,Primario,Alta,4/16/2020,,,
+43,60,F,Rusia,R.Dominicana,LH,Plaza,Exterior,3/15/2020,3/18/2020,3/21/2020,3/23/2020,Primario,Alta,4/3/2020,,,
+44,42,M,Cuba,Uruguay,PR,Pinar del Rio,Exterior,3/11/2020,3/16/2020,3/20/2020,3/23/2020,Primario,alta,4/8/2020,,,
+45,36,M,Cuba,EEUU,SC,Palma Soriano,Exterior,3/21/2020,3/21/2020,3/22/2020,3/23/2020,Primario,Alta,4/9/2020,,,
+46,42,F,Cuba,"EEUU, Lousiana",CA,Ciego de Avila,Exterior,3/15/2020,3/17/2020,3/19/2020,3/23/2020,Primario,Alta,4/10/2020,,,33
+47,49,M,Cuba,R.Dominicana,SS,Taguasco,Exterior,3/17/2020,3/17/2020,3/22/2020,3/23/2020,Primario,Fallecido,4/7/2020,,,5
+48,50,M,Cuba,EEUU,VC,Placetas,Exterior,3/20/2020,3/21/2020,3/22/2020,3/23/2020,Primario,Alta,4/8/2020,,,
+49,48,M,Cuba,EEUU,AR,Guanajay,Exterior,3/12/2020,3/16/2020,3/22/2020,3/24/2020,Primario,Alta,4/10/2020,,,
+50,32,F,Cuba,Mexico,PR,Consolación del Sur,Exterior,3/8/2020,3/18/2020,3/22/2020,3/24/2020,Primario,Alta,4/6/2020,,,
+51,55,M,Cuba,Colombia,LH,Marianao,Exterior,3/16/2020,3/19/2020,3/22/2020,3/24/2020,Primario,Alta,5/6/2020,,,
+52,51,F,Colombia,Colombia,LH,Boyeros,Exterior,3/16/2020,3/19/2020,3/22/2020,3/24/2020,Primario,Alta,5/6/2020,,,
+53,44,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/20/2020,3/21/2020,3/24/2020,Secundario,Alta,2/14/2020,,28,
+54,72,M,Francia,Francia,MT,Cardenas,Exterior,3/13/2020,3/19/2020,3/20/2020,3/24/2020,Primario,Alta,4/8/2020,,,
+55,34,F,Croacia,Alemania,CF,Cienfuegos,Exterior,3/12/2020,3/18/2020,3/20/2020,3/21/2020,Primario,Alta,4/4/2020,,,
+56,38,F,Francesa,Francia,CA,Moron,Exterior,3/9/2020,3/17/2020,3/18/2020,3/24/2020,Primario,Alta,4/24/2020,,,17
+57,78,F,Cuba,España,SS,Sancti Spiritus,Exterior,3/20/2020,3/20/2020,3/21/2020,3/24/2020,Primario,Fallecido,4/4/2020,,,2
+58,49,F,Cubana,cuba,LH,Lisa,Cont-Extranj-COVID-19,,3/19/2020,3/21/2020,3/25/2020,Secundario,Alta,4/4/2020,,16,
+59,48,F,Rusia,Francia,LH,Habana del Este,Exterior,3/12/2020,3/21/2020,3/21/2020,3/25/2020,Primario,Alta,4/3/2020,,,
+60,55,F,Cubana,Estados Unidos,LH,Cerro,Exterior,3/17/2020,3/19/2020,3/21/2020,3/25/2020,Primario,Alta,4/9/2020,,,
+61,76,M,Cubana,Cuba,LH,Plaza,Cont-Extranj-COVID-19,,3/18/2020,3/20/2020,3/25/2020,Secundario,Alta,4/10/2020,,16,
+62,32,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/20/2020,3/21/2020,3/25/2020,Secundario,Alta,4/13/2020,,28.53,
+63,44,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/18/2020,3/21/2020,3/25/2020,Secundario,Alta,4/6/2020,,"28,54",
+64,31,F,Cuba,Guyana,MT,Cardenas,Exterior,3/21/2020,3/21/2020,3/22/2020,3/25/2020,Primario,Alta,4/8/2020,,,
+65,44,M,Cuba,Francia,MT,Cardenas,Exterior,3/14/2020,3/19/2020,3/19/2020,3/25/2020,Primario,Alta,4/5/2020,,,
+66,37,F,Cuba,EEUU,VC,Placetas,Exterior,3/20/2020,3/21/2020,3/22/2020,3/25/2020,Primario,Alta,4/7/2020,,,
+67,85,F,Cuba,EEUU,CA,Moron,Exterior,3/17/2020,3/19/2020,3/23/2020,3/25/2020,Primario,Alta,4/13/2020,,,
+68,56,M,Francia,Francia,MT,Cardenas,Exterior,3/7/2020,3/17/2020,3/24/2020,3/26/2020,Primario,Alta,3/31/2020,,,14
+69,24,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/22/2020,3/22/2020,3/26/2020,Secundario,Alta,4/13/2020,,28,31
+70,8,F,Cuba,Guyana,MT,Cardenas,Exterior,3/21/2020,3/21/2020,3/22/2020,3/26/2020,Primario,Alta,4/13/2020,,64,13
+71,7,F,Cuba,Cuba,PR,Pinar del rio,Cont-Extranj,,3/19/2020,3/21/2020,3/26/2020,Secundario,Alta,4/6/2020,,,25
+72,13,M,Cuba,Cuba,PR,Consolación del Sur,Cont-Cub-Extranj-COVID-19,3/8/2020,3/21/2020,3/22/2020,3/26/2020,Primario,Alta,4/6/2020,,"27,50",37
+73,48,M,Cuba,Panama,LH,Marianao,Exterior,3/12/2020,3/22/2020,3/22/2020,3/26/2020,Primario,Alta,4/10/2020,,,12
+74,21,F,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj-COVID-19,3/4/2020,3/19/2020,3/21/2020,3/26/2020,Secundario,Alta,4/10/2020,,22,12
+75,90,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-Extranj-COVID-19,,3/22/2020,3/21/2020,3/21/2020,Secundario,Fallecido,4/10/2020,,8,13
+76,33,M,Cuba,Cuba,CM,Camaguey,Cont-Extranj-COVID-19,,3/21/2020,3/20/2020,3/26/2020,Primario,Alta,4/7/2020,,12,12
+77,17,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-Extranj-COVID-19,,3/23/2020,3/20/2020,3/26/2020,Secundario,Alta,4/1/2020,,40,12
+78,33,M,Cuba,EEUU,VC,Ranchuelo,Exterior,3/20/2020,3/23/2020,3/23/2020,3/26/2020,Primario,Alta,4/8/2020,,,12
+79,53,F,Cuba,Venezuela,VC,Caibarien,Exterior,3/14/2020,3/23/2020,3/24/2020,3/26/2020,Primario,Cuidado,,,,13
+80,14,M,Cuba,Cuba,VC,Santo Domingo,Cont-Cub-Extranj-COVID-19,,3/23/2020,3/25/2020,3/27/2020,Secundario,Alta,4/10/2020,,48,8
+81,37,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-Extranj-COVID-19,,3/23/2020,3/20/2020,3/27/2020,Secundario,Alta,4/14/2020,,18,33
+82,66,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-Extranj-COVID-19,,3/23/2020,3/20/2020,3/27/2020,Secundario,Alta,4/9/2020,,18,14
+83,61,F,Cuba,EEUU,PR,Consolación del Sur,Exterior,,3/19/2020,3/21/2020,3/27/2020,Primario,Alta,4/6/2020,4/10/2020,,33
+84,25,M,Cuba,Guyana,LH,Cerro,Exterior,3/21/2020,3/22/2020,3/22/2020,3/27/2020,Primario,Alta,4/11/2020,,,8
+85,25,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-Extranj,,3/19/2020,3/23/2020,3/27/2020,Secundario,Alta,4/11/2020,,,71
+86,53,M,Cuba,España,SC,Songo,Exterior,3/17/2020,3/17/2020,3/17/2020,3/28/2020,Primario,Alta,4/11/2020,,,200
+87,29,F,Cubana,Panamá,LH,Cotorro,Exterior,3/16/2020,3/16/2020,3/17/2020,3/27/2020,Primario,Alta,4/11/2020,,,8
+88,44,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-Extranj-COVID-19,,3/24/2020,3/23/2020,3/27/2020,Secundario,Alta,4/11/2020,,41,4
+89,64,F,Cuba,Cuba,LH,Plaza,Cont-Cub-Extranj-COVID-19,,3/24/2020,3/23/2020,3/27/2020,Secundario,Alta,4/11/2020,,41,4
+90,70,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-Extranj-COVID-19,,3/24/2020,3/23/2020,3/27/2020,Secundario,Alta,4/10/2020,,41,4
+91,47,F,Cuba,Perú,LH,Centro Habana,Exterior,3/16/2020,3/18/2020,3/24/2020,3/27/2020,Primario,Alta,4/11/2020,,,12
+92,47,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-Extranj-COVID-19,,3/21/2020,3/20/2020,3/27/2020,Secundario,Alta,4/8/2020,,31,7
+93,29,F,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-Extranj-COVID-19,,3/23/2020,3/22/2020,3/27/2020,Secundario,Alta,4/8/2020,,31,13
+94,6,M,Cuba,Cuba,CA,Baragua,Cont-Extranj (una prima regresó de EU),,3/20/2020,3/21/2020,3/27/2020,Secundario,Alta,4/14/2020,,,13
+95,29,F,Cuba,EEUU,CA,Moron,Exterior,3/21/2020,3/22/2020,3/22/2020,3/27/2020,Primario,Alta,4/10/2020,,,13
+96,32,M,Cuba,Panama,CA,Ciego de Avila,Exterior,3/19/2020,3/22/2020,3/22/2020,3/27/2020,Primario,Alta,4/11/2020,,,5
+97,29,F,Cuba,Haití,CA,Baragua,Exterior,3/22/2020,3/18/2020,3/24/2020,3/27/2020,Primario,Alta,4/11/2020,,,3
+98,21,F,Cuba,EEUU,CA,Ciego de Avila,Exterior,3/17/2020,3/21/2020,3/23/2020,3/27/2020,Primario,Alta,4/7/2020,,,23
+99,77,M,Cuba,Cuba,SC,Contramaestre,Cont-Extranj,,3/19/2020,3/24/2020,3/27/2020,Secundario,Alta,4/22/2020,,,10
+100,43,F,Cuba,Panama,GR,Jiguani,Exterior,3/18/2020,3/22/2020,3/22/2020,3/27/2020,Primario,Alta,4/26/2020,,,13
+101,54,F,Cuba,Canada,GR,Bayamo,Exterior,3/14/2020,3/22/2020,3/22/2020,3/27/2020,Primario,Alta,4/19/2020,,,10
+102,44,M,Cuba,EEUU,SC,Santiago de Cuba,Exterior,3/15/2020,3/24/2020,3/24/2020,3/27/2020,Primario,Alta,4/9/2020,,,18
+103,29,F,Cuba,Cuba,CF,Lajas,Cont-Extranj-COVID-19,,asintom,3/24/2020,3/28/2020,Secundario,Alta,4/6/2020,,55,10
+104,46,M,Cuba,Cuba,CF,Cruces,Cont-Extranj,,3/18/2020,3/24/2020,3/28/2020,Secundario,Alta,4/6/2020,,,13
+105,53,F,Cuba,EEUU,VC,Santa Clara,Exterior,3/23/2020,3/24/2020,3/25/2020,3/27/2020,Primario,Alta,4/8/2020,,,9
+106,64,F,Cuba,Mexico,VC,Santa Clara,Exterior,3/19/2020,3/24/2020,3/25/2020,3/27/2020,Primario,Alta,4/18/2020,,,10
+107,51,F,Cuba,Cuba,VC,Cifuentes,Cont-Cub-Extranj,,3/23/2020,3/25/2020,3/27/2020,Secundario,Alta,4/8/2020,,,10
+108,12,M,Cuba,Cuba,CF,Cienfuegos,Cont-Extranj,,3/19/2020,3/24/2020,3/27/2020,Primario,Alta,4/4/2020,,,8
+109,39,F,Cuba,Mexico,VC,Santa Clara,Exterior,3/23/2020,3/24/2020,3/24/2020,3/27/2020,Primario,Alta,4/10/2020,,,10
+110,54,F,Cuba,Nicaragua,VC,Santa Clara,Exterior,3/16/2020,3/26/2020,3/26/2020,3/27/2020,Primario,Alta,4/10/2020,,,10
+111,52,M,Cuba,España,VC,Remedios,Exterior,3/15/2020,3/25/2020,3/26/2020,3/27/2020,Primario,Fallecido,3/28/2020,,,6
+112,52,M,Cuba,España,LH,Habana del Este,Exterior,3/11/2020,3/23/2020,3/27/2020,3/27/2020,Primario,Alta,4/16/2020,,,8
+113,60,M,Cuba,EEUU,CA,Ciro Redondo,Exterior,3/18/2020,3/20/2020,3/25/2020,3/27/2020,Primario,Alta,4/13/2020,,,8
+114,28,M,Cuba,Mexico,SS,Cabaiguan,Exterior,3/18/2020,3/15/2020,3/26/2020,3/27/2020,Primario,Alta,4/10/2020,,,11
+115,11,M,Cuba,EEUU,VC,Placetas,Exterior,3/20/2020,3/24/2020,3/26/2020,3/27/2020,Primario,Alta,4/26/2020,,,5
+116,15,M,Cuba,EEUU,VC,Santa Clara,Exterior,3/18/2020,3/24/2020,3/25/2020,3/27/2020,Primario,Alta,4/8/2020,,,5
+117,59,M,Cuba,EEUU,VC,Remedios,Exterior,3/25/2020,3/25/2020,3/25/2020,3/27/2020,Primario,Alta,4/11/2020,,,3
+118,17,M,Cuba,EEUU,VC,Placetas,Cont-Extranj,,3/22/2020,3/25/2020,3/26/2020,Primario,Alta,4/18/2020,,48.66,31
+119,12,M,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,3/22/2020,3/27/2020,3/27/2020,Secundario,Alta,4/7/2020,,77,2
+120,61,F,Cuba,EEUU,PR,Consolacion del Sur,Exterior,3/22/2020,3/22/2020,3/25/2020,3/28/2020,Primario,alta,4/8/2020,,,33
+121,22,M,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-Extranj-COVID-19,,3/24/2020,3/27/2020,3/28/2020,Secundario,alta,4/16/2020,,44,12
+122,24,F,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-Extranj,,3/22/2020,3/26/2020,3/28/2020,Secundario,Alta,4/16/2020,,,9
+123,32,M,Cuba,EEUU,LH,Cerro,Exterior,3/21/2020,3/22/2020,3/24/2020,3/28/2020,Primario,Alta,4/11/2020,,,12
+124,55,F,Cuba,España,LH,Cerro,Exterior,3/15/2020,3/16/2020,3/17/2020,3/28/2020,Primario,Alta,4/11/2020,,,23
+125,55,M,Cuba,R.Dominicana,AR,Artemisa,Exterior,3/16/2020,3/23/2020,3/25/2020,3/28/2020,Primario,Alta,4/11/2020,,,25
+126,55,F,Cuba,Venezuela,CM,Esmeralda,Exterior,3/17/2020,3/26/2020,3/26/2020,3/28/2020,Primario,Alta,4/7/2020,,,9
+127,19,M,Cuba,Cuba,CM,Florida,Cont-Cub-Extranj,,3/13/2020,3/25/2020,3/28/2020,Secundario,Alta,4/9/2020,,,16
+128,45,M,Cuba,Cuba,CA,Ciego de Avila,"Cont-Extranjero (Chófer de alquiler,contacto de Yusimi ( Viajera de EEUU)y viajeros procedentes España y EUA)",,3/23/2020,3/26/2020,3/28/2020,Secundario,Alta,4/13/2020,,,6
+129,28,M,Cuba,Mexico,SC,santiago de Cuba,Exterior,3/24/2020,3/26/2020,3/26/2020,3/28/2020,Primario,Alta,5/2/2020,,,11
+130,43,M,Cuba,Panama,SC,Santiago de Cuba,Exterior,3/14/2020,asintom,3/24/2020,3/28/2020,Secundario,Alta,4/18/2020,,102,24
+131,47,M,Cuba,EEUU,MT,Matanzas,Exterior,3/25/2020,3/23/2020,3/25/2020,3/28/2020,Primario,Alta,4/10/2020,,,14
+132,61,M,Cuba,Mexico,CA,Moron,extranjero (desde el aeropuerto de Camaguey fue directo al centro de aislamiento Hospital Amalia Simoni).,3/24/2020,3/21/2020,3/24/2020,3/28/2020,Primario,Alta,4/13/2020,,,9
+133,55,M,Cuba,EEUU,SS,Cabaiguan,Exterior,3/23/2020,3/25/2020,3/25/2020,3/28/2020,Primario,Alta,4/10/2020,,,8
+134,53,M,Cuba,EEUU,SS,Sancti Spiritus,Exterior,3/23/2020,3/24/2020,3/26/2020,3/28/2020,Primario,Alta,4/23/2020,,,4
+135,16,F,Cuba,Cuba,CF,Cienfuegos,Cont-Extranj,,3/23/2020,3/26/2020,3/28/2020,Secundario,Alta,4/13/2020,,,9
+136,58,M,Cuba,Mexico,CM,Nuevitas,Exterior,3/17/2020,3/20/2020,3/26/2020,3/28/2020,Primario,Alta,4/9/2020,,,14
+137,45,M,Cuba,Cuba,CM,Vertientes,Cont-Cub-Extranj,,3/23/2020,3/25/2020,3/28/2020,Secundario,Alta,4/9/2020,,,12
+138,58,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-Extranj,3/17/2020,3/17/2020,3/24/2020,3/28/2020,Secundario,Alta,4/18/2020,,,13
+139,19,M,Cuba,EEUU,CM,Camaguey,Exterior,3/17/2020,3/23/2020,3/24/2020,3/28/2020,Primario,Alta,4/12/2020,,,13
+140,55,F,Cuba,Mexico,MT,Matanzas,Exterior,3/19/2020,3/23/2020,3/27/2020,3/29/2020,Primario,Alta,4/27/2020,,,12
+141,67,M,Cuba,Cuba,CF,Cumanayagua,Cont-Cub-Extranj,,3/24/2020,3/26/2020,3/29/2020,Secundario,Alta,4/12/2020,,,26
+142,50,F,Cuba,Cuba,PR,Consolacion del Sur,Cont-Cub-Extranj-COVID-19,,3/25/2020,3/25/2020,3/29/2020,Secundario,alta,4/11/2020,,27.5,28
+143,13,M,Cuba,Cuba,PR,Consolación del Sur,Cont-Cub-Extranj-COVID-19,,3/21/2020,3/24/2020,3/29/2020,Secundario,Alta,4/6/2020,,72,50
+144,55,M,España,Cuba,AR,San Antonio de los Baños,Indeterminada,3/16/2020,3/24/2020,3/27/2020,3/29/2020,Primario,Alta,4/9/2020,,,10
+145,47,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-Extranj,,3/23/2020,3/24/2020,3/29/2020,Secundario,Alta,4/13/2020,,,7
+146,75,F,Cuba,Cuba,LH,Playa,Cont-Extranj,,3/23/2020,3/24/2020,3/29/2020,Secundario,Alta,4/14/2020,,,10
+147,54,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,3/24/2020,3/22/2020,3/29/2020,Secundario,Alta,4/13/2020,,51,8
+148,37,F,Cuba,Panama,LH,San Miguel del Padron,Exterior,3/18/2020,3/20/2020,3/25/2020,3/29/2020,Primario,Alta,4/13/2020,,,10
+149,49,M,Cuba,Cuba,LH,Playa,Cont-Extranj,,3/16/2020,3/21/2020,3/29/2020,Secundario,Alta,4/11/2020,,,7
+150,51,M,Cubana,Cuba,LH,Plaza,Cont-Extranj-COVID-19,,3/19/2020,3/20/2020,3/29/2020,Secundario,Alta,4/13/2020,,16,24
+151,52,M,China,Cuba,AR,Mariel,Cont-Extranj-COVID-19,,3/24/2020,3/22/2020,3/29/2020,Secundario,Alta,4/12/2020,,23,60
+152,70,F,Cuba,Cuba,LH,Playa,Cont-Cub-Extranj,,3/21/2020,3/25/2020,3/29/2020,Secundario,Alta,4/13/2020,,,8
+153,70,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj,,3/23/2020,3/27/2020,3/29/2020,Secundario,Alta,4/12/2020,,,10
+154,61,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,3/25/2020,3/25/2020,3/29/2020,Secundario,Alta,4/10/2020,,82,3
+155,1,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/21/2020,3/24/2020,3/29/2020,Secundario,Alta,4/6/2020,,53,12
+156,55,M,Cuba,Cuba,MT,Matanzas,Cont-Extranj,,3/22/2020,3/24/2020,3/29/2020,Secundario,Alta,4/9/2020,,,15
+157,26,F,Cuba,Cuba,CF,Aguada,Cont-Cub-Extranj,,3/20/2020,3/27/2020,3/29/2020,Secundario,Alta,4/15/2020,,,25
+158,52,F,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-Extranj,,3/25/2020,3/26/2020,3/29/2020,Secundario,alta,4/11/2020,,,12
+159,38,M,Cuba,España,AR,Guanajay,Exterior,,3/20/2020,3/27/2020,3/29/2020,Secundario,Alta,4/12/2020,,,27
+160,25,F,Cuba,Cuba,LH,Playa,Cont-Extranj-COVID-19,,3/20/2020,3/20/2020,3/29/2020,Secundario,Alta,4/11/2020,,24,11
+161,29,F,Cuba,Mexico,CA,Moron,Exterior,3/24/2020,3/24/2020,3/24/2020,3/29/2020,Primario,Alta,4/18/2020,,,86
+162,48,M,Cuba,EEUU,CA,Majagua,Exterior,3/21/2020,3/23/2020,3/24/2020,3/29/2020,Primario,Alta,4/13/2020,,,6
+163,32,F,Cuba,Francia,GT,Manuel Tames,Exterior,3/20/2020,3/25/2020,3/26/2020,3/29/2020,Primario,Alta,4/19/2020,,,25
+164,7 m,F,Cuba,Cuba,CF,Aguada,Cont-Extranj,,3/22/2020,3/26/2020,3/29/2020,Secundario,Alta,4/13/2020,,,13
+165,45,M,Cuba,Cuba,VC,Ranchuelo,Cont-Cub-Extranj,,3/26/2020,3/27/2020,3/29/2020,Secundario,Alta,4/13/2020,,,8
+166,48,M,Cuba,España,LT,Majibacoa,Exterior,,3/25/2020,3/26/2020,3/29/2020,Primario,Alta,4/15/2020,,,18
+167,29,M,Cuba,Cuba,GR,Manzanillo,Cont-Cub-Extranj,,3/23/2020,3/24/2020,3/29/2020,Secundario,Alta,4/19/2020,,,8
+168,4,M,EEUU,EEUU,GR,Bayamo,Exterior,3/22/2020,3/23/2020,3/27/2020,3/29/2020,Primario,Alta,4/14/2020,,,10
+169,57,F,Cuba,EEUU,CA,Ciego de Avila,Exterior,3/16/2020,3/21/2020,3/27/2020,3/29/2020,Primario,Alta,4/13/2020,,,14
+170,63,M,Cuba,Cuba,CA,Venezuela,Cont-Extranj (hermanos),,3/25/2020,3/27/2020,3/29/2020,Secundario,Fallecido,3/28/2020,,,18
+171,58,M,Cuba,España,LH,San Miguel del Padron ,Exterior,3/28/2020,3/29/2020,3/29/2020,3/30/2020,Primario,alta,4/13/2020,,,1
+172,28,M,Cuba,Canada,LH,Cerro,Exterior,3/17/2020,3/28/2020,3/28/2020,3/30/2020,Primario,Alta,4/9/2020,,,25
+173,25,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-Extranj-COVID-19,,3/28/2020,3/28/2020,3/30/2020,Secundario,Alta,4/9/2020,,172,25
+174,11,F,Francia,Francia,CA,Moron,Exterior,3/9/2020,3/26/2020,3/27/2020,3/30/2020,Primario,Alta,4/24/2020,,56,5
+175,14,M,Francia,Francia,CA,Moron,Exterior,3/9/2020,3/25/2020,3/26/2020,3/30/2020,Primario,Alta,4/24/2020,,56,5
+176,88,F,Cuba,Francia,LH,Playa,Exterior,3/16/2020,3/17/2020,3/28/2020,3/30/2020,Primario,Alta,4/2/2020,,,3
+177,24,M,Cuba,Cuba,LH,10 de Octubre,Cont-Extranj,,3/25/2020,3/26/2020,3/30/2020,Secundario,Alta,4/14/2020,,,4
+178,37,M,Cuba,EEUU,GR,Bayamo,Exterior,3/28/2020,3/25/2020,3/28/2020,3/30/2020,Primario,Alta,5/3/2020,,,20
+179,56,M,Cuba,EEUU,GR,Bayamo,Exterior,3/22/2020,3/26/2020,3/27/2020,3/30/2020,Primario,Alta,4/23/2020,,,2
+180,8,M,Cuba,Cuba,SC,Palma Soriano,Cont-Cub-Extranj,,3/25/2020,3/27/2020,3/30/2020,Primario,Alta,4/23/2020,,99,5
+181,27,M,Cuba,Cuba,SC,Contramaestre,Cont-Cub-Extranj,,3/26/2020,3/29/2020,3/30/2020,Secundario,Alta,4/20/2020,,99,5
+182,16,M,Cuba,Cuba,SC,Palma Soriano,Cont-Cub-Extranj,,3/25/2020,3/27/2020,3/30/2020,Primario,Alta,4/23/2020,,99,5
+183,7,M,Cuba,Cuba,SC,Palma Soriano,Cont-Cub-Extranj,,3/25/2020,3/27/2020,3/30/2020,Secundario,Alta,4/23/2020,,99,12
+184,54,F,Cuba,EEUU,LH,Plaza,Exterior,3/20/2020,3/27/2020,3/27/2020,3/30/2020,Primario,Alta,4/16/2020,,,1
+185,75,M,Cuba,Cuba,LH,Centro Habana,Cont-Extranj-COVID-19,,3/20/2020,3/26/2020,3/30/2020,Secundario,Fallecido,3/31/2020,,146,3
+186,49,M,Cuba,España,LH,La Lisa,Exterior,3/14/2020,3/29/2020,3/29/2020,3/30/2020,Primario,Alta,4/4/2020,,,3
+187,68,F,Cuba,EEUU,LH,Habana Vieja,Exterior,2/2/2020,3/26/2020,3/29/2020,3/31/2020,Primario,Alta,4/4/2020,,,5
+188,49,M,Cuba,Cuba,LH,Cotorro,Cont-Extranj,,3/27/2020,3/29/2020,3/31/2020,Secundario,Alta,4/4/2020,,,8
+189,89,M,Cuba,España,LH,Marianao,Exterior,3/8/2020,3/16/2020,3/30/2020,3/31/2020,Primario,Fallecido,4/12/2020,,,8
+190,53,F,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-COVID-19,,3/21/2020,3/29/2020,3/31/2020,Secundario,alta,4/11/2020,,122.158,13
+191,36,M,Cuba,Mexico,LH,Centro Habana,Exterior,3/25/2020,3/25/2020,3/25/2020,3/31/2020,Primario,Alta,4/14/2020,,,6
+192,55,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-Extranj-COVID-19,,3/28/2020,3/28/2020,3/31/2020,Secundario,alta,4/14/2020,,124,7
+193,33,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-Extranj,,3/21/2020,3/26/2020,3/31/2020,Secundario,Alta,4/13/2020,,,8
+194,9,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/22/2020,3/27/2020,3/31/2020,Secundario,Alta,4/16/2020,,,11
+195,37,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/25/2020,3/28/2020,3/31/2020,Secundario,Alta,4/16/2020,,,9
+196,45,M,Cuba,Mexico,LH,Cerro,Exterior,3/28/2020,3/28/2020,3/28/2020,3/31/2020,Primario,Alta,4/16/2020,,,9
+197,20,F,Cuba,Cuba,LH,Marianao,Cont-Extranj,,3/25/2020,3/28/2020,3/31/2020,Secundario,Alta,4/16/2020,,,12
+198,44,F,Cuba,Cuba,CM,Playa ,Cont-Cub-COVID-19,,3/25/2020,3/28/2020,3/31/2020,Secundario,Alta,5/1/2020,,127,19
+199,15,F,Cuba,Cuba,CM,Habana del Este,Cont-Cub-COVID-19,,3/25/2020,3/25/2020,3/31/2020,Secundario,Alta,5/1/2020,,127,9
+200,40,F,Cuba,Cuba,VC,10 de Octubre,Cont-Cub-COVID-19,,3/27/2020,3/27/2020,3/31/2020,Secundario,Alta,4/8/2020,,118,19
+201,17,F,Cuba,Cuba,VC,Habana Vieja,Cont-Cub-Extranj-COVID-19,,3/28/2020,3/29/2020,3/31/2020,Secundario,Alta,4/17/2020,,79,13
+202,37,F,Cuba,Mexico,CM,10 de Octubre,Exterior,3/24/2020,3/26/2020,3/26/2020,3/31/2020,Primario,Alta,4/13/2020,,,6
+203,17,F,Cuba,Cuba,SS,Boyeros,Cont-Extranj,,3/27/2020,3/27/2020,3/31/2020,Secundario,Alta,4/14/2020,,,5
+204,21,M,Cuba,EEUU,SS,Habana del Este,Exterior,3/23/2020,3/23/2020,3/23/2020,3/31/2020,Primario,Alta,4/13/2020,,,7
+205,49,F,Cuba,España,VC,Marianao,Exterior,3/16/2020,3/29/2020,3/30/2020,3/31/2020,Primario,Alta,4/13/2020,,111,14
+206,29,F,Cuba,Cuba,SC,San Miguel del Padron,Cont-Extranj,,3/20/2020,3/23/2020,3/31/2020,Primario,Alta,4/20/2020,,,11
+207,4 meses,M,Cuba,Cuba,SC,Regla,Cont-Extranj,,3/24/2020,3/26/2020,3/31/2020,Primario,Alta,4/22/2020,,,8
+208,30,M,Cuba,Cuba,SC,La Lisa,Cont-Cub-COVID-19,,3/26/2020,3/29/2020,3/31/2020,Secundario,alta,4/28/2020,,99,10
+209,33,F,Cuba,Cuba,SC,Boyeros,Cont-Extranj,,3/26/2020,3/29/2020,3/31/2020,Secundario,Alta,4/20/2020,,,8
+210,56,M,Cubano-Americano,EEUU,HO,Guanabacoa,Exterior,3/21/2020,3/27/2020,3/29/2020,3/30/2020,Primario,Alta,4/18/2020,,,22
+211,25,F,Cuba,Cuba,HO,Plaza,Cont-Cub-Extranj-COVID-19,,3/28/2020,3/29/2020,3/31/2020,Secundario,Alta,4/23/2020,,210,22
+212,38,M,Cuba,Chile,LT,10 de octubre,Exterior,3/19/2020,3/29/2020,3/29/2020,3/31/2020,Primario,Alta,4/18/2020,,,9
+213,9,M,Cuba,Cuba,PR,Habana Vieja,Cont-Cub-COVID-19,,3/27/2020,3/27/2020,4/1/2020,Secundario,Alta,4/13/2020,,,23
+214,31,F,Cuba,Cuba,PR,Guanabacoa,Cont-Cub-COVID-19,,3/29/2020,3/29/2020,4/1/2020,Secundario,Alta,4/8/2020,,142,23
+215,42,M,China,Cuba,AR,San Miguel del Padron,Cont-Extranj-COVID-19,,3/27/2020,3/30/2020,4/1/2020,Secundario,Alta,4/11/2020,,23,142
+216,69,M,Cuba,España,LH,Arroyo Naranjo,Exterior,3/19/2020,3/29/2020,3/29/2020,4/1/2020,Primario,Alta,4/16/2020,,,10
+217,68,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,3/31/2020,4/1/2020,4/1/2020,Secundario,Alta,4/11/2020,,146,60
+218,63,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,3/31/2020,4/1/2020,4/1/2020,Secundario,Alta,4/18/2020,,146,60
+219,24,M,Cuba,Dubai,LH,Habana del Este,Exterior,3/28/2020,3/17/2020,3/28/2020,4/1/2020,Primario,Alta,4/16/2020,,,15
+220,35,F,Cuba,Cuba,CA,Centro Habana,"Contacto con extranjero (Hija del fallecido, caso cofirmado SARS CoV-2) ",,3/29/2020,3/30/2020,4/1/2020,Secundario,Alta,4/18/2020,,170,35
+221,8,F,Cuba,Cuba,CA,Playa,"Contacto con extranjero (Nieta del fallecido, caso cofirmado)",,3/29/2020,3/30/2020,4/1/2020,Secundario,Alta,4/20/2020,,170,25
+222,3,F,Cuba,Cuba,MT,Centro Habana,Cont-Extranj,,3/19/2020,3/29/2020,4/1/2020,Secundario,Alta,4/9/2020,,,9
+223,35,M,Cuba,Cuba,MT,Guanabacoa,Cont-Cub-COVID-19,,3/26/2020,3/29/2020,4/1/2020,Secundario,Alta,4/17/2020,,,13
+224,35,F,Cuba,Cuba,MT,Centro Habana,Cont-Cub-COVID-19,,3/26/2020,3/29/2020,4/1/2020,Secundario,Alta,4/22/2020,,223,13
+225,58,F,Cuba,Cuba,CA,San Miguel del Padron,Contacto con extranjero (Esposa de caso caso cofirmado y cto de extranjero),,3/29/2020,3/30/2020,4/1/2020,Secundario,Alta,4/20/2020,,170,29
+226,38,F,Cuba,Cuba,CF,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,3/29/2020,4/1/2020,Secundario,Alta,4/16/2020,,141,12
+227,22,M,Cuba,Cuba,CF,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,3/29/2020,4/1/2020,Secundario,Alta,4/16/2020,,141,12
+228,35,M,Cuba,Cuba,CF,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,3/28/2020,4/1/2020,Secundario,Alta,4/16/2020,,108,57
+229,31,M,Cuba,Cuba,SC,Guanabacoa,Cont-Extranj,,3/10/2020,3/25/2020,4/1/2020,Primario,Alta,4/23/2020,,,10
+230,42,M,Cuba,Cuba,LH,Habana del Este,Cont-Extranj,,3/23/2020,3/30/2020,4/1/2020,Secundario,Alta,4/14/2020,,,15
+231,49,F,Cuba,Cuba,SC,San miguel del Padron,Cont-Extranj,,3/26/2020,3/27/2020,4/1/2020,Primario,Alta,4/22/2020,,,14
+232,76,F,Cuba,Cuba,SC,San miguel del Padron,Cont-Cub-COVID-19,,3/29/2020,3/29/2020,4/1/2020,Secundario,Alta,4/23/2020,,99,5
+233,41,M,Cuba,Cuba,CM,10 de Octubre,Cont-Extranj,,3/27/2020,3/28/2020,4/1/2020,Secundario,Alta,4/16/2020,,,12
+234,7,F,Cuba,Cuba,CA,Regla,Contacto con extranjero (su tia viajera procedente de Venezuela),,3/28/2020,3/30/2020,4/2/2020,Secundario,Alta,4/20/2020,,,10
+235,46,M,Cuba,Haití,CA,Regla,Exterior,3/22/2020,3/24/2020,3/29/2020,4/2/2020,Primario,Alta,4/17/2020,,97,7
+236,19,M,Cuba,Cuba,MT,Arroyo Naranjo,Cont-Cub-Extranj,,3/27/2020,3/28/2020,4/2/2020,Secundario,Alta,4/16/2020,,,11
+237,42,F,Cuba,Cuba,AR,Habana del Este,Cont-Cub-Extranj-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,144,13
+238,57,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-Extranj-COVID-19,,3/29/2020,3/29/2020,4/2/2020,Secundario,Alta,4/11/2020,,144,17
+239,58,M,Cuba,Cuba,AR,Plaza,Cont-Cub-Extranj-COVID-19,,3/29/2020,3/29/2020,4/2/2020,Secundario,Alta,4/11/2020,,125,7
+240,23,F,Cuba,Cuba,AR,Centro Habana,Cont-Cub-Extranj-COVID-19,,3/29/2020,3/29/2020,4/2/2020,Secundario,Alta,4/18/2020,,,14
+241,45,F,Cuba,Cuba,CA,San Miguel del Padron,Cont-Extranj,,3/24/2020,3/28/2020,4/2/2020,Secundario,Alta,4/16/2020,,,27
+242,18,F,Cuba,Cuba,CA,Arroyo Naranjo,Cont-Cub-Extranj,,3/26/2020,3/30/2020,4/2/2020,Secundario,Alta,4/16/2020,,,6
+243,34,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,185,7
+244,34,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,185,11
+245,55,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,185,8
+246,34,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,185,11
+247,22,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/18/2020,,185,9
+248,47,F,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/1/2020,4/2/2020,4/2/2020,Primario,Alta,,,,25
+249,18,F,Cuba,Cuba,SC,Marianao,Cont-Extranj,,3/20/2020,3/23/2020,4/2/2020,Primario,Alta,4/23/2020,,,12
+250,80,F,Cuba,Cuba,SC,Centro Habana,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/22/2020,,181.99,7
+251,39,M,Cuba,Cuba,SC,Centro Habana,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/23/2020,,102,23
+252,10,M,Cuba,Cuba,PR,San Miguel del Padron,Cont-Cub-COVID-19,,3/27/2020,3/27/2020,4/2/2020,Secundario,Alta,4/19/2020,,171,20
+253,11,M,Cuba,Cuba,PR,Cerro,Cont-Cub-COVID-19,,3/28/2020,3/28/2020,4/2/2020,Secundario,Alta,4/19/2020,,122,34
+254,12,F,Cuba,Cuba,PR,Marianao,Cont-Cub-COVID-19,,3/28/2020,3/28/2020,4/2/2020,Secundario,Alta,4/19/2020,,122,41
+255,42,M,Cuba,Cuba,PR,Consolación del Sur ,Cont-Cub-COVID-19,,3/22/2020,3/22/2020,4/2/2020,Secundario,Alta,4/19/2020,,27,22
+256,71,M,Cuba,Cuba,PR,Consolacion del Sur,Cont-Cub-COVID-19,,3/30/2020,3/30/2020,4/2/2020,Secundario,Alta,4/19/2020,,143,41
+257,31,M,China,Cuba,AR,Mariel,Cont-Extranj-COVID-19,,3/21/2020,3/21/2020,4/2/2020,Secundario,Alta,4/6/2020,,23,6
+258,19,F,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,3/31/2020,3/31/2020,4/2/2020,Secundario,Alta,4/15/2020,,201,20
+259,90,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,3/31/2020,3/31/2020,4/2/2020,Secundario,Alta,4/14/2020,,75,2
+260,48,M,Cuba,EEUU,CM,Camaguey,Exterior,3/11/2020,3/28/2020,3/29/2020,4/2/2020,Primario,Alta,4/27/2020,,,8
+261,36,F,Cuba,España,CM,Camaguey,Exterior,3/20/2020,3/28/2020,3/29/2020,4/2/2020,Primario,Alta,4/16/2020,,,21
+262,46,F,Cuba,España,SS,Taguasco,Exterior,3/16/2020,3/31/2020,3/31/2020,4/2/2020,Primario,Alta,4/15/2020,,,12
+263,20,M,Cuba,Cuba,SS,Taguasco,Cont-Cub-Extranj-COVID-19,,3/31/2020,3/31/2020,4/2/2020,Secundario,Alta,4/14/2020,,262,14
+264,34,M,Cuba,Cuba,CA,Ciego de Avila,contacto caso positivo (Médico contacto de caso confirmado SARS CoV-2 (Lázaro  Apolinerio),,asintom,3/28/2020,4/2/2020,Secundario,Alta,4/20/2020,,96,9
+265,27,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,3/27/2020,3/27/2020,4/2/2020,Secundario,Alta,4/28/2020,,170,8
+266,28,F,Cuba,Cuba,HO,Banes,Cont-Cub-Extranj-COVID-19,,3/22/2020,3/22/2020,4/2/2020,Secundario,Alta,4/21/2020,,38,23
+267,68,M,Cuba,España,HO,Holguin,Exterior,3/20/2020,3/28/2020,3/28/2020,4/2/2020,Primario,Alta,4/21/2020,,,15
+268,46,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,3/22/2020,3/22/2020,4/2/2020,Secundario,Alta,4/21/2020,,38,26
+269,48,M,Cuba,Cuba,HO,Calixto Garcia,Cont-Cub-COVID-19,,3/22/2020,3/22/2020,4/2/2020,Secundario,Alta,4/21/2020,,38,31
+270,42,F,Perú,Cuba,AR,San Antonio de los Baños,Cont-Extranj-COVID-19,,3/29/2020,3/29/2020,4/3/2020,Secundario,Alta,4/12/2020,28-Apr,144,25
+271,68,F,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,3/24/2020,4/1/2020,4/3/2020,Primario,Fallecido,4/14/2020,,,15
+272,41,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Extranj,,3/23/2020,3/28/2020,4/3/2020,Secundario,Alta,,,,9
+273,84,M,Cuba,Cuba,VC,Santa Clara,Cont-Extranj,,3/25/2020,4/2/2020,4/3/2020,Secundario,Fallecido,4/15/2020,,,124
+274,59,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj-COVID-19,,3/29/2020,3/29/2020,4/3/2020,Secundario,Alta,4/22/2020,,,15
+275,17,M,Cuba,Cuba,AR,Guira ,Cont-Extranj,,3/25/2020,3/30/2020,4/3/2020,Secundario,Alta,4/16/2020,,,10
+276,28,F,Cuba,Nicaragua,LH,Habana Vieja,Exterior,,3/31/2020,3/31/2020,4/3/2020,Primario,Alta,4/18/2020,,,14
+277,21,M,Cuba,Italia,LH,Guanabacoa,Exterior,3/28/2020,3/28/2020,3/28/2020,4/3/2020,Primario,Alta,4/13/2020,,,12
+278,101,F,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj-COVID-19,,3/25/2020,3/31/2020,4/3/2020,Secundario,Fallecido,4/6/2020,,187,6
+279,6,M,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj,,3/31/2020,3/31/2020,4/3/2020,Secundario,Alta,4/21/2020,,,12
+280,57,F,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj,,3/31/2020,3/31/2020,4/3/2020,Secundario,Alta,4/18/2020,,,15
+281,12,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/31/2020,3/31/2020,4/3/2020,Secundario,Alta,4/15/2020,,193,18
+282,29,M,Cuba,Cuba,SC,santiago de Cuba,Cont-Extranj,,3/23/2020,3/25/2020,4/3/2020,Primario,Alta,4/23/2020,,,11
+283,65,M,Cuba,Cuba,MT,Matanzas,Cont-Extranj-COVID-19,,3/22/2020,3/22/2020,4/3/2020,Secundario,Alta,4/17/2020,,18,16
+284,71,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj-COVID-19,,3/25/2020,3/25/2020,4/3/2020,Secundario,Alta,4/17/2020,,65,11
+285,72,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj-COVID-19,,3/25/2020,3/25/2020,4/3/2020,Secundario,Alta,4/17/2020,,65,11
+286,42,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj-COVID-19,,3/25/2020,3/25/2020,4/3/2020,Secundario,Alta,4/17/2020,,65,11
+287,24,M,Cuba,Cuba,LH,Plaza,Cont-Extranj,,3/28/2020,3/28/2020,4/3/2020,Secundario,Alta,4/13/2020,,,22
+288,34,F,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj,,4/1/2020,4/1/2020,4/3/2020,Secundario,Alta,4/25/2020,,,10
+289,18,F,Cuba,Cuba,MY,Guines,Cont-Cub-Extranj,,asintom,3/24/2020,4/4/2020,Primario,Alta,4/20/2020,,,13
+290,49,F,Cuba,Cuba,LH,Habana del Este,Cont-Extranj,,3/30/2020,4/1/2020,4/4/2020,Secundario,Alta,,,,
+291,42,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/1/2020,4/4/2020,Secundario,Alta,4/18/2020,,,
+292,8,F,Cuba,Cuba,PR,Pinar del rio,Cont-Cub-COVID-19,,3/29/2020,3/27/2020,4/4/2020,Secundario,alta,4/16/2020,,44.121,
+293,49,F,Cuba,Cuba,LH,Plaza,Exterior,3/17/2020,3/25/2020,4/3/2020,4/4/2020,Primario,Cuidado,,,,
+294,54,M,Cuba,Cuba,LH,Plaza,Exterior,3/13/2020,3/19/2020,3/24/2020,4/4/2020,Primario,Alta,4/16/2020,,,
+295,34,M,Cuba,Cuba,LH,Plaza,Cont-Extranj,,3/28/2020,3/28/2020,4/4/2020,Secundario,Alta,4/16/2020,,,
+296,64,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,3/23/2020,3/31/2020,4/4/2020,Secundario,Alta,4/20/2020,,230,
+297,45,F,Cuba,Cuba,MY,San Jose,Cont-Cub-Extranj,,asintom,4/4/2020,4/6/2020,Primario,Alta,4/20/2020,,,10
+298,31,M,Cuba,Cuba,LH,Habana del Este,Cont-Extranj,,3/21/2020,4/1/2020,4/4/2020,Secundario,Alta,4/18/2020,,,
+299,29,M,Cuba,Cuba,MT,Cardenas,Cont-Extranj,,3/25/2020,4/2/2020,4/4/2020,Secundario,Alta,4/19/2020,,,
+300,73,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,3/26/2020,3/31/2020,4/4/2020,Secundario,Alta,4/17/2020,,,
+301,67,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/29/2020,3/31/2020,4/4/2020,Secundario,Alta,4/17/2020,,300,
+302,67,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-Extranj,,3/29/2020,4/1/2020,4/4/2020,Secundario,Alta,4/19/2020,,,
+303,46,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,3/29/2020,4/1/2020,4/4/2020,Secundario,Alta,4/19/2020,,302,
+304,68,M,Cuba,Cuba,HO,Banes,Indeterminada,,3/23/2020,3/28/2020,4/4/2020,Primario,Fallecido,4/6/2020,,,
+305,59,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,asintom,3/29/2020,4/4/2020,Secundario,Alta,4/21/2020,,223,
+306,48,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,asintom,4/3/2020,4/4/2020,Secundario,Alta,4/16/2020,,,
+307,21,F,Cuba,Cuba,VC,Caibarien,Cont-Cub-Extranj-COVID-19,,asintom,3/27/2020,4/4/2020,Secundario,Alta,4/16/2020,,79,19
+308,42,M,Cuba,Cuba,VC,Placetas,Cont-Cub-Extranj-COVID-19,,asintom,3/27/2020,4/4/2020,Secundario,Alta,4/16/2020,,,8
+309,27,F,Cuba,Cuba,VC,Caibarien,Cont-Cub-Extranj-COVID-19,,asintom,3/27/2020,4/4/2020,Secundario,Alta,4/16/2020,,79,4
+310,74,M,Cuba,,IJ,IJ,Cont-Cub-Extranj,,3/31/2020,4/2/2020,4/2/2020,Secundario,Fallecido,4/3/2020,,,
+311,55,M,Cuba,Cuba,VC,Caibarien,Cont-Cub-Extranj-COVID-19,,asintom,3/24/2020,4/4/2020,Secundario,Alta,4/14/2020,,79,49
+312,7,M,Cuba,Cuba,VC,Caibarien,Cont-Cub-Extranj-COVID-19,,asintom,3/24/2020,4/4/2020,Secundario,Alta,4/19/2020,,79,34
+313,63,F,Cuba,Cuba,AR,San Cristobal,Cont-Cub-Extranj,,3/31/2020,3/31/2020,4/4/2020,Secundario,Alta,4/18/2020,,,
+314,25,F,Cuba,Cuba,AR,Bauta,Cont-Cub-Extranj,,asintom,4/1/2020,4/4/2020,Secundario,Alta,4/25/2020,,,
+315,19,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,3/29/2020,3/31/2020,4/4/2020,Secundario,Alta,4/14/2020,,193,
+316,53,F,Cuba,Cuba,SS,Cabaiguan,Exterior,3/23/2020,3/23/2020,3/31/2020,4/4/2020,Primario,Alta,4/14/2020,,,11
+317,53,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-Extranj,,3/31/2020,3/31/2020,4/4/2020,Secundario,Alta,4/23/2020,,,
+318,39,M,Cuba,Cuba,LH,Habana del Este,Exterior,3/23/2020,3/31/2020,4/1/2020,4/4/2020,Primario,Alta,4/20/2020,,,
+319,44,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-Extranj,,3/20/2020,4/1/2020,4/4/2020,Secundario,Alta,,,,
+320,64,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-Extranj,,3/15/2020,4/1/2020,4/4/2020,Secundario,Alta,4/19/2020,,,
+321,66,M,Cuba,Cuba,LH,Marianao,Indeterminada,,4/1/2020,4/1/2020,4/5/2020,Primario,Fallecido,4/14/2020,,,
+322,56,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,,,4/5/2020,Secundario,Alta,4/14/2020,,260,
+323,40,M,Cuba,Cuba,CA,Morón,Contacto con extranjero,,3/30/2020,4/1/2020,4/5/2020,Secundario,Alta,4/24/2020,,,
+324,62,F,Cuba,Cuba,CA,Morón,Cont-Cub-Extranj,,3/28/2020,4/1/2020,4/5/2020,Secundario,Fallecido,4/7/2020,,,
+325,15,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,3/20/2020,4/5/2020,Secundario,Alta,4/20/2020,,77,6
+326,21,M,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,3/21/2020,4/5/2020,Secundario,Alta,4/18/2020,,77,7
+327,67,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,3/31/2020,4/2/2020,4/2/2020,Secundario,Alta,5/1/2020,,310,
+328,77,F,Cuba,Cuba,MT,Matanzas,Exterior,3/10/2020,3/27/2020,4/1/2020,4/5/2020,Primario,Alta,4/17/2020,,,
+329,67,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,3/28/2020,4/2/2020,4/5/2020,Secundario,Fallecido,4/12/2020,,,
+330,55,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/1/2020,4/3/2020,4/5/2020,Secundario,Alta,,,271,
+331,4,F,Cuba,Cuba,PR,Pinar del rio,Cont-Cub-COVID-19,,3/30/2020,3/27/2020,4/5/2020,Secundario,alta,4/16/2020,,121.292,12
+332,80,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,asintom,4/3/2020,4/5/2020,Secundario,Alta,4/23/2020,,,3
+333,57,M,Cuba,Cuba,HO,Holguin,Cont-Extranj,,3/23/2020,4/3/2020,4/5/2020,Indice,Alta,4/24/2020,,,62
+334,43,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,3/30/2020,4/2/2020,4/5/2020,Secundario,Alta,4/21/2020,,42,2
+335,36,M,Cuba,Cuba,LH,Habana del Este,Cont-Extranj,,3/24/2020,4/2/2020,4/5/2020,Secundario,Alta,4/21/2020,,,5
+336,51,M,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,,4/3/2020,4/5/2020,Secundario,Alta,4/26/2020,,249,25
+337,21,M,Cuba,Cuba,MY,Guines,Cont-Cub-Extranj,,4/1/2020,4/1/2020,4/1/2020,Secundario,Alta,4/25/2020,,,14
+338,56,F,Cuba,Cuba,LH,Boyeros,Cont-Extranj,,3/29/2020,4/2/2020,4/5/2020,Secundario,Alta,4/21/2020,,,6
+339,66,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-Extranj,,3/31/2020,3/31/2020,4/5/2020,Secundario,Alta,4/22/2020,,,2
+340,81,F,Cuba,Cuba,LH,Playa,Indeterminada,,4/2/2020,4/3/2020,4/5/2020,Primario,Alta,4/22/2020,,,2
+341,79,F,Cuba,Cuba,LH,Plaza,Indeterminada,,3/20/2020,4/2/2020,4/5/2020,Primario,Cuidado,,,,2
+342,56,M,Cuba,Cuba,LH,Playa,Cont-Extranj,,3/27/2020,3/27/2020,4/5/2020,Secundario,alta,4/28/2020,,,5
+343,37,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/1/2020,4/5/2020,Secundario,Alta,4/24/2020,,200,16
+344,27,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/1/2020,4/5/2020,Secundario,Alta,4/24/2020,,,12
+345,14,F,Cuba,Cuba,CM,Florida,Cont-Cub-COVID-19,,4/4/2020,4/29/2020,4/5/2020,Secundario,Alta,4/27/2020,,,48
+346,35,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,,4/3/2020,4/5/2020,Secundario,Alta,4/22/2020,,,6
+347,34,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,,4/3/2020,4/5/2020,Secundario,Cuidado,,,,5
+348,32,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,,4/3/2020,4/5/2020,Secundario,Cuidado,,,,6
+349,65,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,3/23/2020,3/28/2020,4/5/2020,Secundario,Cuidado,,,,5
+350,38,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-Extranj,,3/17/2020,3/27/2020,4/5/2020,Secundario,Fallecido,4/3/2020,,,
+351,77,M,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,4/3/2020,4/3/2020,4/6/2020,Secundario,Alta,4/21/2020,,249,44
+352,22,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Extranj,,4/2/2020,4/2/2020,4/6/2020,Primario,Alta,4/26/2020,,,13
+353,27,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,4
+354,44,M,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/1/2020,4/6/2020,Secundario,Alta,4/24/2020,,220,4
+355,6,F,Cuba,Cuba,CA,Florencia,Cont-Cub-Extranj,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/27/2020,,242,2
+356,76,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/27/2020,,242,
+357,48,F,Cuba,Cuba,CA,Florencia,Cont-Cub-Extranj,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,
+358,28,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/27/2020,,242,2
+359,50,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,4
+360,9,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,10
+361,41,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,4
+362,5,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,10
+363,78,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,10
+364,50,M,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,242,5
+365,32,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/1/2020,4/6/2020,Secundario,Alta,4/27/2020,,220 y 221,6
+366,48,M,Cuba,EEUU,AR,Guira ,Exterior,3/20/2020,3/26/2020,4/1/2020,4/6/2020,Primario,Alta,4/25/2020,,,27
+367,56,M,Cuba,Cuba,IJ,IJ,Cont-Extranj,,3/29/2020,4/4/2020,4/4/2020,Secundario,Alta,4/25/2020,,,14
+368,13,M,Cuba,Cuba,CM,Camaguey,Cont-Extranj/Cont-Cub-Extranj,,4/1/2020,4/1/2020,4/6/2020,Secundario,Alta,4/22/2020,,,4
+369,61,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/29/2020,4/2/2020,4/6/2020,Secundario,Cuidado,,,370,3
+370,29,M,Cuba,Cuba,LH,Cerro,Indeterminada,,3/24/2020,4/2/2020,4/6/2020,Primario,Alta,4/20/2020,,,20
+371,55,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,asintom,4/2/2020,4/6/2020,Secundario,Alta,4/9/2020,,251,22
+372,48,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,3/28/2020,3/28/2020,4/6/2020,Secundario,alta,4/29/2020,,304,28
+373,45,F,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,4/1/2020,4/3/2020,4/6/2020,Secundario,Alta,4/17/2020,,258,30
+374,3,M,Cuba,Cuba,VC,Camajuaní,"Cont-Extranj/Cont-Cub-COVID-1
+",,4/2/2020,4/3/2020,4/6/2020,Secundario,Alta,4/23/2020,,,16
+375,56,F,Cuba,Cuba,VC,Placetas,Cont-Cub-COVID-19,,3/31/2020,4/5/2020,4/6/2020,Secundario,Alta,4/20/2020,,48,12
+376,22,F,Cuba,Cuba,VC,Camajuaní,Cont-Extranj,,3/28/2020,4/3/2020,4/6/2020,Secundario,Alta,4/15/2020,,,16
+377,45,F,Cuba,Cuba,MT,Matanzas,Cont-Extranj,,3/23/2020,4/4/2020,4/6/2020,Secundario,Alta,4/20/2020,,,24
+378,59,F,Cuba,Cuba,HO,Banes,Cont-Cub-Extranj,,4/2/2020,4/3/2020,4/6/2020,Primario,Alta,4/24/2020,,,15
+379,45,M,Cuba,Cuba,LH,Cerro,Exterior,,3/24/2020,3/24/2020,4/6/2020,Primario,Alta,4/22/2020,,,11
+380,56,F,Cuba,Cuba,LH,Playa,Indeterminada,,3/28/2020,4/2/2020,4/6/2020,Primario,Alta,4/20/2020,,,2
+381,59,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-Extranj,,3/27/2020,4/2/2020,4/6/2020,Secundario,alta,,,,12
+382,52,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,3/31/2020,4/4/2020,4/6/2020,Primario,Alta,4/25/2020,,368,14
+383,11,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-Extranj,,3/31/2020,3/29/2020,4/6/2020,Secundario,Alta,4/23/2020,,,14
+384,70,M,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-19,,4/1/2020,4/3/2020,4/6/2020,Secundario,Alta,4/27/2020,,324,28
+385,52,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,3/23/2020,4/4/2020,4/6/2020,Secundario,Alta,4/22/2020,,,8
+386,4,F,Cuba,Cuba,PR,Viñales,Cont-Cub-Extranj,,3/29/2020,4/4/2020,4/6/2020,Secundario,Alta,4/16/2020,,,6
+387,52,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/2/2020,4/6/2020,Secundario,Alta,4/25/2020,,310,7
+388,20,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/2/2020,4/6/2020,Secundario,Alta,4/25/2020,,310,7
+389,20,M,Cuba,Cuba,MY,,Cont-Cub-COVID-19,,asintom,4/2/2020,4/6/2020,Secundario,,,,310,10
+390,27,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/6/2020,4/6/2020,Secundario,Alta,4/19/2020,,,50
+391,2,M,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,3/29/2020,4/6/2020,Secundario,Alta,4/27/2020,,220,4
+392,7,M,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/3/2020,4/6/2020,Secundario,Alta,4/24/2020,,220,7
+393,67,M,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,3/29/2020,4/6/2020,Secundario,Alta,4/25/2020,,,4
+394,51,F,Cuba,Cuba,CA,Baraguá,Cont-Cub-COVID-19,,asintom,3/27/2020,4/6/2020,Secundario,Alta,4/25/2020,,94,18
+395,48,F,Cuba,Cuba,CA,Baraguá,Cont-Cub-Extranj,,asintom,3/27/2020,4/6/2020,Secundario,Alta,4/25/2020,,,4
+396,29,M,Cuba,EEUU,CA,Morón,Exterior,3/19/2020,asintom,3/26/2020,4/6/2020,Primario,Alta,4/27/2020,,95,24
+397,39,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,3/31/2020,4/5/2020,4/7/2020,Transmision local,Alta,4/24/2020,,304,304
+398,8,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,3/30/2020,4/5/2020,4/7/2020,Secundario,Alta,4/29/2020,,304,24
+399,36,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,3/29/2020,4/5/2020,4/7/2020,Secundario,Alta,4/29/2020,,304,4
+400,74,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,3/25/2020,4/5/2020,4/7/2020,Secundario,Alta,4/30/2020,,304,3
+401,47,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/7/2020,Transmision local,Alta,4/24/2020,,304,234
+402,28,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/7/2020,Transmision local,Alta,4/24/2020,,234,234
+403,42,F,Cuba,Panama,SC,Contramaestre,Cont-Cub-COVID-19,,asintom,4/1/2020,4/7/2020,Secundario,Alta,4/28/2020,,,16
+404,36,M,Cuba,Panama,LH,Centro Habana,Exterior,3/29/2020,3/29/2020,4/2/2020,4/7/2020,Primario,Alta,4/21/2020,,,16
+405,10,F,Cuba,Cuba,LH,Marianao,Cont-Cub-Extranj,,4/3/2020,4/3/2020,4/7/2020,Secundario,Cuidado,,,,14
+406,36,F,Cuba,Mexico,LH,Playa ,Exterior,3/13/2020,3/25/2020,26/04/2020,4/7/2020,Primario,Alta,4/21/2020,,,3
+407,49,F,Cuba,Cuba,AR,Marianao,Cont-Cub-Extranj,,4/3/2020,4/3/2020,4/7/2020,Secundario,Alta,4/22/2020,,,15
+408,52,M,China,Cuba,AR,Playa ,Cont-Cub-Extranj,,asintom,,4/7/2020,Secundario,Alta,4/17/2020,,23,10
+409,70,F,Cuba,Cuba,LH,Marianao,Indeterminada,,3/23/2020,4/6/2020,4/7/2020,Primario,Cuidado,,,,23
+410,80,M,Cuba,Cuba,LH,Playa ,Indeterminada,,4/3/2020,4/6/2020,4/7/2020,Primario,Cuidado,,,,1
+411,22,F,Cuba,Cuba,VC,Marianao,Cont-Cub-COVID-19,,asintom,4/6/2020,4/7/2020,Secundario,Alta,4/19/2020,,,17
+412,60,M,Cuba,EEUU,VC,Playa ,Exterior,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/19/2020,,316,
+413,13,F,Cuba,Cuba,VC,Marianao,Cont-Cub-COVID-19,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/23/2020,,,12
+414,50,M,Cuba,Cuba,SS,Playa ,Cont-Cub-COVID-19,,asintom,4/1/2020,4/7/2020,Secundario,Alta,4/18/2020,,,12
+415,63,M,Cuba,Cuba,SS,Marianao,Cont-Cub-Extranj,,asintom,4/1/2020,4/7/2020,Secundario,Alta,4/18/2020,,,11
+416,56,M,Cuba,EEUU,SS,Playa ,Exterior,3/23/2020,asintom,3/31/2020,4/7/2020,Primario,alta,4/18/2020,,,11
+417,78,M,Cuba,EEUU,SS,Marianao,Exterior,3/23/2020,asintom,3/31/2020,4/7/2020,Primario,alta,4/18/2020,,,11
+418,29,M,Cuba,Cuba,SS,Playa ,Cont-Cub-Extranj,,asintom,3/31/2020,4/7/2020,Secundario,Alta,4/18/2020,,,11
+419,27,M,Cuba,Cuba,SS,Marianao,Cont-Cub-Extranj,,asintom,4/3/2020,4/7/2020,Secundario,Alta,4/18/2020,,249,25
+420,23,F,Cuba,EEUU,SS,Playa ,Cont-Cub-COVID-19,,asintom,31/04/2020,4/7/2020,Secundario,Alta,4/18/2020,,316,32
+421,55,M,Cuba,Cuba,SS,Marianao,Cont-Cub-Extranj,,asintom,3/31/2020,4/7/2020,Secundario,Alta,4/18/2020,,316,17
+422,16,M,Cuba,Cuba,SS,Playa ,Cont-Cub-COVID-19,,asintom,4/1/2020,4/7/2020,Secundario,Alta,4/19/2020,,316,67
+423,81,F,Cuba,Cuba,SS,Marianao,Cont-Cub-Extranj,,4/1/2020,4/4/2020,4/7/2020,Secundario,Alta,4/15/2020,,316,11
+424,69,M,Cuba,Cuba,MT,Playa ,Cont-Cub-COVID-19,,3/24/2020,4/4/2020,4/7/2020,Secundario,Alta,4/21/2020,,,9
+425,59,F,Cuba,Cuba,MT,Marianao,Cont-Cub-COVID-19,,3/21/2020,4/5/2020,4/7/2020,Secundario,Alta,4/21/2020,,,14
+426,46,M,Cuba,Cuba,MT,Playa ,Cont-Extranj,,3/31/2020,4/4/2020,4/7/2020,Secundario,Alta,4/20/2020,,,16
+427,37,F,Cuba,Cuba,VC,Marianao,Cont-Cub-COVID-19,,4/6/2020,4/7/2020,4/7/2020,Secundario,Alta,4/22/2020,,,14
+428,68,F,Cuba,Cuba,VC,Playa ,Cont-Cub-COVID-19,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/19/2020,,,17
+429,15,F,Cuba,Cuba,VC,Marianao,Cont-Cub-COVID-19,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/19/2020,,,4
+430,67,F,Cuba,Cuba,VC,Playa ,Cont-Cub-COVID-19,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/21/2020,,273,17
+431,11,M,Cuba,Cuba,VC,Marianao,Cont-Cub-COVID-19,,asintom,4/6/2020,4/7/2020,Secundario,Alta,4/23/2020,,,3
+432,51,F,Cuba,,VC,Playa ,Cont-extranj,,asintom,4/7/2020,4/7/2020,Secundario,Alta,4/19/2020,,,2
+433,29,M,Cuba,Panama,LH,Marianao,Exterior,,4/4/2020,4/4/2020,4/7/2020,Primario,Alta,4/21/2020,,,15
+434,62,M,Cuba,Cuba,LH,Playa ,Cont-Cub-COVID-19,,3/31/2020,4/4/2020,4/7/2020,Secundario,Fallecido,4/23/2020,,,10
+435,59,F,Cuba,Nicaragua,LH,Marianao,Exterior,3/21/2020,4/3/2020,4/4/2020,4/7/2020,Primario,Alta,4/22/2020,,,56
+436,61,F,Cuba,Cuba,LH,Playa ,Cont-Cub-COVID-19,,3/27/2020,4/3/2020,4/7/2020,Secundario,Cuidado,,,,6
+437,35,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/1/2020,4/7/2020,Secundario,Cuidado,,,,13
+438,78,M,Cuba,EEUU,LH,Playa ,Exterior,,3/23/2020,4/2/2020,4/7/2020,Primario,Alta,4/25/2020,,,10
+439,37,F,Cuba,Cuba,LH,Marianao,Cont-Extranj,,4/3/2020,4/3/2020,4/7/2020,Secundario,Alta,4/22/2020,,,13
+440,16,F,Cuba,Cuba,LH,Playa ,Cont-Cub-COVID-19,,asintom,4/5/2020,4/7/2020,Secundario,Alta,,,,12
+441,52,F,Cuba,Cuba,LH,Playa ,Cont-Cub-COVID-19,,asintom,4/5/2020,4/7/2020,Secundario,Alta,,,,4
+442,49,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,4/7/2020,4/7/2020,Primario,Cuidado,,,,48
+443,29,M,Mexico,Mexico,LH,10 de Octubre,Cont-Extranj,3/1/2020,4/4/2020,4/4/2020,4/7/2020,Primario,Cuidado,,,,1
+444,49,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/6/2020,4/7/2020,Secundario,Alta,4/23/2020,,,45
+445,32,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/6/2020,4/7/2020,Secundario,Cuidado,,,,60
+446,67,M,Cuba,Cuba,LH,Playa,Cont-Cub-Extranj,,4/1/2020,4/2/2020,4/7/2020,Secundario,Alta,,,,7
+447,20,M,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,asintom,4/4/2020,4/7/2020,Secundario,Alta,4/28/2020,,,24
+448,36,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,asintom,4/2/2020,4/7/2020,Secundario,Alta,4/28/2020,,,27
+449,1,M,Cuba,Cuba,AR,San Cristobal,Cont-Cub-COVID-19,,asintom,4/2/2020,4/7/2020,Secundario,Alta,4/29/2020,,,15
+450,25,F,Cuba,Cuba,AR,San Cristobal,Cont-Cub-COVID-19,,asintom,4/2/2020,4/7/2020,Secundario,Alta,4/25/2020,,,15
+451,24,F,Cuba,Cuba,AR,Bauta,Cont-Cub-Extranj,,4/2/2020,4/2/2020,4/7/2020,Secundario,Alta,4/22/2020,,,13
+452,54,M,Cuba,Cuba,AR,Bauta,Cont-Cub-Extranj,,4/2/2020,4/2/2020,4/7/2020,Secundario,Alta,5/2/2020,,,13
+453,21,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,3/30/2020,4/4/2020,4/7/2020,Secundario,Alta,4/22/2020,,,15
+454,11,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,2/18/2020,2/18/2020,4/7/2020,Primario,Cuidado,,,,20
+455,59,M,Cuba,Cuba,CM,Florida,Cont-Cub-COVID-19,,asintom,3/31/2020,4/7/2020,Secundario,Alta,4/27/2020,,,15
+456,31,F,Cuba,Cuba,CM,Esmeralda ,Cont-Cub-COVID-19,,asintom,3/18/2020,4/7/2020,Secundario,Alta,4/27/2020,,,25
+457,39,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/7/2020,4/7/2020,Secundario,Cuidado,,,,54
+458,70,F,Cuba,EEUU,HO,Baguanos,Cont-Cub-Extranj,3/16/2020,4/3/2020,4/3/2020,4/8/2020,Secundario,Alta,4/25/2020,,333,10
+459,30,F,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/8/2020,Secundario,Alta,4/22/2020,,373,14
+460,15,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,4/6/2020,4/8/2020,Secundario,Alta,4/20/2020,,374,12
+461,48,M,Italia,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/3/2020,4/4/2020,4/8/2020,Secundario,Alta,4/17/2020,,145,2
+462,43,F,Panama,Cuba,AR,San Antonio de los Baños,Cont-Cub-COVID-19,,3/31/2020,4/3/2020,4/8/2020,Secundario,Alta,4/17/2020,,237,13
+463,65,M,Cuba,Cuba,AR,Bahia Honda,Cont-Cub-Extranj,,4/2/2020,4/6/2020,4/8/2020,Secundario,Alta,4/17/2020,,,2
+464,53,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,07/04/202,4/8/2020,Secundario,Alta,4/14/2020,,446,6
+465,54,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,asintom,07/04/202,4/8/2020,Secundario,Alta,4/24/2020,,446,6
+466,57,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,07/04/202,4/8/2020,Secundario,Cuidado,,,446,6
+467,53,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,07/04/202,4/8/2020,Secundario,alta,,,446,6
+468,68,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,3/23/2020,4/5/2020,4/8/2020,Primario,Alta,4/27/2020,,,3
+469,30,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/4/2020,4/5/2020,4/8/2020,Secundario,Alta,4/22/2020,,,5
+470,53,F,Cuba,Cuba,CA,Majagua,Cont-Cub-COVID-19,,asintom,4/3/2020,4/8/2020,Secundario,Alta,4/27/2020,,241,26
+471,41,F,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-19,,asintom,4/3/2020,4/8/2020,Secundario,Alta,4/27/2020,,324,18
+472,35,F,Cuba,Cuba,CA,Florencia,Cont-Cub-Extranj,,asintom,4/3/2020,4/8/2020,Secundario,Alta,4/27/2020,,242,5
+473,29,F,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-19,,asintom,4/4/2020,4/8/2020,Secundario,Alta,4/27/2020,,384,5
+474,22,M,Cuba,Cuba,CA,Majagua,Cont-Cub-COVID-19,,asintom,4/3/2020,4/8/2020,Secundario,Alta,4/27/2020,,241,26
+475,82,M,Cuba,Cuba,CA,Majagua,Cont-Cub-COVID-19,,asintom,4/5/2020,4/8/2020,Secundario,Alta,4/27/2020,,324,7
+476,49,M,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,4/4/2020,4/5/2020,4/8/2020,Secundario,Alta,4/22/2020,,325,5
+477,81,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/4/2020,4/8/2020,Secundario,Alta,4/26/2020,,310,7
+478,23,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/2/2020,4/8/2020,Secundario,Alta,4/26/2020,,310,7
+479,40,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/6/2020,4/8/2020,Secundario,Alta,4/30/2020,,329,15
+480,62,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/6/2020,4/8/2020,Secundario,Alta,4/25/2020,,329,2
+481,16,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/6/2020,4/8/2020,Secundario,Alta,4/28/2020,,304,18
+482,52,M,Cuba,Cuba,HO,Moa,Cont-Cub-Extranj,,3/31/2020,4/5/2020,4/8/2020,Secundario,Alta,4/28/2020,,,27
+483,36,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,3/29/2020,4/6/2020,4/8/2020,Secundario,Alta,4/28/2020,,333,8
+484,22,F,Cuba,EEUU,HO,Holguin,Exterior,3/22/2020,4/4/2020,4/4/2020,4/8/2020,Primario,Alta,4/28/2020,,,8
+485,38,F,Cuba,Cuba,HO,Holguin,Cont-Cub-Extranj,,3/30/2020,4/5/2020,4/8/2020,Secundario,Alta,4/28/2020,,,6
+486,39,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/4/2020,4/8/2020,Secundario,Cuidado,,,330,9
+487,34,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/8/2020,4/8/2020,Secundario,Alta,4/25/2020,,330,7
+488,57,F,Cuba,Cuba,LH,Playa,,,3/29/2020,4/4/2020,4/8/2020,,Cuidado,,,,4
+489,96,F,Cuba,Cuba,LH,Playa,Cont-Cub-Extranj,,asintom,4/4/2020,4/8/2020,Secundario,Alta,4/23/2020,,663,6
+490,58,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/1/2020,4/4/2020,4/8/2020,Secundario,Alta,4/21/2020,,,6
+491,51,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/1/2020,4/3/2020,4/8/2020,Secundario,Alta,4/23/2020,,322,13
+492,7,F,Cuba,Cuba,SC,Santiago,Indeterminada,No,4/14/2020,4/15/2020,4/19/2020,Indeterminada,Cuidado,,,,1
+493,80,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,3/31/2020,4/8/2020,Secundario,Fallecido,4/23/2020,,278,8
+494,57,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/26/2020,4/5/2020,4/8/2020,Secundario,Alta,4/22/2020,,230,7
+495,43,M,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/3/2020,4/1/2020,4/8/2020,Primario,Cuidado,,,,8
+496,39,F,Cubana,Francia/EUA,LH,Plaza,Exterior,3/15/2020,3/20/2020,4/6/2020,4/8/2020,Primario,Alta,4/22/2020,,,15
+497,79,M,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-Extranj,,4/8/2020,4/10/2020,4/10/2020,Indeterminada,Alta,4/8/2020,,,8
+498,66,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-Extranj,,4/1/2020,4/1/2020,4/8/2020,Secundario,Cuidado,,,,30
+499,57,F,Cuba,Cuba,LH,Playa,Indeterminada,,3/29/2020,4/1/2020,4/8/2020,Primario,Alta,4/22/2020,,,11
+500,57,M,Cuba,Cuba,LH,Playa,Indeterminada,,3/28/2020,4/5/2020,4/8/2020,Primario,Alta,,,,2
+501,54,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,3/28/2020,3/31/2020,4/8/2020,Secundario,Alta,,,278,22
+502,52,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/1/2020,4/4/2020,4/8/2020,Primario,Alta,4/15/2020,,,4
+503,53,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,3/27/2020,4/6/2020,4/8/2020,Primario,Alta,4/23/2020,,,5
+504,60,F,Cuba,Cuba,AR,Gûira de Melena,Indeterminada,,3/27/2020,4/3/2020,4/8/2020,Secundario,Alta,4/29/2020,,,5
+505,84,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/3/2020,4/4/2020,4/8/2020,Primario,Alta,4/23/2020,,,1
+506,75,F,Cuba,Cuba,HO,Banes,Indeterminada,,4/1/2020,4/4/2020,4/8/2020,Primario,Fallecido,4/7/2020,,,5
+507,43,M,Cuba,Cuba,LH,Boyeros,Cont-Extranj,,3/26/2020,3/27/2020,4/8/2020,Secundario,Alta,4/13/2020,,,11
+508,27,F,Cuba,Cuba,LH,Marianao,Cont-Cub-Extranj,,4/1/2020,4/6/2020,4/8/2020,Secundario,Cuidado,,,,7
+509,45,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,3/20/2020,4/3/2020,4/8/2020,Secundario,Alta,4/25/2020,,192 y 124,11
+510,80,F,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/1/2020,4/4/2020,4/8/2020,Primario,Fallecido,4/6/2020,,,5
+511,9,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/4/2020,4/8/2020,Secundario,Cuidado,,,320,22
+512,72,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,4/3/2020,4/3/2020,4/8/2020,Secundario,Fallecido,4/19/2020,,,4
+513,43,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,3/28/2020,4/3/2020,4/8/2020,Secundario,Alta,4/29/2020,,,2
+514,35,M,Cuba,Cuba,LH,Cerro,Cont-Cub-Extranj,,3/29/2020,4/4/2020,4/8/2020,Secundario,Alta,4/23/2020,,,2
+515,47,F,Cuba,Cuba,LH,Cotorro,Indeterminada,,4/3/2020,4/4/2020,4/8/2020,Primario,Alta,4/22/2020,,,6
+516,48,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/5/2020,4/9/2020,Secundario,Alta,4/24/2020,,390,32
+517,30,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/6/2020,4/6/2020,4/9/2020,Primario,Alta,4/16/2020,,,10
+518,56,F,Cuba,Cuba,GT,El Salvador,Indeterminada,,4/2/2020,4/7/2020,4/9/2020,Secundario,Alta,4/30/2020,,,10
+519,22,F,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/27/2020,,324,13
+520,11,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/27/2020,,220.221,7
+521,53,M,Cuba,Cuba,LH,Playa,Indeterminada,,3/26/2020,3/30/2020,4/9/2020,Primario,Fallecido,4/16/2020,,,2
+522,48,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/9/2020,4/9/2020,Secundario,Alta,5/4/2020,,521,2
+523,15,M,Cuba,Cuba,PR,Consolacion del Sur,Cont-Cub-COVID-19,,4/1/2020,4/2/2020,4/9/2020,Secundario,Alta,4/19/2020,,213,13
+524,64,F,Cuba,Cuba,HO,Gibara,Indeterminada,,3/30/2020,4/6/2020,4/9/2020,Secundario,Alta,4/28/2020,,,12
+525,66,M,Cuba,Cuba,HO,Gibara,Indeterminada,,3/27/2020,4/6/2020,4/9/2020,Secundario,Alta,4/28/2020,,,15
+526,45,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/6/2020,4/6/2020,4/9/2020,Secundario,Alta,4/29/2020,,304,7
+527,25,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/29/2020,,304,9
+528,36,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/6/2020,4/9/2020,Secundario,Alta,4/29/2020,,304,8
+529,33,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/6/2020,4/6/2020,4/9/2020,Secundario,Alta,4/22/2020,,223,2
+530,35,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/29/2020,,304,4
+531,34,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/5/2020,4/5/2020,4/9/2020,Secundario,Alta,4/25/2020,,298,4
+532,16,M,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/6/2020,4/9/2020,Secundario,Alta,4/24/2020,,297,7
+533,12,F,Cuba,Cuba,CM,Camaguey,Cont-Extranj,,3/29/2020,4/3/2020,4/9/2020,Secundario,Alta,4/27/2020,,,37
+534,23,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/23/2020,,236,3
+535,38,M,Cuba,Cuba,VC,Caibarien,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/23/2020,,79,10
+536,38,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/23/2020,,376,13
+537,98,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-Extranj,,4/1/2020,4/2/2020,4/9/2020,Secundario,Fallecido,4/27/2020,,,3
+538,51,M,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/19/2020,,,6
+539,58,M,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,4/4/2020,4/6/2020,4/9/2020,Secundario,Alta,4/20/2020,,,6
+540,54,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/22/2020,,376,15
+541,11,M,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,asintom,4/8/2020,4/9/2020,Secundario,Alta,4/23/2020,,376,8
+542,80,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-Extranj,,4/3/2020,4/5/2020,4/9/2020,Secundario,Cuidado,,,,4
+543,87,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,4/1/2020,4/5/2020,4/9/2020,Secundario,Alta,,,,3
+544,44,F,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,4/2/2020,4/5/2020,4/9/2020,Primario,Alta,4/26/2020,,,6
+545,78,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/2/2020,4/5/2020,4/9/2020,Secundario,Alta,,,346,6
+546,19,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/1/2020,4/9/2020,Secundario,Cuidado,,,193,9
+547,79,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/6/2020,4/9/2020,Secundario,Alta,4/28/2020,,359,7
+548,59,F,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-19,,4/3/2020,4/3/2020,4/9/2020,Secundario,Alta,4/27/2020,,,13
+549,19,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/4/2020,4/4/2020,4/9/2020,Primario,Cuidado,,,,10
+550,61,F,Cuba,Cuba,LH,Plaza,Cont-Extranj,,3/24/2020,4/7/2020,4/9/2020,Secundario,Alta,4/22/2020,,,10
+551,7,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-Extranj,,3/30/2020,3/30/2020,4/9/2020,Secundario,Alta,4/27/2020,,,7
+552,20,M,Cuba,Cuba,CA,Ciego de Avila,Indeterminada,,3/16/2020,3/16/2020,4/9/2020,Secundario,Alta,4/27/2020,,,6
+553,44,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,asintom,3/24/2020,4/9/2020,Primario,Alta,4/28/2020,,,10
+554,28,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/6/2020,4/9/2020,Secundario,Alta,5/2/2020,,170,3
+555,52,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/6/2020,4/9/2020,Secundario,Alta,4/27/2020,,324,5
+556,25,F,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/2/2020,4/9/2020,Secundario,Alta,4/27/2020,,169,5
+557,30,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,asintom,4/5/2020,4/9/2020,Secundario,Alta,4/28/2020,,333,5
+558,54,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/28/2020,,304,5
+559,74,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/28/2020,,304,6
+560,28,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/4/2020,4/9/2020,Secundario,Alta,4/28/2020,,304,5
+561,75,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/7/2020,4/9/2020,Secundario,Alta,4/27/2020,,385,30
+562,57,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/7/2020,4/9/2020,Secundario,Alta,4/27/2020,,385,20
+563,75,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/7/2020,4/9/2020,Secundario,Alta,4/27/2020,,385,10
+564,33,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,3/31/2020,4/4/2020,4/9/2020,Secundario,Alta,4/23/2020,,,10
+565,42,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/27/2020,,385,13
+566,18,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,3/30/2020,4/6/2020,4/10/2020,Secundario,Alta,4/25/2020,,385,31
+567,19,F,Cuba,Cuba,LT,Las Tunas,Indeterminada,,asintom,4/8/2020,4/10/2020,Indeterminada,Alta,4/26/2020,,,19
+568,14,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,4/3/2020,4/4/2020,4/10/2020,Secundario,Alta,4/16/2020,,379,16
+569,24,F,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,asintom,4/7/2020,4/10/2020,Primario,Alta,4/22/2020,,,16
+570,22,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/9/2020,4/10/2020,Secundario,Alta,4/18/2020,,245,8
+571,54,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/3/2020,4/3/2020,4/10/2020,Secundario,Cuidado,,,341,8
+572,54,F,Cuba,Cuba,MY,Habana Vieja,Cont-Cub-Extranj,,4/2/2020,4/2/2020,4/10/2020,Secundario,Alta,4/27/2020,,,20
+573,49,M,Cuba,Mexico,LH,10 de Octubre,Exterior,4/27/2020,4/5/2020,4/6/2020,4/10/2020,Primario,Cuidado,,,,11
+574,43,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,4/5/2020,4/5/2020,4/10/2020,Secundario,Alta,4/16/2020,,379,20
+575,30,F,Cuba,Cuba,CA,10 de Octubre,Cont-Cub-COVID-19,,asintom,3/31/2020,4/10/2020,Secundario,Alta,4/27/2020,,234,20
+576,30,M,Cuba,Cuba,SS,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,422,20
+577,33,F,Cuba,Cuba,SS,10 de Octubre,Cont-Cub-COVID-19,,4/5/2020,4/7/2020,4/10/2020,Secundario,Alta,4/24/2020,,419,16
+578,80,M,Cubana,cuba,LH,Habana Vieja,Cont-Extranj,,4/4/2020,4/7/2020,4/10/2020,Secundario,Alta,4/22/2020,,,13
+579,17,M,Cuba,Cuba,SS,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,422,13
+580,26,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,3/30/2020,4/10/2020,Secundario,Alta,4/28/2020,,197,13
+581,3,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,298,8
+582,63,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/29/2020,,385,8
+583,14 m,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,4/4/2020,4/7/2020,4/10/2020,Secundario,Alta,4/22/2020,,376,8
+584,18 M,F,Cuba,Cuba,VC,Sta Clara,Indeterminada,,4/3/2020,4/7/2020,4/10/2020,,Alta,4/22/2020,,,7
+585,73,F,Cuba,Cuba,VC,Sta Clara,Cont-Cub-Extranj,,4/6/2020,4/7/2020,4/10/2020,Secundario,Alta,4/21/2020,,,9
+586,16,M,Cuba,Cuba,VC,Sta Clara,Indeterminada,,4/6/2020,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,,19
+587,28,F,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-19,,4/1/2020,4/7/2020,4/10/2020,,Alta,4/21/2020,,273,9
+588,56,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,4/6/2020,4/8/2020,4/10/2020,Secundario,Alta,4/21/2020,,412,18
+589,50,F,Cuba,Cuba,VC,Cifuentes,Indeterminada,,4/7/2020,4/8/2020,4/10/2020,,Alta,4/22/2020,,,8
+590,47,F,Cuba,Cuba,VC,Camajuaní,Cont-Cub-COVID-19,,4/6/2020,4/8/2020,4/10/2020,Secundario,Alta,4/21/2020,,,11
+591,54,F,Cuba,Cuba,VC,Remedios,Indeterminada,,asintom,4/10/2020,4/10/2020,Indeterminada,Alta,4/23/2020,,,8
+592,17,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,422,8
+593,17,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,422,18
+594,16,M,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/8/2020,4/10/2020,Secundario,Alta,4/23/2020,,422,18
+595,56,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,415,18
+596,25,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,415,25
+597,29,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,415,11
+598,6,M,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,442,18
+599,16,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,442,13
+600,16,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/23/2020,,442,13
+601,61,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/24/2020,,415,12
+602,56,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/25/2020,,415,13
+603,5m,M,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-19,,asintom,4/10/2020,4/10/2020,Secundario,Alta,4/26/2020,,142,7
+604,7,M,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-19,,asintom,4/10/2020,4/10/2020,Secundario,Alta,4/26/2020,,142,7
+605,43,M,Cubana,cuba,LH,Marianao,Cont-Cub-COVID-19,,4/4/2020,4/6/2020,4/10/2020,Secundario,Alta,4/21/2020,,,12
+606,60,F,Cubana,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/4/2020,4/6/2020,4/10/2020,Secundario,Fallecido,4/24/2020,,605,12
+607,23,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/9/2020,4/10/2020,Secundario,Cuidado,,,,15
+608,64,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/3/2020,4/7/2020,4/10/2020,Secundario,Alta,4/29/2020,,,14
+609,81,M,Cubana,cuba,LH,Cerro,Indeterminada,,4/2/2020,4/6/2020,4/10/2020,Primario,Fallecido,4/18/2020,,,7
+610,73,M,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/8/2020,4/8/2020,4/10/2020,Primario,Alta,4/25/2020,,,7
+611,75,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Alta,4/24/2020,,417,7
+612,81,F,Cuba,Cuba,SS,Trinidad,Indeterminada,,4/4/2020,4/6/2020,4/10/2020,,Alta,4/12/2020,,,11
+613,58,M,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/4/2020,4/10/2020,Secundario,Alta,4/25/2020,,,8
+614,50,M,Cuba,EEUU/Nicaragua,MY,Melena del Sur,Cont-Extranj,,3/28/2020,3/29/2020,4/10/2020,Secundario,Alta,4/26/2020,,,9
+615,31,F,Cuba,Bolivia,LH,Habana Vieja,Exterior,3/6/2020,4/5/2020,4/7/2020,4/10/2020,,Alta,4/28/2020,,467,13
+616,54,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,4/4/2020,4/7/2020,4/10/2020,Secundario,Alta,4/24/2020,,376,16
+617,88,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Cuidado,,,406,10
+618,63,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/7/2020,4/10/2020,Secundario,Cuidado,,,406,13
+619,,M,Cuba,Cuba,LH,,,,asintom,,4/10/2020,,Alta,4/24/2020,,,
+620,56,M,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,3/25/2020,4/10/2020,Secundario,Alta,4/25/2020,,92,12
+621,18,M,Cuba,Cuba,SS,Taguasco,Indeterminada,,3/30/2020,4/5/2020,4/11/2020,Secundario,Alta,4/23/2020,,,38
+622,70,F,Cuba,Cuba,SC,Contramaestre,Cont-Cub-COVID-19,,asintom,4/5/2020,4/11/2020,Secundario,Alta,5/4/2020,,,8
+623,55,F,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/6/2020,4/7/2020,4/11/2020,Secundario,Alta,5/3/2020,,,12
+624,60,F,Cuba,Cuba,LT,Las Tunas,Indeterminada,,asintom,4/8/2020,4/11/2020,Indeterminada,Alta,4/26/2020,,,12
+625,39,M,Cuba,Cuba,HO,Holguin,Indeterminada,,4/1/2020,4/7/2020,4/11/2020,Vigilancia IRA,Alta,4/29/2020,,,28
+626,53,M,Cuba,Cuba,HO,Baguanos,Cont-Cub-COVID-19,,4/4/2020,4/8/2020,4/11/2020,Secundario,Alta,4/29/2020,,,11
+627,85,M,Cuba,Cuba,HO,Baguanos,Cont-Cub-COVID-19,,4/4/2020,4/8/2020,4/11/2020,Secundario,Alta,4/29/2020,,,10
+628,10,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/8/2020,4/8/2020,4/11/2020,Secundario,Alta,4/28/2020,,,5
+629,74,M,Cuba,Cuba,LT,Las Tunas,Indeterminada,,4/2/2020,4/6/2020,4/11/2020,Indeterminada,Alta,4/15/2020,,,4
+630,57,F,Cuba,Cuba,LT,Las Tunas,Indeterminada,,4/4/2020,4/6/2020,4/11/2020,Indeterminada,Alta,4/14/2020,,,8
+631,60,M,Cuba,Cuba,GT,Baracoa,Indeterminada,,3/26/2020,4/7/2020,4/11/2020,Secundario,Alta,4/9/2020,,,86
+632,47,F,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/2/2020,4/9/2020,4/11/2020,Primario,Alta,4/26/2020,,,7
+633,57,M,Cuba,Cuba,VC,Santo Domingo,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/23/2020,,,6
+634,25,M,Cuba,Cuba,VC,Santo Domingo,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/23/2020,,,7
+635,58,F,Cuba,Cuba,VC,Santo Domingo,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/23/2020,,,7
+636,6,M,Cuba,Cuba,VC,Caibarien,Indeterminada,,asintom,4/11/2020,4/11/2020,Indeterminada,Alta,4/26/2020,,,8
+637,12,F,Cuba,Cuba,VC,Caibarien,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/23/2020,,,8
+638,73,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/25/2020,,,5
+639,80,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/25/2020,,,8
+640,80,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/25/2020,,,9
+641,15,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/25/2020,,,7
+642,16,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/25/2020,,,9
+643,88,M,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,3/19/2020,3/19/2020,4/11/2020,Secundario,Fallecido,4/11/2020,,,14
+644,80,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,3/27/2020,3/27/2020,4/11/2020,Secundario,Fallecido,4/12/2020,,,9
+645,18,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/23/2020,,,16
+646,56,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/11/2020,4/11/2020,Secundario,Alta,4/28/2020,,,17
+647,32,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,asintom,4/8/2020,4/11/2020,Secundario,Alta,4/30/2020,,223,15
+648,50,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,asintom,4/8/2020,4/11/2020,Secundario,Alta,4/26/2020,,,6
+649,51,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/8/2020,4/11/2020,Secundario,Alta,4/27/2020,,,11
+650,72,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,asintom,4/10/2020,4/11/2020,Secundario,Alta,4/26/2020,,324 y 384,10
+651,60,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/7/2020,4/11/2020,Secundario,Cuidado,,,220 y 221,5
+652,25,M,Cuba,Cuba,LH,,Cont-Extranj,,4/4/2020,4/8/2020,4/11/2020,Secundario,Alta,4/26/2020,,,5
+653,25,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/4/2020,4/7/2020,4/11/2020,Primario,Alta,4/26/2020,,521,27
+654,67,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/1/2020,4/7/2020,4/11/2020,Primario,Fallecido,4/23/2020,,,6
+655,58,M,Cuba,Cuba,LH,,Indeterminada,,3/24/2020,4/3/2020,4/11/2020,Primario,Alta,4/23/2020,,,13
+656,76,F,Cuba,Cuba,LH,,Indeterminada,,3/24/2020,4/1/2020,4/11/2020,Primario,Cuidado,,,,4
+657,54,F,Cuba,Cuba,LH,,Cont-Extranj,,asintom,4/3/2020,4/11/2020,Secundario,Alta,4/25/2020,,,12
+658,22,M,Cuba,Cuba,LH,,Cont-Extranj,,4/5/2020,4/6/2020,4/11/2020,Secundario,Alta,4/26/2020,,,12
+659,22,M,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,4/4/2020,4/7/2020,4/11/2020,Secundario,Alta,4/29/2020,,,6
+660,31,M,Cuba,Cuba,LH,,Indeterminada,,4/7/2020,4/8/2020,4/11/2020,Primario,Cuidado,,,,11
+661,84,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,3/29/2020,3/29/2020,4/11/2020,Secundario,Alta,4/28/2020,,,5
+662,79,F,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,3/29/2020,3/29/2020,4/11/2020,Secundario,Alta,4/28/2020,,,5
+663,26,M,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,asintom,4/6/2020,4/11/2020,Secundario,Cuidado,,,,5
+664,13,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,3/20/2020,4/11/2020,Secundario,Cuidado,,,,5
+665,78,M,Cuba,Cuba,LH,,Cont-Extranj,,4/4/2020,4/8/2020,4/11/2020,Secundario,Cuidado,,,,6
+666,37,F,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,4/6/2020,4/7/2020,4/11/2020,Secundario,Cuidado,,,,5
+667,29,F,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,asintom,4/8/2020,4/11/2020,Secundario,Cuidado,,,,10
+668,73,M,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,3/17/2020,4/20/2020,4/11/2020,Secundario,Cuidado,,,,2
+669,57,F,Cuba,Panama,LH,,Exterior,3/15/2020,asintom,3/20/2020,4/11/2020,Primario,Alta,4/21/2020,,,9
+670,49,F,Cuba,Cuba,SC,Stgo de Cuba,Cont-Cub-COVID-19,,4/1/2020,4/10/2020,4/12/2020,Indeterminada,Grave,,,,36
+671,93,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,asintom,3/31/2020,4/12/2020,Secundario,Alta,4/26/2020,,,6
+672,14,M,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Alta,4/25/2020,,,23
+673,27,M,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/25/2020,,,13
+674,33,M,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,asintom,4/6/2020,4/12/2020,Secundario,Alta,4/28/2020,,,7
+675,82,F,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,asintom,4/6/2020,4/12/2020,Secundario,Alta,4/27/2020,,,7
+676,21,F,Cuba,Cuba,VC,Santo Domingo,Cont-Cub-COVID-19,,4/8/2020,4/8/2020,4/12/2020,Secundario,Alta,4/26/2020,,,5
+677,85,F,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-19,,4/9/2020,4/9/2020,4/12/2020,Transmision local,Alta,5/1/2020,,,7
+678,30,M,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,4/7/2020,4/7/2020,4/12/2020,Indeterminada,Alta,4/30/2020,,,1
+679,53,F,Cuba,Cuba,VC,Placetas,Cont-Cub-COVID-19,,asintom,4/12/2020,4/12/2020,Secundario,Alta,4/26/2020,,,11
+680,47,F,Cuba,Cuba,SC,Stgo de Cuba,Cont-Cub-COVID-19,,4/8/2020,4/10/2020,4/12/2020,Secundario,Alta,5/3/2020,,,63
+681,55,F,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,4/4/2020,4/3/2020,4/12/2020,Secundario,Alta,4/28/2020,,,6
+682,48,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/12/2020,4/12/2020,Secundario,Cuidado,,,,6
+683,25,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Cuidado,,,,4
+684,30,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,01/04/202,4/12/2020,4/12/2020,Secundario,Alta,5/7/2020,,,4
+685,75,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,4/6/2020,4/7/2020,4/12/2020,Secundario,Alta,4/29/2020,,,6
+686,75,F,Cuba,Cuba,HO,Cacocum,Cont-Cub-COVID-19,,4/1/2020,4/4/2020,4/10/2020,Secundario,Fallecido,4/11/2020,,,11
+687,44,M,Cubano - Español,España,SC,Stgo de Cuba,Cont-Cub-COVID-19,4/8/2020,4/8/2020,4/8/2020,4/12/2020,Primario,Fallecido,4/17/2020,,,28
+688,80,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,5/4/2020,,,6
+689,58,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,4/30/2020,,,11
+690,43,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/7/2020,4/12/2020,Secundario,Alta,4/30/2020,,,8
+691,66,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/7/2020,4/12/2020,Secundario,Cuidado,,,,8
+692,25,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,4/30/2020,,,12
+693,8m,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,4/11/2020,4/10/2020,4/12/2020,Secundario,Cuidado,,,,12
+694,29,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,5/4/2020,,,12
+695,43,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/5/2020,4/12/2020,Secundario,Cuidado,,,,12
+696,66,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,38
+697,29,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/29/2020,,,38
+698,40,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,38
+699,11,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/29/2020,,,38
+700,52,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,38
+701,52,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,38
+702,52,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,2/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,38
+703,44,M,Cuba,Cuba,HO,banes,Cont-Cub-COVID-19,,asintom,2/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,20
+704,32,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,2/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,20
+705,9,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,2/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,20
+706,78,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,2/8/2020,4/12/2020,Secundario,Alta,4/30/2020,,,20
+707,71,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/5/2020,4/7/2020,4/12/2020,Secundario,Alta,4/30/2020,,,6
+708,57,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/5/2020,4/9/2020,4/12/2020,Secundario,Alta,4/30/2020,,,6
+709,58,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Alta,4/29/2020,,,8
+710,15,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/5/2020,4/7/2020,4/12/2020,Secundario,Alta,4/29/2020,,,6
+711,35,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,3/31/2020,4/4/2020,4/12/2020,Secundario,Alta,4/30/2020,,,44
+712,90,F,Cuba,Cuba,GT,Baracoa,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,4/12/2020,,,20
+713,32,F,Cuba,Cuba,GT,Baracoa,Cont-Cub-COVID-19,,3/19/2020,4/9/2020,4/12/2020,Secundario,Alta,4/12/2020,,,29
+714,59,F,Cuba,Cuba,GT,Baracoa,Cont-Cub-COVID-19,,3/25/2020,4/9/2020,4/12/2020,Primario,Alta,4/12/2020,,,32
+715,57,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Cuidado,,,,92
+716,30,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,4/26/2020,,,92
+717,20,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,2/23/2020,4/12/2020,Secundario,Cuidado,,,,92
+718,1,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Alta,4/29/2020,,,12
+719,57,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Cuidado,,,,58
+720,26,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Cuidado,,,,58
+721,55,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Alta,4/25/2020,,,58
+722,19,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/9/2020,4/12/2020,Secundario,Alta,4/28/2020,,,74
+723,42,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/10/2020,4/12/2020,Secundario,Cuidado,,,,36
+724,47,F,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,4/2/2020,4/7/2020,4/12/2020,Secundario,Alta,,,,7
+725,38,M,Bolivia,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/11/2020,4/12/2020,Secundario,Cuidado,,,,12
+726,35,F,Cuba,Cuba,LH,,,,4/10/2020,4/11/2020,4/12/2020,,,,,,15
+727,52,M,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,4/8/2020,4/9/2020,4/13/2020,Secundario,Alta,4/28/2020,,,6
+728,87,F,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,asintom,4/7/2020,4/13/2020,Secundario,Alta,4/29/2020,,,13
+729,51,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,4/10/2020,4/10/2020,4/13/2020,Secundario,Alta,4/24/2020,,416,3
+730,51,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/6/2020,4/13/2020,Secundario,Alta,4/29/2020,,323,11
+731,8,F,Cuba,Cuba,MY,Madruga,Cont-Cub-COVID-19,,asintom,4/7/2020,4/13/2020,Secundario,Alta,4/27/2020,,,12
+732,20,F,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-COVID-19,,asintom,4/9/2020,4/13/2020,Secundario,Alta,4/25/2020,,418,4
+733,49,M,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,4/7/2020,4/10/2020,4/13/2020,Primario,Cuidado,,,,4
+734,66,M,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,4/5/2020,4/11/2020,4/13/2020,Primario,Alta,4/29/2020,,,6
+735,49,F,Cuba,Cuba,LH,Cerro,Indeterminada,,4/2/2020,4/6/2020,4/13/2020,Primario,Cuidado,,,,2
+736,21,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/10/2020,4/13/2020,Transmision local,Cuidado,,,,27
+737,49,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/4/2020,4/10/2020,4/13/2020,Secundario,Cuidado,,,,6
+738,87,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/8/2020,4/8/2020,4/13/2020,Secundario,Fallecido,4/22/2020,,494,1
+739,33,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/2/2020,4/9/2020,4/13/2020,Primario,Cuidado,,,,3
+740,78,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/8/2020,4/8/2020,4/13/2020,Secundario,Cuidado,,,464,2
+741,70,M,Cubana,Cuba,LH,Playa,Indeterminada,,3/30/2020,4/13/2020,4/13/2020,Primario,Alta,4/28/2020,,,2
+742,51,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/7/2020,4/8/2020,4/13/2020,Secundario,Alta,4/21/2020,,218,33
+743,11,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/5/2020,4/10/2020,4/13/2020,Secundario,Cuidado,,,,6
+744,25,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/6/2020,4/7/2020,4/13/2020,Primario,Alta,4/29/2020,,,2
+745,47,F,Cuba,Cuba,LH,La Lisa,Cont-Extranj,,3/27/2020,4/6/2020,4/13/2020,Secundario,Cuidado,,,,2
+746,44,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/5/2020,4/10/2020,4/13/2020,Secundario,Cuidado,,,,6
+747,24,M,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-COVID-19,,asintom,4/11/2020,4/13/2020,Secundario,Alta,4/29/2020,,,17
+748,76,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,3/28/2020,4/1/2020,4/13/2020,Primario,Cuidado,,,,4
+749,51,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,3/20/2020,4/3/2020,4/13/2020,Secundario,Cuidado,,,,7
+750,22,F,Cuba,Cuba,LH,10 de Octubre,Cont-Extranj,,4/7/2020,4/9/2020,4/13/2020,Secundario,Cuidado,,,,12
+751,50,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,3/29/2020,4/6/2020,4/13/2020,Primario,Cuidado,,,,5
+752,67,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/7/2020,4/8/2020,4/13/2020,Primario,Cuidado,,,,2
+753,27,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/5/2020,4/8/2020,4/13/2020,Primario,Alta,4/29/2020,,,2
+754,63,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/7/2020,4/8/2020,4/13/2020,Primario,Cuidado,,,,9
+755,21,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/6/2020,4/4/2020,4/13/2020,Secundario,Cuidado,,,746,3
+756,31,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/4/2020,4/13/2020,Secundario,Alta,4/29/2020,,407,10
+757,64,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,3/30/2020,4/8/2020,4/13/2020,Primario,Alta,4/25/2020,,,3
+758,46,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/8/2020,4/8/2020,4/13/2020,Primario,Cuidado,,,,2
+759,27,F,Cuba,Cuba,HO,Mayari,Indeterminada,,4/5/2020,4/9/2020,4/13/2020,Secundario,Alta,4/30/2020,,,21
+760,72,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/7/2020,4/8/2020,4/13/2020,Primario,Cuidado,,,,10
+761,56,F,Cuba,Cuba,LH,Cotorro,Indeterminada,,4/4/2020,4/8/2020,4/13/2020,Primario,Alta,4/27/2020,,,10
+762,20,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,4/4/2020,4/8/2020,4/13/2020,Secundario,Alta,4/26/2020,,762,9
+763,44,M,Cuba,Cuba,GT,Baracoa,Cont-Cub-COVID-19,,4/9/2020,4/8/2020,4/13/2020,Secundario,Alta,4/13/2020,,,76
+764,28,M,Cuba,Cuba,GT,Baracoa,Cont-Cub-COVID-19,,asintom,4/10/2020,4/13/2020,Secundario,Alta,5/4/2020,,,21
+765,53,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/2/2020,4/7/2020,4/13/2020,Secundario,Alta,4/26/2020,,"452,451,407",5
+766,25,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/10/2020,4/13/2020,4/13/2020,Secundario,Cuidado,,,,5
+767,66,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,4/9/2020,4/13/2020,4/14/2020,Secundario,Alta,4/30/2020,,,12
+768,49,F,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-COVID-19,,4/9/2020,4/11/2020,4/14/2020,Secundario,Alta,4/26/2020,,,36
+769,48,F,Cuba,Cuba,AR,Bauta,Cont-Cub-COVID-19,,4/12/2020,4/14/2020,4/14/2020,Secundario,Cuidado,,,,12
+770,32,M,Cuba,Cuba,GT,Guantanamo,Indeterminada,,4/8/2020,4/9/2020,4/14/2020,Indeterminada,Alta,4/14/2020,,,32
+771,32,M,Cuba,Cuba,GT,Baracoa,Indeterminada,,4/5/2020,4/11/2020,4/14/2020,Secundario,Alta,5/3/2020,,,10
+772,47,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Cuidado,,,,13
+773,52,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/11/2020,4/14/2020,Secundario,Alta,5/2/2020,,365,9
+774,67,M,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/5/2020,4/9/2020,4/14/2020,Primario,Cuidado,,,,8
+775,58,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/6/2020,4/9/2020,4/14/2020,Secundario,Cuidado,,,,6
+776,55,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Alta,5/2/2020,,,8
+777,80,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/9/2020,4/9/2020,4/14/2020,Secundario,Fallecido,4/29/2020,,,2
+778,10,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/7/2020,4/14/2020,Secundario,Cuidado,,,,5
+779,58,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/7/2020,4/14/2020,Secundario,Cuidado,,,,5
+780,53,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/12/2020,4/14/2020,Secundario,Alta,4/15/2020,,,4
+781,25,F,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/4/2020,4/10/2020,4/14/2020,Primario,Cuidado,,,,5
+782,70,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Fallecido,4/16/2020,,,3
+783,40,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/7/2020,4/8/2020,4/14/2020,Secundario,Cuidado,,,,5
+784,45,M,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,4/7/2020,4/8/2020,4/14/2020,Primario,Cuidado,,,,6
+785,52,F,Cuba,Francia,LH,Cerro,Exterior,4/1/2020,3/25/2020,4/12/2020,4/14/2020,Primario,Cuidado,,,,4
+786,76,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/12/2020,4/10/2020,4/14/2020,Secundario,Fallecido,4/16/2020,,,6
+787,44,F,Cuba,Cuba,LH,Cerro,Indeterminada,,4/5/2020,4/7/2020,4/14/2020,Primario,Cuidado,,,,5
+788,33,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/9/2020,4/14/2020,Secundario,Alta,4/25/2020,,,4
+789,71,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/6/2020,4/6/2020,4/14/2020,Secundario,Cuidado,,,,10
+790,25,F,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,asintom,4/10/2020,4/14/2020,Primario,Alta,4/29/2020,,,4
+791,49,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Cuidado,,,,9
+792,36,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/7/2020,4/11/2020,4/14/2020,Primario,Cuidado,,,,4
+793,16,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,4/7/2020,4/12/2020,4/14/2020,Secundario,Alta,4/26/2020,,,6
+794,51,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/12/2020,4/14/2020,Secundario,Alta,4/24/2020,,,9
+795,41,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Cuidado,,,,3
+796,88,M,Cuba,Cuba,LH,Plaza,Cont-Extranj,,4/9/2020,4/10/2020,4/14/2020,Secundario,Fallecido,4/14/2020,,,4
+797,51,F,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/8/2020,4/14/2020,Secundario,Alta,4/24/2020,,616,9
+798,59,M,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/11/2020,4/14/2020,Secundario,Alta,4/29/2020,,736,13
+799,39,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,4/10/2020,4/11/2020,4/14/2020,Transmision local,Cuidado,,,736,15
+800,53,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/11/2020,4/14/2020,Secundario,Alta,4/29/2020,,,10
+801,53,F,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/11/2020,4/14/2020,Secundario,Alta,4/28/2020,,614,13
+802,34,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Alta,4/29/2020,,,7
+803,50,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,3/29/2020,4/7/2020,4/14/2020,Primario,Cuidado,,,,7
+804,29,M,Cuba,Cuba,LH,Habana del este,Cont-Cub-COVID-19,,4/8/2020,4/8/2020,4/14/2020,Secundario,Alta,4/29/2020,,,6
+805,51,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/9/2020,4/9/2020,4/14/2020,Secundario,Cuidado,,,,3
+806,34,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/12/2020,4/14/2020,Secundario,Cuidado,,,726,7
+807,78,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/8/2020,4/11/2020,4/14/2020,Primario,Cuidado,,,,2
+808,59,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/3/2020,4/7/2020,4/14/2020,Primario,Fallecido,5/1/2020,,,32
+809,29,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/6/2020,4/7/2020,4/14/2020,Secundario,Cuidado,,,,20
+810,32,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,3/30/2020,4/7/2020,4/14/2020,Secundario,Cuidado,,,,14
+811,55,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Cuidado,,,,15
+812,55,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/14/2020,4/14/2020,Secundario,Cuidado,,,,12
+813,83,F,Cuba,EEUU,LH,Plaza,Exterior,,4/1/2020,4/5/2020,4/14/2020,Primario,Fallecido,4/25/2020,,,5
+814,57,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/7/2020,4/12/2020,4/14/2020,Secundario,Cuidado,,,,32
+815,66,F,Cuba,Cuba,MT,Cárdenas,Indeterminada,,4/4/2020,4/13/2020,4/15/2020,Secundario,Alta,4/30/2020,,,5
+816,31,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/12/2020,4/13/2020,4/15/2020,Transmision local,Alta,5/4/2020,,677,12
+817,81,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/7/2020,4/11/2020,4/15/2020,Transmision local,Alta,4/28/2020,,677,29
+818,29,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/12/2020,4/15/2020,Secundario,Alta,4/29/2020,,645,18
+819,53,M,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,4/4/2020,4/11/2020,4/15/2020,Primario,Cuidado,,,,6
+820,47,F,Cuba,Cuba,CA,Florencia,Cont-Cub-COVID-19,,asintom,4/9/2020,4/15/2020,Secundario,Alta,5/2/2020,,"242,359,547",14
+821,31,F,Cuba,Cuba,SS,La Sierpe,Cont-Cub-COVID-19,,asintom,4/11/2020,4/15/2020,Secundario,Alta,4/24/2020,,621,3
+822,32,F,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/4/2020,4/11/2020,4/15/2020,Primario,Cuidado,,,,16
+823,68,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/28/2020,,,29
+824,50,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/25/2020,,,29
+825,87,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,5/1/2020,,,7
+826,79,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/30/2020,,,7
+827,20,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/28/2020,,,6
+828,47,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/28/2020,,,6
+829,32,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/28/2020,,,4
+830,85,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,5/8/2020,,,7
+831,27,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/25/2020,,,6
+832,81,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,5/1/2020,,,6
+833,77,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,crítico,,,,7
+834,31,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/20/2020,,,4
+835,21,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/25/2020,,,15
+836,85,F,Cuba,Cuba,VC,Placetas,Indeterminada,,4/8/2020,4/8/2020,4/15/2020,Primario,Fallecido,4/19/2020,,,2
+837,43,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Secundario,Alta,4/27/2020,,587,10
+838,83,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,5/5/2020,,677,12
+839,83,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/15/2020,Transmision local,Alta,4/28/2020,,677,29
+840,34,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,4/4/2020,4/11/2020,4/15/2020,Secundario,Cuidado,,,761 y762,7
+841,21,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/7/2020,4/9/2020,4/15/2020,Secundario,Cuidado,,,464,5
+842,44,F,Cuba,Cuba,LH,Habana del  Este,Indeterminada,,4/2/2020,4/10/2020,4/15/2020,Primario,Cuidado,,,,12
+843,32,M,Cuba,Cuba,LH,Habana del  Este,Indeterminada,,4/10/2020,4/10/2020,4/15/2020,Primario,Cuidado,,,,8
+844,58,F,Cuba,Cuba,LH,Habana del  Este,Indeterminada,,4/6/2020,4/10/2020,4/15/2020,Primario,Alta,4/29/2020,,,12
+845,56,M,Cuba,Cuba,LH,Cerro,Indeterminada,,4/2/2020,4/10/2020,4/15/2020,Primario,Cuidado,,,,4
+846,57,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,3/20/2020,4/10/2020,4/15/2020,Secundario,Cuidado,,,,3
+847,53,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/2/2020,4/11/2020,4/15/2020,Secundario,Cuidado,,,,18
+848,31,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/6/2020,4/9/2020,4/15/2020,Primario,Alta,4/25/2020,,,4
+849,44,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/6/2020,4/10/2020,4/15/2020,Secundario,Alta,4/29/2020,,606,8
+850,25,F,Cuba,Cuba,LH,Regla,Indeterminada,,4/2/2020,4/11/2020,4/15/2020,Primario,Cuidado,,,,11
+851,70,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/10/2020,4/11/2020,4/15/2020,Primario,Cuidado,,,,3
+852,76,M,Cuba,Cuba,LH,Cerro,Indeterminada,,4/10/2020,4/11/2020,4/15/2020,Primario,Cuidado,,,,5
+853,49,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/9/2020,4/15/2020,Secundario,Cuidado,,,510,6
+854,60,M,Cuba,Cuba,LH,Habana del  Este,Indeterminada,,4/10/2020,4/10/2020,4/15/2020,Primario,Cuidado,,,,8
+855,75,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/10/2020,4/15/2020,Secundario,Alta,5/2/2020,,,32
+856,47,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/10/2020,4/15/2020,Secundario,Alta,5/2/2020,,,32
+857,54,F,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/9/2020,4/15/2020,4/15/2020,Primario,Cuidado,,,,5
+858,20,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/7/2020,4/15/2020,Secundario,Alta,4/25/2020,,442,55
+859,19,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/5/2020,4/6/2020,4/15/2020,Secundario,Alta,4/29/2020,,,6
+860,69,M,Cuba,Cuba,GT,Guantánamo,Indeterminada,,4/11/2020,4/12/2020,4/15/2020,Indeterminada,Alta,4/8/2020,,,13
+861,58,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,3/28/2020,3/28/2020,4/15/2020,Primario,Fallecido,4/11/2020,,,12
+862,73,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/12/2020,4/12/2020,4/15/2020,Primario,Fallecido,4/13/2020,,,9
+863,62,M,Cuba,Cuba,PR,Consolacion del Sur,Cont-Cub-COVID-19,,4/11/2020,4/7/2020,4/16/2020,Secundario,Alta,4/28/2020,,,10
+864,5,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,4/30/2020,,,3
+865,3,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,4/30/2020,,,18
+866,72,M,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/5/2020,,,18
+867,48,F,Cuba,Cuba,VC,Cifuentes,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/2/2020,,,18
+868,47,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,4/29/2020,,,16
+869,28,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/10/2020,4/12/2020,4/16/2020,Transmision local,Alta,4/30/2020,,,13
+870,25,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-Extranj,,4/8/2020,4/10/2020,4/16/2020,Secundario,Alta,5/1/2020,,,4
+871,25,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/10/2020,4/10/2020,4/16/2020,Secundario,Alta,5/1/2020,,,5
+872,18,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/12/2020,4/13/2020,4/16/2020,Secundario,Alta,5/2/2020,,,6
+873,31,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/13/2020,4/14/2020,4/16/2020,Transmision local,Cuidado,,,,12
+874,50,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/13/2020,4/14/2020,4/16/2020,Transmision local,Alta,4/29/2020,,,12
+875,7,M,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/11/2020,4/15/2020,4/16/2020,Indeterminada,Alta,5/7/2020,,,22
+876,39,M,Cuba,Cuba,MY,San Jose,Indeterminada,,asintom,4/12/2020,4/16/2020,Transmision local,Alta,5/2/2020,,,17
+877,42,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/13/2020,4/16/2020,Secundario,Alta,5/4/2020,,,4
+878,44,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/12/2020,4/16/2020,Secundario,Alta,5/7/2020,,,4
+879,59,M,Cuba,Cuba,IJ,IJ,Indeterminada,,4/8/2020,4/14/2020,4/16/2020,Secundario,Alta,5/4/2020,,,6
+880,46,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,4/15/2020,4/11/2020,4/16/2020,Secundario,Alta,5/6/2020,,,31
+881,27,F,Cuba,Cuba,GT,Guantanamo,Cont-Cub-COVID-19,,4/11/2020,4/14/2020,4/16/2020,Secundario,Alta,5/8/2020,,,9
+882,5,M,Cuba,Cuba,GT,Guantanamo,Cont-Cub-COVID-19,,4/11/2020,4/14/2020,4/16/2020,Secundario,Alta,5/7/2020,,,9
+883,44,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/7/2020,4/13/2020,4/16/2020,Secundario,Cuidado,,,,9
+884,47,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,4/11/2020,4/13/2020,4/16/2020,Secundario,Cuidado,,,,3
+885,72,M,Cuba,Cuba,LH,Playa,Indeterminada,,3/28/2020,4/14/2020,4/16/2020,Primario,Cuidado,,,,4
+886,73,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/9/2020,4/10/2020,4/16/2020,Secundario,Cuidado,,,,8
+887,55,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/10/2020,4/11/2020,4/16/2020,Primario,Cuidado,,,,38
+888,22,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,15
+889,22,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+890,22,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+891,39,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+892,26,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+893,18,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+894,50,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Cuidado,,,,34
+895,79,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Cuidado,,,,23
+896,75,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/4/2020,,,24
+897,81,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Cuidado,,,,23
+898,81,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,4/28/2020,,,23
+899,63,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,4/28/2020,,,16
+900,43,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/1/2020,,,9
+901,64,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,4/28/2020,,,9
+902,31,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/16/2020,Secundario,Alta,4/28/2020,,,18
+903,72,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/1/2020,,,15
+904,89,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Fallecido,4/18/2020,,,15
+905,80,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/1/2020,,,15
+906,90,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/4/2020,,,16
+907,88,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/1/2020,,,25
+908,73,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/1/2020,,,16
+909,84,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Transmision local,Alta,5/4/2020,,,22
+910,61,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/2/2020,,,25
+911,91,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/1/2020,,,21
+912,77,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Fallecido,4/26/2020,,,18
+913,100,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,,,,18
+914,47,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/1/2020,,,21
+915,50,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/1/2020,,,32
+916,76,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Alta,5/1/2020,,,24
+917,19,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/16/2020,4/16/2020,Secundario,Cuidado,,,,6
+918,51,F,Cuba,Cuba,PR,Pinar del Rio,Cont-Cub-COVID-19,,asintom,4/14/2020,4/16/2020,Secundario,Alta,5/1/2020,,,39
+919,1,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,4/7/2020,4/7/2020,4/16/2020,Secundario,Cuidado,,,,8
+920,53,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/7/2020,4/14/2020,4/16/2020,Secundario,Alta,5/3/2020,,,6
+921,82,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/10/2020,4/16/2020,Secundario,Alta,4/29/2020,,,5
+922,83,M,Cuba,Cuba,LT,Las Tunas,Indeterminada,,4/10/2020,4/11/2020,4/16/2020,Secundario,Fallecido ,,,,5
+923,6m,M,Cuba,Cuba,LT,Puerto Padre,Indeterminada,,4/9/2020,4/13/2020,4/16/2020,Secundario,Cuidado,5/1/2020,,,8
+924,62,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,asintom,4/13/2020,4/17/2020,Secundario,Cuidado,,,687,32
+925,56,F,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/11/2020,4/11/2020,4/17/2020,Indeterminada,Alta,5/6/2020,,,29
+926,79,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/13/2020,4/17/2020,Secundario,Alta,5/3/2020,,305 y 397,7
+927,59,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/8/2020,4/17/2020,Secundario,Cuidado,,,783,6
+928,57,F,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,4/12/2020,4/14/2020,4/17/2020,Primario,,,,,8
+929,58,M,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/9/2020,4/17/2020,Secundario,Cuidado,,,298 y 531,7
+930,29,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/9/2020,4/17/2020,Secundario,Cuidado,,,,7
+931,58,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/9/2020,4/17/2020,Secundario,Cuidado,,,,7
+932,21,F,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,Secundario,Alta,5/1/2020,,748,5
+933,84,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,,Alta,5/1/2020,,,35
+934,70,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,,Cuidado,,,,35
+935,75,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,,Alta,5/1/2020,,,35
+936,55,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,,Cuidado,,,,35
+937,74,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,,Alta,5/2/2020,,,35
+938,86,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,Alta,5/6/2020,,,35
+939,88,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,Alta,5/1/2020,,,35
+940,78,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,Alta,5/1/2020,,,35
+941,66,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,Alta,5/5/2020,,,35
+942,87,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/16/2020,4/17/2020,4/17/2020,Transmision local,Fallecido,4/21/2020,,,35
+943,81,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,Cuidado,,,,35
+944,87,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Transmision local,crítico,,,,35
+945,73,M,Cuba,Cuba,VC,Santa Clara,Indeterminada,,asintom,4/17/2020,4/17/2020,,Alta,5/1/2020,,,2
+946,25,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/14/2020,4/17/2020,4/17/2020,Secundario,Alta,4/28/2020,,"667, 678 , 679",3
+947,5,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,Secundario,Alta,5/1/2020,,798,7
+948,30,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Secundario,Alta,4/25/2020,,685,5
+949,8,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Cuidado,,,767,3
+950,76,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,13
+951,10,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,12
+952,36,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,14
+953,64,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,12
+954,20,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,21
+955,3,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,5/1/2020,,768,12
+956,62,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/4/2020,4/14/2020,4/17/2020,Primario,,,,,9
+957,34,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Cuidado,,,809,9
+958,47,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,asintom,4/17/2020,4/17/2020,Secundario,Alta,5/1/2020,,,6
+959,63,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/16/2020,4/17/2020,Secundario,Alta,5/2/2020,,,46
+960,26,M,Angola,Cuba,CF,Cienfuegos,Indeterminada,,asintom,4/14/2020,4/17/2020,Primario,Alta,4/17/2020,,,54
+961,84,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/3/2020,4/17/2020,4/17/2020,Secundario,Fallecido,4/21/2020,,,8
+962,15,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Transmision local,Alta,5/3/2020,,737,19
+963,15,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Transmision local,Alta,5/3/2020,,737,19
+964,15,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Transmision local,Alta,5/3/2020,,737,19
+965,68,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Transmision local,Alta,4/29/2020,,737,19
+966,72,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-20,,asintom,4/15/2020,4/17/2020,Transmision local,Alta,4/29/2020,,737,15
+967,52,F,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Alta,4/29/2020,,298,10
+968,52,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,Transmision local,Cuidado,,,737,25
+969,50,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/15/2020,4/17/2020,Transmision local,Cuidado,,,"737;800",13
+970,36,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,4/14/2020,4/15/2020,4/17/2020,Secundario,Cuidado,,,858,13
+971,78,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/6/2020,4/17/2020,Transmision local,Grave,,,858,10
+972,75,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/14/2020,4/17/2020,Secundario,Cuidado,,,759,4
+973,48,M,Cuba,Cuba,LH,Plaza,Indeterminada,,4/2/2020,4/11/2020,4/17/2020,Primario,,,,,3
+974,57,M,Cuba,Cuba,LH,Playa,Indeterminada,,asintom,4/17/2020,4/17/2020,Primario,Alta,4/25/2020,,,4
+975,43,M,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,4/7/2020,4/10/2020,4/17/2020,Primario,Alta,4/20/2020,,,7
+976,43,M,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,asintom,4/16/2020,4/17/2020,Primario,,,,,2
+977,47,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/7/2020,4/17/2020,Secundario,Cuidado,,,438,20
+978,32,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,asintom,4/17/2020,4/17/2020,Secundario,Alta,5/1/2020,,,7
+979,47,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/7/2020,4/17/2020,Secundario,Cuidado,,,438,9
+980,68,M,Cuba,Cuba,LH,Cerro,Indeterminada,,4/4/2020,4/6/2020,4/17/2020,Primario,,,,,2
+981,26,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,4/4/2020,4/6/2020,4/17/2020,Secundario,Cuidado,,,438,7
+982,45,F,Cuba,Cuba,LH,10 de octubre,Indeterminada,,3/27/2020,4/11/2020,4/17/2020,Primario,,,,,7
+983,47,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/4/2020,4/14/2020,4/17/2020,Secundario,Cuidado,,,809,7
+984,39,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/17/2020,4/17/2020,Secundario,Cuidado,,,809,2
+985,30,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,4/17/2020,4/17/2020,Primario,,,,,
+986,31,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,4/16/2020,4/17/2020,Primario,,,,,
+987,52,F,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-COVID-19,,4/12/2020,4/15/2020,4/18/2020,Secundario,Alta,5/2/2020,,,17
+988,54,F,Cuba,Cuba,SS,Taguasco,Cont-Cub-COVID-19,,asintom,4/16/2020,4/18/2020,Secundario,Alta,5/2/2020,,793,14
+989,23,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,776,16
+990,77,M,Cuba,Cuba,SC,Contramaestre,Indeterminada,,4/10/2020,4/14/2020,4/18/2020,Indeterminada,Fallecido,4/19/2020,,,17
+991,24,F,Cuba,Cuba,VC,Corralillo,Cont-Cub-COVID-19,,4/13/2020,4/13/2020,4/18/2020,Secundario,Alta,5/2/2020,,676,12
+992,24,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/13/2020,4/16/2020,4/18/2020,Transmision local,Alta,5/2/2020,,,18
+993,69,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Transmision local,Alta,5/1/2020,,,33
+994,66,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/19/2020,4/18/2020,Transmision local,Alta,5/1/2020,,,33
+995,61,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Transmision local,Alta,5/5/2020,,,42
+996,61,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Transmision local,Alta,5/1/2020,,,12
+997,57,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Transmision local,Fallecido,4/23/2020,,,34
+998,9,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,690,24
+999,29,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/15/2020,4/18/2020,Secundario,Alta,5/4/2020,,694,13
+1000,9 m,F,Cuba,Cuba,CA,Venezuela,Indeterminada,,4/9/2020,4/9/2020,4/18/2020,Primario,Grave,,,,15
+1001,46,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/9/2020,4/18/2020,4/18/2020,Secundario,Alta,5/2/2020,,430,11
+1002,23,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,4/9/2020,4/9/2020,4/18/2020,Secundario,Alta,5/7/2020,,687,15
+1003,49,M,Cuba,Cuba,CA,Baragua,Cont-Cub-COVID-19,,asintom,4/7/2020,4/18/2020,Secundario,Alta,5/6/2020,,324.555,11
+1004,5 m,F,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/9/2020,4/12/2020,4/18/2020,Indeterminada,Alta,5/7/2020,,,51
+1005,8,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/15/2020,4/16/2020,4/18/2020,Secundario,Cuidado,,,,9
+1006,15,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/16/2020,4/17/2020,4/18/2020,Secundario,Cuidado,,,,12
+1007,52,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Secundario,Alta,5/6/2020,,,15
+1008,17,F,Cuba,Cuba,HO,Cueto,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Secundario,Alta,5/4/2020,,759,33
+1009,33,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Secundario,Alta,5/4/2020,,,9
+1010,51,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Secundario,Alta,5/8/2020,,,11
+1011,52,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/18/2020,4/18/2020,Secundario,Alta,5/8/2020,,,11
+1012,58,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,372,12
+1013,10,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,1012,13
+1014,47,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-20,,4/14/2020,4/14/2020,4/18/2020,Secundario,Alta,5/8/2020,,,13
+1015,74,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,,4
+1016,11,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,,10
+1017,35,M,Cuba,Cuba,HO,Baguanos,Cont-Cub-COVID-19,,4/10/2020,4/9/2020,4/18/2020,Secundario,Alta,5/4/2020,,458,19
+1018,28,M,Cuba,Cuba,HO,Mayari,Cont-Cub-COVID-19,,asintom,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,759,13
+1019,11,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/10/2020,4/14/2020,4/18/2020,Secundario,Alta,5/4/2020,,,10
+1020,54,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/1/2020,4/12/2020,4/18/2020,Secundario,Cuidado,,,,18
+1021,53,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/4/2020,4/18/2020,Secundario,Cuidado,,,,10
+1022,29,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/3/2020,4/18/2020,Secundario,Cuidado,,,407,13
+1023,22,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/8/2020,4/18/2020,Secundario,Cuidado,,,,17
+1024,29,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/8/2020,4/18/2020,Secundario,Cuidado,,,,17
+1025,33,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/7/2020,4/10/2020,4/18/2020,Secundario,Cuidado,,,,14
+1026,58,M,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/9/2020,4/13/2020,4/18/2020,Primario,,,,,17
+1027,51,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/16/2020,4/18/2020,4/18/2020,Secundario,Cuidado,,,,12
+1028,42,M,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/7/2020,4/10/2020,4/18/2020,Primario,,,,,15
+1029,74,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/7/2020,4/10/2020,4/18/2020,Secundario,Cuidado,,,,8
+1030,43,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/7/2020,4/10/2020,4/18/2020,Secundario,Cuidado,,,,12
+1031,39,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/12/2020,4/12/2020,4/18/2020,Secundario,Cuidado,,,,15
+1032,55,M,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/10/2020,4/15/2020,4/18/2020,Primario,,,,,12
+1033,36,M,Cuba,Cuba,LH,Cerro,Indeterminada,,3/27/2020,3/28/2020,4/18/2020,Primario,,,,,12
+1034,51,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,4/10/2020,4/14/2020,4/18/2020,Secundario,Cuidado,,,822,12
+1035,54,M,Cuba,Cuba,LH,Regla,Indeterminada,,4/10/2020,4/10/2020,4/18/2020,Primario,,,,,15
+1036,29,F,Cuba,Cuba,CA,Venezuela,Cont-Cub-COVID-19,,asintom,4/14/2020,4/19/2020,Secundario,Alta,5/5/2020,,,4
+1037,61,F,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/12/2020,4/15/2020,4/19/2020,Indeterminada,,,,,12
+1038,30,M,Cuba,Cuba,PR,Guane,Indeterminada,,4/12/2020,4/13/2020,4/19/2020,Indeterminada,Alta,5/6/2020,,,15
+1039,33,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,4/12/2020,4/13/2020,4/19/2020,Secundario,Alta,5/6/2020,,,11
+1040,5,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/10/2020,4/15/2020,4/19/2020,,,,,647,4
+1041,22,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,4/10/2020,4/14/2020,4/19/2020,Secundario,Alta,5/7/2020,,917,6
+1042,56,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,4/11/2020,4/14/2020,4/19/2020,Secundario,Alta,5/4/2020,,,7
+1043,57,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/14/2020,4/16/2020,4/19/2020,Secundario,Alta,5/3/2020,,,6
+1044,40,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/14/2020,4/15/2020,4/19/2020,Secundario,Alta,5/3/2020,,330,7
+1045,42,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/10/2020,4/19/2020,Secundario,Cuidado,,,510,17
+1046,17,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/10/2020,4/19/2020,Secundario,Cuidado,,,510,17
+1047,72,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/12/2020,4/15/2020,4/19/2020,Secundario,Cuidado,,,853,5
+1048,54,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,4/14/2020,4/16/2020,4/19/2020,Secundario,Alta,4/25/2020,,,2
+1049,51,M,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/3/2020,4/16/2020,4/19/2020,Secundario,Cuidado,,,858,3
+1050,51,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/14/2020,4/16/2020,4/19/2020,Secundario,Cuidado,,,858,6
+1051,44,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,asintom,4/5/2020,4/19/2020,Secundario,Cuidado,,,336,5
+1052,33,F,Bolivia,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,3/21/2020,4/14/2020,4/19/2020,Secundario,Alta,4/28/2020,,616,3
+1053,75,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,4/11/2020,4/15/2020,4/19/2020,Secundario,crítico,,,835,8
+1054,55,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,4/11/2020,4/15/2020,4/19/2020,Secundario,Alta,5/2/2020,,835,8
+1055,44,M,Cuba,Cuba,LH,Marianao,Indeterminada,,4/5/2020,4/16/2020,4/19/2020,Primario,,,,,10
+1056,33,F,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/10/2020,4/13/2020,4/19/2020,Primario,,,,,3
+1057,41,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/5/2020,4/16/2020,4/19/2020,Secundario,Alta,5/3/2020,,530,5
+1058,48,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/11/2020,4/14/2020,4/19/2020,Secundario,Alta,5/4/2020,,,6
+1059,55,F,Cuba,Cuba,MT,Colon,Cont-Cub-Extranj,,4/2/2020,4/3/2020,4/19/2020,Secundario,Alta,5/2/2020,,,7
+1060,50,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/19/2020,4/19/2020,Secundario,Alta,5/3/2020,,633,11
+1061,56,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,asintom,4/19/2020,4/19/2020,Secundario,Alta,5/3/2020,,,8
+1062,30,M,Cuba,Cuba,CF,Cienfuegos,Indeterminada,,4/14/2020,4/14/2020,4/19/2020,Secundario,Cuidado,,,,31
+1063,42,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,asintom,4/3/2020,4/19/2020,Primario,,,,,11
+1064,27,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/8/2020,4/19/2020,Secundario,Cuidado,,,504.633,5
+1065,52,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/8/2020,4/19/2020,Secundario,Alta,4/29/2020,,504.633,8
+1066,23,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/6/2020,4/11/2020,4/19/2020,Secundario,Alta,5/4/2020,,484.629,10
+1067,53,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/8/2020,4/11/2020,4/19/2020,Secundario,Alta,5/4/2020,,709,4
+1068,32,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/11/2020,4/12/2020,4/19/2020,Secundario,Alta,5/4/2020,,305,10
+1069,34,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/15/2020,4/19/2020,Secundario,Alta,5/4/2020,,709,28
+1070,56,F,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/14/2020,4/15/2020,4/19/2020,Secundario,Cuidado,,,485.629,12
+1071,74,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/14/2020,4/15/2020,4/19/2020,Primario,,,,,5
+1072,50,F,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,asintom,4/11/2020,4/19/2020,Primario,,,,,3
+1073,24,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,4/11/2020,4/19/2020,Primario,,,,,10
+1074,36,F,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,4/8/2020,4/14/2020,4/19/2020,Primario,,,,,18
+1075,55,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/10/2020,4/15/2020,4/19/2020,Primario,,,,,26
+1076,53,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/4/2020,4/10/2020,4/19/2020,Primario,,,,,5
+1077,33,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/9/2020,4/12/2020,4/19/2020,Primario,,,,,8
+1078,19,M,Cuba,Cuba,LH,Cotorro,Indeterminada,,4/16/2020,4/16/2020,4/19/2020,Primario,,,,,3
+1079,52,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,asintom,4/16/2020,4/19/2020,Secundario,Cuidado,,,504,4
+1080,52,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/10/2020,4/15/2020,4/19/2020,Secundario,Cuidado,,,504,2
+1081,52,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,asintom,4/10/2020,4/19/2020,Primario,,,,,45
+1082,65,M,Cuba,Cuba,LH,Regla,Indeterminada,,4/6/2020,4/12/2020,4/19/2020,Primario,,,,,12
+1083,37,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/14/2020,4/19/2020,Secundario,Cuidado,,,607,2
+1084,53,F,Cuba,Cuba,LH,Regla,Indeterminada,,asintom,4/4/2020,4/19/2020,Primario,,,,,3
+1085,58,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/10/2020,4/19/2020,Secundario,Cuidado,,,"321, 606",9
+1086,48,M,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/6/2020,4/12/2020,4/19/2020,Primario,,,,,5
+1087,11,M,Cuba,Cuba,LH,Habana Vieja,,,asintom,4/6/2020,4/19/2020,,,,,575,29
+1088,59,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,4/14/2020,4/17/2020,4/20/2020,Secundario,Alta,5/4/2020,,,17
+1089,59,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/17/2020,4/17/2020,4/20/2020,Secundario,Alta,5/3/2020,,,12
+1090,82,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/14/2020,4/17/2020,4/20/2020,Secundario,Cuidado,,,,7
+1091,14,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/16/2020,4/20/2020,Secundario,Alta,5/5/2020,,,20
+1092,73,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/16/2020,4/20/2020,Secundario,Cuidado,,,,20
+1093,7,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/20/2020,4/20/2020,Secundario,Alta,5/4/2020,,,7
+1094,37,F,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,4/14/2020,4/14/2020,4/20/2020,Secundario,Alta,5/4/2020,,,11
+1095,59,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/20/2020,4/20/2020,Secundario,Alta,5/4/2020,,,4
+1096,52,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/20/2020,4/20/2020,Secundario,Alta,5/4/2020,,,18
+1097,46,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/20/2020,4/20/2020,Secundario,Alta,5/4/2020,,,8
+1098,40,F,Cuba,Cuba,VC,Santa Clara,Indeterminada,,4/16/2020,4/17/2020,4/20/2020,Indeterminada,Alta,5/1/2020,,,17
+1099,86,F,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,4/15/2020,4/16/2020,4/20/2020,Secundario,Cuidado,,,,10
+1100,41,F,Cuba,Cuba,CA,Moron,Indeterminada,,asintom,4/16/2020,4/20/2020,Secundario,Alta,5/6/2020,,,15
+1101,39,M,Cuba,Cuba,CA,Bolivia,Cont-Cub-COVID-19,,asintom,4/11/2020,4/20/2020,Secundario,Alta,5/6/2020,,,16
+1102,30,M,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,asintom,4/11/2020,4/20/2020,Secundario,Cuidado,5/7/2020,,,15
+1103,8 m,M,Cuba,Cuba,CA,Chambas,Cont-Cub-COVID-19,,4/11/2020,4/13/2020,4/20/2020,Secundario,Alta,5/5/2020,,,13
+1104,68,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/17/2020,4/20/2020,Secundario,Alta,5/7/2020,,,13
+1105,24,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Alta,5/7/2020,,,12
+1106,34,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Alta,5/7/2020,,1105,12
+1107,61,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Alta,5/7/2020,,879,13
+1108,52,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Alta,5/7/2020,,879,14
+1109,8,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Alta,5/7/2020,,879,12
+1110,31,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Cuidado,,,879,13
+1111,17,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Cuidado,,,879,13
+1112,50,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Cuidado,,,879,14
+1113,53,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/18/2020,4/20/2020,Secundario,Cuidado,,,,14
+1114,67,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/20/2020,Secundario,Cuidado,,,,19
+1115,7,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/20/2020,Secundario,Cuidado,,,,19
+1116,43,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/20/2020,Secundario,Cuidado,,,,19
+1117,12,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,4/19/2020,4/8/2020,4/20/2020,Secundario,Cuidado,,,,17
+1118,22,F,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/15/2020,4/17/2020,4/20/2020,Primario,,,,,17
+1119,43,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/14/2020,4/14/2020,4/20/2020,Secundario,Cuidado,,,,19
+1120,27,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/14/2020,4/20/2020,Secundario,Cuidado,,,,14
+1121,19,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/14/2020,4/14/2020,4/20/2020,Secundario,Cuidado,,,,14
+1122,27,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/14/2020,4/16/2020,4/20/2020,Primario,,,,,13
+1123,50,M,Cuba,Cuba,LH,Boyeros,Indeterminada,,4/12/2020,4/12/2020,4/20/2020,Primario,,,,,15
+1124,40,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/16/2020,4/20/2020,Secundario,Cuidado,,,,3
+1125,9,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/17/2020,4/20/2020,Secundario,Cuidado,,,,12
+1126,49,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/4/2020,4/6/2020,4/20/2020,Primario,,,,,10
+1127,59,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,4/19/2020,4/19/2020,4/20/2020,Secundario,Cuidado,,,,11
+1128,38,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/17/2020,4/20/2020,Secundario,Cuidado,,,,11
+1129,92,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/20/2020,4/20/2020,Secundario,Cuidado,,,609,16
+1130,30,F,Cuba,Cuba,LT,Puerto Padre,Cont-Cub-COVID-19,,4/14/2020,4/15/2020,4/20/2020,Secundario,Cuidado,5/6/2020,,,35
+1131,28,F,Cuba,Cuba,LT,Puerto Padre,Cont-Cub-COVID-19,,asintom,4/13/2020,4/20/2020,Secundario,Cuidado,5/6/2020,,,58
+1132,65,M,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,4/14/2020,4/16/2020,4/20/2020,Primario,Fallecido,4/18/2020,,,11
+1133,47,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/15/2020,4/17/2020,4/20/2020,Primario,,,,,13
+1134,17,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/17/2020,4/20/2020,Secundario,Cuidado,,,,11
+1135,56,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/17/2020,4/20/2020,Transmision local,Cuidado,,,,19
+1136,59,M,Cuba,Cuba,MY,Batabanó,Indeterminada,,4/14/2020,4/17/2020,4/20/2020,Indeterminada,Alta,5/5/2020,,,14
+1137,54,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/9/2020,4/20/2020,Secundario,Cuidado,,,,12
+1138,19,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/13/2020,4/21/2020,Secundario,Cuidado,,,,12
+1139,56,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,4/10/2020,4/16/2020,4/21/2020,Secundario,Cuidado,,,,19
+1140,74,M,Cuba,Cuba,LH,Cotorro,Indeterminada,,4/12/2020,4/16/2020,4/21/2020,Primario,Fallecido,4/21/2020,,,12
+1141,45,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/8/2020,4/13/2020,4/21/2020,Primario,,,,,11
+1142,47,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,asintom,4/12/2020,4/21/2020,Secundario,Cuidado,,,,17
+1143,12,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/12/2020,4/21/2020,Secundario,Cuidado,,,,17
+1144,47,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,13
+1145,29,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,13
+1146,59,F,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,4/13/2020,4/18/2020,4/21/2020,Primario,,,,,11
+1147,58,F,Cuba,Cuba,MT,San Miguel del Padron,Cont-Cub-COVID-19,,4/16/2020,4/17/2020,4/21/2020,,Alta,5/4/2020,,,12
+1148,84,F,Cuba,Cuba,VC,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/21/2020,4/21/2020,Indeterminada,Alta,4/23/2020,,640,14
+1149,54,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/16/2020,4/21/2020,Secundario,Cuidado,,,,12
+1150,54,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/17/2020,4/17/2020,4/21/2020,Secundario,Cuidado,,,,14
+1151,67,M,Cuba,Cuba,CF,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/19/2020,4/21/2020,Secundario,Alta,4/21/2020,,,13
+1152,30,M,Cuba,Cuba,SC,Guanabacoa,Cont-Cub-COVID-19,,4/15/2020,4/15/2020,4/21/2020,Secundario,Alta,5/8/2020,,,24
+1153,25,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/17/2020,4/21/2020,Secundario,Cuidado,,,,11
+1154,18,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/21/2020,Secundario,Cuidado,,,,10
+1155,10,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,10
+1156,10,M,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/7/2020,4/21/2020,Secundario,Cuidado,,,,15
+1157,17,M,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,15
+1158,20,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/17/2020,4/19/2020,4/21/2020,Primario,,,,,19
+1159,42,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/11/2020,4/21/2020,Secundario,Cuidado,,,,12
+1160,26,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/21/2020,Secundario,Cuidado,,,,12
+1161,47,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/12/2020,4/15/2020,4/21/2020,Secundario,Cuidado,,,,13
+1162,61,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/18/2020,4/19/2020,4/21/2020,Secundario,Cuidado,,,,11
+1163,26,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/18/2020,4/19/2020,4/21/2020,Primario,,,,,17
+1164,44,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/13/2020,4/21/2020,Secundario,Cuidado,,,,12
+1165,61,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,16
+1166,24,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,17
+1167,20,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/10/2020,4/21/2020,Secundario,Cuidado,,,,17
+1168,48,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,4/8/2020,4/12/2020,4/21/2020,Indeterminada,Cuidado,,,,17
+1169,51,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/20/2020,4/21/2020,Indeterminada,Cuidado,,,,27
+1170,33,F,Cuba,Cuba,GT,Guantanamo,Cont-Cub-COVID-19,,4/16/2020,4/18/2020,4/21/2020,Secundario,Cuidado,,,,10
+1171,23,F,Cuba,Cuba,LT,Puerto Padre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/21/2020,Secundario,Cuidado,5/6/2020,,,40
+1172,50,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/16/2020,4/21/2020,4/21/2020,Secundario,Cuidado,,,,16
+1173,26,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,17
+1174,43,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,4/17/2020,4/18/2020,4/21/2020,Secundario,Cuidado,,,,15
+1175,30,F,Cuba,Cuba,LH,Cerro,Indeterminada,,4/15/2020,4/16/2020,4/21/2020,Primario,,,,,15
+1176,8,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,15
+1177,33,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,15
+1178,24,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/11/2020,4/21/2020,Secundario,Cuidado,,,,16
+1179,54,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/12/2020,4/21/2020,Secundario,Cuidado,,,,25
+1180,21,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/21/2020,Secundario,Cuidado,,,,12
+1181,25,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/15/2020,4/21/2020,Secundario,Cuidado,,,,12
+1182,25,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/21/2020,Secundario,Cuidado,,,,12
+1183,58,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/14/2020,4/21/2020,Secundario,Cuidado,,,,15
+1184,66,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/17/2020,4/17/2020,4/21/2020,Primario,,,,,1
+1185,42,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/18/2020,4/21/2020,Secundario,Cuidado,,,,12
+1186,22,F,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/16/2020,4/19/2020,4/21/2020,Primario,,,,,10
+1187,44,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/13/2020,4/21/2020,Secundario,Cuidado,,,,17
+1188,29,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/18/2020,4/21/2020,Secundario,Cuidado,,,,17
+1189,60,M,Cuba,Cuba,LH,Regla,Indeterminada,,4/16/2020,4/18/2020,4/21/2020,Primario,,,,,16
+1190,29,M,Cuba,Cuba,PR,10 de Octubre,Cont-Cub-COVID-19,,4/17/2020,4/19/2020,4/22/2020,Secundario,Alta,5/4/2020,,,24
+1191,29,M,Cuba,Cuba,PR,Regla,Cont-Cub-COVID-19,,4/17/2020,4/18/2020,4/22/2020,Secundario,Alta,5/4/2020,,,11
+1192,23,M,Cuba,Cuba,IJ,10 de Octubre,Cont-Cub-COVID-19,,4/18/2020,4/19/2020,4/22/2020,Secundario,Cuidado,,,,16
+1193,54,M,Cuba,Cuba,MT,Regla,Cont-Cub-COVID-19,,asintom,4/22/2020,4/22/2020,Secundario,Alta,,,,11
+1194,77,F,Cuba,Cuba,MT,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/22/2020,4/22/2020,Secundario,Fallecido,4/25/2020,,961,7
+1195,18,F,Cuba,Cuba,MT,Regla,Cont-Cub-COVID-20,,asintom,4/22/2020,4/22/2020,Secundario,Alta,5/5/2020,,1056,13
+1196,66,M,Cuba,Cuba,MT,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/14/2020,4/22/2020,Secundario,Alta,,,961,9
+1197,24,F,Cuba,Cuba,SC,Regla,Cont-Cub-COVID-19,,asintom,4/15/2020,4/22/2020,Secundario,Cuidado,,,,30
+1198,74,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/17/2020,4/20/2020,4/22/2020,Primario,,,,,2
+1199,71,F,Cuba,Cuba,LH,Regla,Indeterminada,,4/18/2020,4/20/2020,4/22/2020,Primario,,,,,13
+1200,34,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/17/2020,4/21/2020,4/22/2020,Secundario,Cuidado,,,1134,32
+1201,49,M,Cuba,Cuba,VC,Regla,Cont-Cub-COVID-19,,asintom,4/22/2020,4/22/2020,Secundario,Alta,5/5/2020,,,19
+1202,30,F,Cuba,Cuba,VC,10 de Octubre,Cont-Cub-COVID-19,,4/17/2020,4/19/2020,4/22/2020,Transmision local,Alta,5/7/2020,,831,9
+1203,10,F,Cuba,Cuba,VC,Regla,Cont-Cub-COVID-19,,asintom,4/22/2020,4/22/2020,Secundario,Alta,5/7/2020,,1203.831,9
+1204,31,F,Cuba,Cuba,VC,10 de Octubre,Indeterminada,,asintom,4/22/2020,4/22/2020,Transmision local,Alta,5/5/2020,,,15
+1205,76,F,Cuba,Cuba,VC,Regla,Cont-Cub-COVID-19,,asintom,4/22/2020,4/22/2020,Secundario,Alta,5/4/2020,,872,7
+1206,41,F,Cuba,Cuba,VC,10 de Octubre,Indeterminada,,asintom,4/22/2020,4/22/2020,Transmision local,Alta,5/5/2020,,,7
+1207,45,M,Cuba,Cuba,VC,Regla,Indeterminada,,asintom,4/22/2020,4/22/2020,Transmision local,Alta,5/5/2020,,,15
+1208,54,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/10/2020,4/22/2020,Secundario,Cuidado,,,608,9
+1209,15,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/20/2020,4/22/2020,Secundario,Cuidado,,,1133,3
+1210,46,F,Cuba,Cuba,LH,Playa,Indeterminada,,4/16/2020,4/19/2020,4/22/2020,Primario,,,,,8
+1211,51,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/14/2020,4/22/2020,Secundario,Cuidado,,,752,12
+1212,20,M,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/11/2020,4/20/2020,4/22/2020,Secundario,Cuidado,,,1031,13
+1213,37,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/22/2020,Secundario,Cuidado,,,1133,13
+1214,61,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/22/2020,Secundario,Cuidado,,,986,20
+1215,33,M,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,asintom,4/11/2020,4/22/2020,Primario,,,,,20
+1216,50,M,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,asintom,4/11/2020,4/22/2020,Primario,,,,,8
+1217,50,F,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,asintom,4/11/2020,4/22/2020,Primario,,,,,8
+1218,30,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/13/2020,4/22/2020,Secundario,Cuidado,,,499,16
+1219,51,F,Cuba,Cuba,LH,Marianao,Indeterminada,,asintom,4/10/2020,4/22/2020,Primario,,,,,10
+1220,32,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/17/2020,4/19/2020,4/22/2020,Secundario,Cuidado,,,1031,16
+1221,45,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,1038,62
+1222,61,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1223,2,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1224,25,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/4/2020,,,62
+1225,32,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1226,53,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1227,7,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1228,58,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1229,81,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1230,30,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1231,36,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1232,71,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1233,36,M,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/19/2020,4/22/2020,Secundario,Alta,5/9/2020,,,62
+1234,19,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,asintom,4/9/2020,4/22/2020,Secundario,Cuidado,,,658,16
+1235,87,M,Cuba,Cuba,GT,Guantanamo,Indeterminada,,4/12/2020,4/17/2020,4/22/2020,Indeterminada,Fallecido,4/22/2020,,,20
+1236,48,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Cuidado,,,,16
+1237,82,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/22/2020,4/23/2020,Secundario,Cuidado,,,1081,253
+1238,59,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,asintom,4/22/2020,4/23/2020,Secundario,Cuidado,,,1081,34
+1239,43,F,Cuba,Cuba,LH,Cerro,Indeterminada,,asintom,4/20/2020,4/23/2020,Primario,,,,,1
+1240,59,M,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/23/2020,Secundario,Cuidado,,,1081,49
+1241,57,M,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/23/2020,Secundario,Cuidado,,,1081,47
+1242,39,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/18/2020,4/21/2020,4/23/2020,Secundario,Alta,5/6/2020,,1043,14
+1243,36,F,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,asintom,4/1/2020,4/23/2020,Primario,,,,,8
+1244,13,F,Cuba,Cuba,VC,Corralillo,Cont-Cub-COVID-19,,4/16/2020,4/19/2020,4/23/2020,Secundario,Alta,5/8/2020,,991,8
+1245,15,M,Cuba,Cuba,VC,Corralillo,Indeterminada,,4/19/2020,4/20/2020,4/23/2020,Secundario,Alta,5/6/2020,,,9
+1246,86,M,Cuba,Cuba,VC,Santa Clara,Indeterminada,,4/15/2020,4/18/2020,4/23/2020,Secundario,Fallecido,4/27/2020,,,18
+1247,29,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,4/23/2020,4/23/2020,Primario,,,,,18
+1248,59,F,Cuba,Cuba,PR,San Luis,Indeterminada,,4/19/2020,4/20/2020,4/23/2020,Secundario,Alta,5/6/2020,,,8
+1249,21,M,Cuba,Cuba,MY,Batabano,Cont-Cub-COVID-19,,asintom,4/23/2020,4/23/2020,Secundario,Cuidado,,,1136,14
+1250,37,F,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,asintom,4/1/2020,4/23/2020,Primario,,,,,9
+1251,80,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/20/2020,4/23/2020,Secundario,Cuidado,,,879,8
+1252,3,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/20/2020,4/23/2020,Secundario,Cuidado,,,879,8
+1253,36,F,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,asintom,4/3/2020,4/23/2020,Primario,,,,,10
+1254,28,M,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,asintom,4/3/2020,4/23/2020,Primario,,,,,15
+1255,59,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,asintom,4/23/2020,4/23/2020,Secundario,Alta,5/8/2020,,,10
+1256,84,M,Cuba,Cuba,VC,Camajuani,Cont-Cub-COVID-19,,4/17/2020,4/21/2020,4/23/2020,,Fallecido,4/23/2020,,868,7
+1257,6,M,Cuba,Cuba,PR,San Luis,Indeterminada,,4/18/2020,4/18/2020,4/23/2020,Indeterminada,Alta,5/5/2020,,,9
+1258,24,F,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/20/2020,4/20/2020,4/23/2020,Primario,,,,,12
+1259,13,F,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,asintom,4/22/2020,4/23/2020,Secundario,Alta,4/23/2020,,1151,17
+1260,82,F,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Alta,4/23/2020,,1151,7
+1261,17,M,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Alta,4/23/2020,,1062,25
+1262,38,F,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/20/2020,4/21/2020,4/23/2020,Primario,,,,,12
+1263,43,M,Cuba,Cuba,LH,10 de octubre,Indeterminada,,asintom,4/21/2020,4/23/2020,Primario,,,,,12
+1264,52,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/23/2020,Secundario,Cuidado,,,857,7
+1265,40,F,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/18/2020,4/21/2020,4/23/2020,Primario,,,,,12
+1266,49,,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,asintom,4/15/2020,4/23/2020,Secundario,Cuidado,,,857,10
+1267,55,M,Cuba,Cuba,MT,Perico,Indeterminada,,asintom,4/23/2020,4/23/2020,Secundario,Alta,5/8/2020,,,23
+1268,44,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/13/2020,4/23/2020,Secundario,Cuidado,,,,12
+1269,50,F,Cuba,Cuba,CM,Nuevitas,Indeterminada,,4/12/2020,4/17/2020,4/23/2020,Secundario,Cuidado,,,,58
+1270,43,M,Cuba,Cuba,MY,Batabano,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Cuidado,,,1136,14
+1271,71,M,Cuba,Cuba,MY,Batabano,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Indeterminada,Cuidado,,,1136,36
+1272,21,F,Cuba,Cuba,LT,Puerto Padre,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Cuidado,,,1131,47
+1273,7,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/21/2020,4/23/2020,Secundario,Cuidado,,,779,8
+1274,45,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/15/2020,4/23/2020,Secundario,Cuidado,,,,16
+1275,66,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/15/2020,4/23/2020,Secundario,Cuidado,,,,16
+1276,26,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/19/2020,4/23/2020,Secundario,Cuidado,,,,19
+1277,60,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/14/2020,4/23/2020,Secundario,Cuidado,,,,21
+1278,19,F,Cuba,Cuba,LH,Guanabacoa,,,asintom,4/20/2020,4/23/2020,,,,,,11
+1279,35,M,Cuba,Cuba,CF,Cienfuegos,Indeterminada,,3/20/2020,3/20/2020,4/23/2020,Indeterminada,Fallecido,4/23/2020,,,
+1280,23,M,Cuba,Cuba,LH,Cerro,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,7
+1281,19,M,Cuba,Cuba,LH,Regla,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,7
+1282,21,M,Cuba,Cuba,LH,Regla,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,7
+1283,52,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,7
+1284,60,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,7
+1285,31,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,asintom,3/23/2020,4/23/2020,Primario,,,,,11
+1286,57,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/17/2020,4/18/2020,4/24/2020,Primario,,,,,13
+1287,84,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,1081,44
+1288,32,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/19/2020,4/19/2020,4/24/2020,Secundario,Cuidado,,,1031,12
+1289,69,M,Cuba,Cuba,LH,10 de octubre,Indeterminada,,4/6/2020,4/20/2020,4/24/2020,Primario,,,,,10
+1290,32,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,asintom,4/15/2020,4/24/2020,Primario,,,,,14
+1291,57,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,asintom,4/24/2020,4/24/2020,Secundario,Cuidado,,,,10
+1292,82,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/19/2020,4/20/2020,4/24/2020,Transmision local,Alta,5/7/2020,,,36
+1293,20,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,asintom,4/24/2020,4/24/2020,Secundario,Alta,5/5/2020,,,36
+1294,15,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,4/19/2020,4/21/2020,4/24/2020,Secundario,Cuidado,,,1134,33
+1295,12,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,4/17/2020,4/21/2020,4/24/2020,Secundario,Cuidado,,,1134,33
+1296,52,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,1105,14
+1297,26,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,878,12
+1298,5,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/11/2020,4/24/2020,Secundario,Cuidado,,,437,13
+1299,20 d,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,1119,11
+1300,85,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/10/2020,4/14/2020,4/24/2020,Primario,,,,,16
+1301,77,F,Cuba,Cuba,LH,Habana Vieja,Indeterminada,,4/16/2020,4/21/2020,4/24/2020,Primario,Fallecido,4/29/2020,,,19
+1302,75,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/19/2020,4/21/2020,4/24/2020,Primario,,,,,14
+1303,76,M,Cuba,Cuba,MT,Jovellanos,Indeterminada,,4/14/2020,4/20/2020,4/24/2020,Secundario,Cuidado,,,,14
+1304,80,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,4/17/2020,4/23/2020,4/24/2020,Secundario,Cuidado,,,,14
+1305,66,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,4/19/2020,4/22/2020,4/24/2020,Secundario,Cuidado,,,,18
+1306,73,M,Cuba,Cuba,MT,Matanzas,Indeterminada,,asintom,4/24/2020,4/24/2020,Secundario,Cuidado,,,,14
+1307,37,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/21/2020,4/24/2020,Secundario,Cuidado,,,1105,14
+1308,29,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,asintom,4/21/2020,4/24/2020,Secundario,Cuidado,,,367,12
+1309,8,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-19,,asintom,4/20/2020,4/24/2020,Secundario,Alta,5/8/2020,,,14
+1310,15,M,Cuba,Cuba,CF,Cienfuegos,Indeterminada,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,,19
+1311,34,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,asintom,4/14/2020,4/24/2020,Secundario,Cuidado,,,774,16
+1312,63,F,Cuba,Cuba,LH,Plaza,Indeterminada,,4/21/2020,4/22/2020,4/24/2020,Primario,,,,,10
+1313,56,F,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/20/2020,4/21/2020,4/24/2020,Primario,,,,,12
+1314,47,F,Cuba,Cuba,LH,Playa,Indeterminada,,4/18/2020,4/24/2020,4/24/2020,Primario,,,,,19
+1315,79,F,Cuba,Cuba,LH,Marianao,Indeterminada,,4/4/2020,4/20/2020,4/24/2020,Primario,Fallecido,5/3/2020,,,15
+1316,51,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/19/2020,4/19/2020,4/24/2020,Secundario,Cuidado,,,,15
+1317,21,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/11/2020,4/24/2020,Secundario,Cuidado,,,986,19
+1318,59,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,3/28/2020,4/18/2020,4/24/2020,Secundario,Cuidado,,,,13
+1319,57,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-20,,asintom,4/24/2020,4/24/2020,Secundario,Cuidado,,,,6
+1320,69,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,3/15/2020,4/19/2020,4/24/2020,Secundario,Cuidado,,,,10
+1321,57,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/12/2020,4/15/2020,4/24/2020,Primario,,,,,10
+1322,18,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/18/2020,4/15/2020,4/24/2020,Secundario,Cuidado,,,,6
+1323,25,F,Cuba,Cuba,MY,San Jose,Indeterminada,,asintom,4/20/2020,4/24/2020,Secundario,Cuidado,,,,38
+1324,36,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/15/2020,4/24/2020,Secundario,Cuidado,,,,27
+1325,73,F,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Secundario,Cuidado,,,,27
+1326,27,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Transmision local,Cuidado,,,,16
+1327,15,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Transmision local,Cuidado,,,,15
+1328,13,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Transmision local,Cuidado,,,,10
+1329,27,M,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Transmision local,Cuidado,,,,21
+1330,63,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,asintom,4/10/2020,4/24/2020,Secundario,Cuidado,,,,12
+1331,47,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/22/2020,4/23/2020,4/24/2020,Secundario,Cuidado,,,,33
+1332,47,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/21/2020,4/24/2020,Secundario,Cuidado,,,,18
+1333,19,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/22/2020,4/15/2020,4/24/2020,Secundario,Cuidado,,,1187,6
+1334,5,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Transmision local,Cuidado,,,,16
+1335,44,M,Cuba,Cuba,MY,Batabano,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Secundario,Cuidado,,,,11
+1336,31,M,Cuba,Cuba,MY,Guines,Cont-Cub-COVID-19,,asintom,4/22/2020,4/24/2020,Primario,Alta,5/1/2020,,,14
+1337,34,F,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-20,,3/30/2020,4/1/2020,4/24/2020,Primario,Cuidado,,,,15
+1338,56,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/25/2020,Secundario,Cuidado,,,1038,10
+1339,27,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/25/2020,Secundario,Alta,5/7/2020,,1038,8
+1340,73,M,Cuba,Cuba,MT,Pedro Betancourt,Cont-Cub-COVID-19,,asintom,4/23/2020,4/25/2020,Secundario,Alta,5/8/2020,,1194,11
+1341,44,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/20/2020,4/21/2020,4/25/2020,Secundario,Alta,5/7/2020,,377.65,8
+1342,79,M,Cuba,Cuba,MY,Melena del Sur,Cont-Cub-COVID-19,,asintom,4/22/2020,4/25/2020,Secundario,Cuidado,,,,13
+1343,62,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/17/2020,4/21/2020,4/25/2020,,,,,1158,11
+1344,73,M,Cuba,Cuba,LH,Arroyo Naranjo,Indeterminada,,4/14/2020,4/21/2020,4/25/2020,,Fallecido,4/25/2020,,,15
+1345,42,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/12/2020,4/13/2020,4/16/2020,Secundario,Alta,5/2/2020,,676,13
+1346,52,F,Cuba,Cuba,LH,San Miguel del Padron,Indeterminada,,4/17/2020,4/20/2020,4/25/2020,,,,,,9
+1347,48,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,4/19/2020,4/20/2020,4/25/2020,,,,,1346,8
+1348,54,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/25/2020,4/25/2020,Secundario,Alta,5/7/2020,,1043,12
+1349,32,M,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,4/19/2020,4/21/2020,4/25/2020,Secundario,Cuidado,,,955,8
+1350,44,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/25/2020,4/25/2020,Secundario,Alta,5/7/2020,,1043,10
+1351,54,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/20/2020,4/21/2020,4/25/2020,Secundario,Alta,5/7/2020,,1043,13
+1352,51,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/25/2020,4/25/2020,Secundario,Cuidado,,,632.106,16
+1353,46,F,Cuba,Cuba,LH,Cerro,Indeterminada,,4/20/2020,4/22/2020,4/25/2020,,,,,,8
+1354,49,F,Cuba,Cuba,LH,La Lisa,Indeterminada,,4/20/2020,4/20/2020,4/25/2020,,,,,,13
+1355,42,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,4/16/2020,4/17/2020,4/25/2020,,,,,808,35
+1356,23,M,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,4/11/2020,4/17/2020,4/25/2020,Secundario,Cuidado,,,701,15
+1357,43,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/25/2020,4/25/2020,,,,,1263,10
+1358,21,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/20/2020,4/20/2020,4/25/2020,,,,,,13
+1359,30,F,Cuba,Cuba,HO,Banes,Cont-Cub-COVID-19,,asintom,4/15/2020,4/25/2020,Secundario,Cuidado,,,700,11
+1360,25,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-19,,4/20/2020,4/21/2020,4/25/2020,Indeterminada,Cuidado,,,,14
+1361,30,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/24/2020,4/25/2020,,,,,,10
+1362,45,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,asintom,4/24/2020,4/25/2020,,,,,,10
+1363,52,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-20,,asintom,4/24/2020,4/25/2020,,,,,,10
+1364,34,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/20/2020,4/24/2020,4/25/2020,,,,,,10
+1365,20,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/21/2020,4/22/2020,4/25/2020,,,,,,8
+1366,23,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/20/2020,4/22/2020,4/25/2020,,,,,,7
+1367,36,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/19/2020,4/22/2020,4/25/2020,,,,,,8
+1368,36,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-20,,4/20/2020,4/22/2020,4/25/2020,,,,,,8
+1369,49,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-20,,4/20/2020,4/24/2020,4/25/2020,,,,,,8
+1370,48,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/26/2020,4/26/2020,Secundario,Cuidado,,,1038,11
+1371,52,F,Cuba,Cuba,PR,Guane,Cont-Cub-COVID-19,,asintom,4/23/2020,4/26/2020,Secundario,Cuidado,,,1233,26
+1372,40,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,asintom,4/19/2020,4/26/2020,,,,,1051,11
+1373,43,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/20/2020,,4/26/2020,,,,,,14
+1374,67,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/21/2020,4/23/2020,4/26/2020,Secundario,Cuidado,,,1375,11
+1375,60,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,asintom,4/26/2020,4/26/2020,Secundario,Cuidado,,,961,11
+1376,28,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/17/2020,4/21/2020,4/26/2020,,,,,,18
+1377,46,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,1028,9
+1378,59,F,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,,11
+1379,29,F,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,,12
+1380,34,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,asintom,4/21/2020,4/26/2020,,,,,,11
+1381,12,M,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,1032,13
+1382,9,M,Cuba,Cuba,LH,San miguel del Padron,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,1032,12
+1383,27,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,asintom,4/21/2020,4/26/2020,,,,,,10
+1384,39,M,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,4/18/2020,4/23/2020,4/26/2020,Secundario,Cuidado,,,1260,49
+1385,45,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,asintom,4/18/2020,4/26/2020,,,,,,9
+1386,14,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,asintom,4/19/2020,4/26/2020,,,,,1386,11
+1387,20,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/20/2020,4/21/2020,4/26/2020,,,,,,10
+1388,27,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/21/2020,4/23/2020,4/26/2020,,,,,,12
+1389,53,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/22/2020,4/8/2020,4/26/2020,Secundario,Fallecido,4/24/2020,,,10
+1390,61,M,Cuba,Cuba,SS,Cabaiguán,Cont-Cub-COVID-19,,4/20/2020,4/24/2020,4/27/2020,Secundario,Cuidado,,,,2
+1391,54,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,asintom,4/27/2020,4/27/2020,,,,,,14
+1392,1,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/17/2020,4/27/2020,,,,,850,20
+1393,8,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,asintom,4/17/2020,4/27/2020,,,,,850,20
+1394,70,M,Cuba,Cuba,LH,Cotorro,Indeterminada,,4/18/2020,4/23/2020,4/27/2020,,,,,,2
+1395,56,M,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,4/18/2020,4/19/2020,4/27/2020,Secundario,Cuidado,,,707,3
+1396,24,M,Cuba,Cuba,HO,Holguín,Indeterminada,,4/19/2020,4/23/2020,4/27/2020,Secundario,Cuidado,,,,8
+1397,58,M,Cuba,Cuba,HO,Holguín,Indeterminada,,4/15/2020,4/18/2020,4/27/2020,Indeterminada,Cuidado,,,,4
+1398,75,F,Cuba,Cuba,HO,Holguín,Indeterminada,,4/17/2020,4/21/2020,4/27/2020,Indeterminada,Cuidado,,,,7
+1399,63,M,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/19/2020,4/19/2020,4/27/2020,Indeterminada,Fallecido,4/21/2020,,,75
+1400,33,F,Cuba,Cuba,CM,Camagüey,Cont-Cub-COVID-19,,asintom,4/24/2020,4/27/2020,Secundario,Cuidado,,,,30
+1401,22,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,asintom,4/26/2020,4/27/2020,,,,,,8
+1402,19,F,Cuba,Cuba,HO,Gibara,Cont-Cub-COVID-19,,asintom,4/22/2020,4/27/2020,Secundario,Cuidado,,,1168,10
+1403,44,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/22/2020,4/23/2020,4/27/2020,Secundario,Cuidado,,,1044,14
+1404,19,M,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/22/2020,4/23/2020,4/27/2020,Secundario,Cuidado,,,,9
+1405,82,M,Cuba,Cuba,MT,Colón,Indeterminada,,4/21/2020,4/24/2020,4/27/2020,Indeterminada,Fallecido,5/3/2020,,,21
+1406,21,F,Cuba,Cuba,MT,Cardenas,Indeterminada,,4/20/2020,4/21/2020,4/27/2020,Indeterminada,Cuidado,,,,4
+1407,42,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/21/2020,4/24/2020,4/27/2020,Secundario,Cuidado,,,1306,16
+1408,18,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintomatico,,4/27/2020,Secundario,Cuidado,,,1306,16
+1409,25,M,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-19,,4/22/2020,4/24/2020,4/27/2020,Indeterminada,Cuidado,,,1303,8
+1410,50,F,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-19,,4/15/2020,4/25/2020,4/27/2020,,,,,,8
+1411,19,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico,4/20/2020,4/27/2020,,,,,1076,6
+1412,62,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,1076,7
+1413,34,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,1167,6
+1414,21,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico,4/20/2020,4/27/2020,,,,,1076,6
+1415,48,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomatico,4/22/2020,4/27/2020,,,,,1167,13
+1416,67,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,1167,6
+1417,77,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomatico,4/19/2020,4/27/2020,,,,,1071,7
+1418,79,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomatico,4/19/2020,4/27/2020,,,,,1071,7
+1419,59,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomatico,4/19/2020,4/27/2020,,,,,1071,7
+1420,36,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomatico,4/19/2020,4/27/2020,,,,,1063,7
+1421,55,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,Asintomatico,4/20/2020,4/27/2020,,,,,1035,8
+1422,27,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico,4/19/2020,4/27/2020,,,,,1080,5
+1423,42,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/21/2020,4/27/2020,4/27/2020,,Alta,5/6/2020,,,18
+1424,87,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,1175,6
+1425,11,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,Alta,5/6/2020,,,12
+1426,27,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,Asintomatico,4/23/2020,4/27/2020,,,,,,6
+1427,47,M,Cuba,Cuba,LH,Playa,Indeterminada,,4/23/2020,4/24/2020,4/27/2020,,,,,,6
+1428,37,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,Alta,5/6/2020,,,14
+1429,56,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,1166,5
+1430,38,F,Cuba,Cuba,CF,Cienfuegos,Indeterminada,,4/23/2020,4/24/2020,4/27/2020,Indeterminada,Cuidado,,,,43
+1431,38,M,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,Asintomatico,4/25/2020,4/27/2020,Secundario,Cuidado,,,1259,81
+1432,54,M,Cuba,Cuba,AR,San Antonio de Los Baños,Indeterminada,,4/23/2020,4/24/2020,4/27/2020,Primario,Cuidado,,,,14
+1433,72,M,Cuba,Cuba,AR,Güira de Melena,Indeterminada,,4/23/2020,4/24/2020,4/27/2020,Indice,Cuidado,,,,7
+1434,52,F,Cuba,Cuba,AR,Mariel,Cont-Cub-COVID-19,,Asintomatico,4/27/2020,4/27/2020,Indice,Alta,5/2/2020,,,7
+1435,37,F,Cuba,Cuba,AR,Guanajay,Cont-Cub-COVID-19,,Asintomatico,4/27/2020,4/27/2020,Indice,Alta,5/2/2020,,,27
+1436,64,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,Asintomatico,4/21/2020,4/27/2020,,,,,,7
+1437,33,M,Cuba,Cuba,LH,Plaza ,Indeterminada,,4/19/2020,4/22/2020,4/27/2020,,,,,,6
+1438,31,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/22/2020,4/24/2020,4/28/2020,,,,,1174.1031,8
+1439,41,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/20/2020,4/24/2020,4/28/2020,,,,,,8
+1440,49,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/20/2020,4/24/2020,4/28/2020,,,,,1174,8
+1441,49,F,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/20/2020,4/24/2020,4/28/2020,,,,,1184,30
+1442,26,F,Cuba,Cuba,MT,Cárdenas,Indeterminada,,4/23/2020,4/24/2020,4/28/2020,Secundario,Cuidado,,,,6
+1443,26,F,Cuba,Cuba,MT,Cárdenas,Cont-Cub-COVID-19,,4/21/2020,4/22/2020,4/28/2020,Secundario,Cuidado,,,1375,7
+1444,26,F,Cuba,Cuba,MT,Cárdenas,Cont-Cub-COVID-19,,4/21/2020,4/24/2020,4/28/2020,Secundario,Cuidado,,,961,8
+1445,61,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,4/22/2020,4/24/2020,4/28/2020,,,,,,7
+1446,19,M,Cuba,Cuba,SC,Palma Soriano,Indeterminada,,4/20/2020,4/21/2020,4/28/2020,Indeterminada,Cuidado,,,,58
+1447,62,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/20/2020,4/23/2020,4/28/2020,,,,,1286,12
+1448,10,F,Cuba,Cuba,HO,Baguanos,Cont-Cub-COVID-19,,Asintomatico ,4/5/2020,4/28/2020,Secundario,Cuidado,,,1017,7
+1449,46,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,4/20/2020,4/21/2020,4/28/2020,,,,,1427,12
+1450,63,M,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/24/2020,4/24/2020,4/28/2020,,,,,,80
+1451,71,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/22/2020,4/22/2020,4/28/2020,,,,,,13
+1452,77,M,Cuba,Cuba,LH,Regla,Indeterminada,,4/20/2020,4/24/2020,4/28/2020,,,,,,22
+1453,23,F,Cuba,Cuba,LH,10 de Octubre,Cont-Cub-COVID-19,,4/24/2020,4/25/2020,4/28/2020,,,,,,11
+1454,77,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/20/2020,4/24/2020,4/28/2020,,Fallecido,5/1/2020,,,9
+1455,22,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/22/2020,4/23/2020,4/28/2020,,,,,,7
+1456,19,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1457,18,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1458,18,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1459,22,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,6
+1460,23,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,6
+1461,19,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,6
+1462,20,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1463,20,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1464,19,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico ,4/16/2020,4/28/2020,,,,,,16
+1465,41,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomatico ,4/25/2020,4/28/2020,,,,,,8
+1466,42,M,Cuba,Cuba,LH,Plaza,Indeterminada,,4/24/2020,4/26/2020,4/28/2020,,,,,,8
+1467,54,F,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,4/13/2020,4/26/2020,4/28/2020,,,,,,16
+1468,11 meses,M,Cuba,Cuba,LH,Plaza,Indeterminada,,4/20/2020,25/04/2020,4/29/2020,,,,,,8
+1469,19,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,4/23/2020,4/20/2020,4/29/2020,,,,,1119,11
+1470,44,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/22/2020,4/24/2020,4/29/2020,,,,,1174,12
+1471,75,M,Cuba,Cuba,SC,Santiago de Cuba,Indeterminada,,4/23/2020,4/24/2020,4/29/2020,Indeterminada,Cuidado,,,,25
+1472,12,M,Cuba,Cuba,GT,Guantanamo,Cont-Cub-COVID-19,,Asintomático,4/22/2020,4/29/2020,Secundario,Cuidado,,,1235,17
+1473,47,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,Asintomática,4/19/2020,4/29/2020,Secundario,Cuidado,,,879,11
+1474,45,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,4/19/2020,4/20/2020,4/29/2020,,,,,,12
+1475,63,M,Cuba,Cuba,LT,Puerto Padre,Cont-Cub-COVID-19,,Asintomático,4/23/2020,4/29/2020,Secundario,Cuidado,,,1272,15
+1476,52,F,Cuba,Cuba,MT,Jaguey Grande,Indeterminada,,4/23/2020,4/24/2020,4/29/2020,Indeterminada,Cuidado,,,,13
+1477,45,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,Secundario,Cuidado,,,1196,10
+1478,30,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,4/28/2020,4/28/2020,4/29/2020,Secundario,Cuidado,,,,10
+1479,27,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/24/2020,4/24/2020,4/29/2020,Secundario,Cuidado,,,1196,4
+1480,61,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/29/2020,Secundario,Cuidado,,,"1196,1194,1043,1241",14
+1481,57,M,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/29/2020,Secundario,Cuidado,,,,14
+1482,51,M,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-19,,Asintomático,4/26/2020,4/29/2020,Secundario,Cuidado,,,,10
+1483,23,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,4/26/2020,4/27/2020,4/29/2020,Secundario,Cuidado,,,,10
+1484,32,F,Cuba,Cuba,SC,San Luis,Indeterminada,,Asintomática,4/23/2020,4/29/2020,Indeterminada,Cuidado,,,,11
+1485,27,F,Cuba,Venezuela,AR,Artemisa,Indeterminada,4/23/2020,Asintomático,4/23/2020,4/29/2020,Indeterminada,Cuidado,,,,11
+1486,95,F,Cuba,Cuba,LH,La Lisa,Indeterminada,,4/25/2020,4/26/2020,4/29/2020,,Fallecido,4/29/2020,,,13
+1487,28,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/29/2020,,,,,1423,10
+1488,27,F,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/25/2020,4/29/2020,4/29/2020,,,,,,11
+1489,30,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,"1218, 1156",11
+1490,21,M,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/29/2020,Secundario,Cuidado,,,1431,22
+1491,50,M,Cuba,Cuba,CF,Cienfuegos,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/29/2020,Secundario,Cuidado,,,1431,23
+1492,57,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1493,49,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1494,35,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1495,49,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1496,52,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1497,53,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1498,58,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1499,51,F,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomática,4/29/2020,4/29/2020,,,,,,59
+1500,32,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomático,4/6/2020,4/29/2020,,,,,606,9
+1501,56,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/29/2020,,,,,,3
+1502,29,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,4/20/2020,4/21/2020,4/30/2020,,Alta,5/7/2020,,,10
+1503,56,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,4/26/2020,4/26/2020,4/30/2020,,,,,,11
+1504,43,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,4/24/2020,4/27/2020,4/30/2020,,,,,,12
+1505,30,M,Cuba,Cuba,SS,Cabaiguan,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,Secundario,Cuidado,,,,14
+1506,64,M,Cuba,Cuba,SS,Cabaiguán,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,Secundario,Cuidado,,,,24
+1507,31,M,Cuba,Cuba,SS,Cabaiguán,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,Secundario,Cuidado,,,,24
+1508,51,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,4/25/2020,4/28/2020,4/30/2020,,,,,,14
+1509,53,F,Cuba,Cuba,VC,Manicaragua,Cont-Cub-COVID-19,,Asintomático,4/30/2020,4/30/2020,Secundario,Cuidado,,,,14
+1510,53,F,Cuba,Cuba,MT,Martí,Cont-Cub-COVID-19,,4/17/2020,4/27/2020,4/30/2020,Secundario,Cuidado,,,,12
+1511,75,M,Cuba,Cuba,MT,MT,Indeterminada,,4/25/2020,4/26/2020,4/30/2020,Secundario,Cuidado,,,,10
+1512,51,M,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-19,,Asintomático,4/30/2020,4/30/2020,Secundario,Cuidado,,,,15
+1513,41,F,Cuba,Cuba,LH,San Miguel del Padrón,Indeterminada,,4/25/2020,4/26/2020,4/30/2020,,,,,,8
+1514,51,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/30/2020,4/30/2020,,Alta,5/7/2020,,,10
+1515,31,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/22/2020,4/30/2020,,,,,,14
+1516,63,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/22/2020,4/30/2020,,,,,,15
+1517,33,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/22/2020,4/30/2020,,,,,,14
+1518,30,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,10
+1519,72,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,4/22/2020,4/28/2020,4/30/2020,,Fallecido,4/30/2020,,,12
+1520,42,M,Cuba,Cuba,LH,Cerro,Indeterminada,,4/24/2020,4/24/2020,4/30/2020,,,,,,14
+1521,69,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,4/30/2020,,,,,,277
+1522,49,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,277
+1523,79,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,,,,,,277
+1524,72,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,,,,,,277
+1525,77,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,,,,,,277
+1526,67,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,277
+1527,57,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,277
+1528,60,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,277
+1529,72,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,65
+1530,28,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/27/2020,,4/30/2020,,,,,,12
+1531,54,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/28/2020,4/30/2020,,,,,,152
+1532,80,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/29/2020,4/30/2020,,,,,,277
+1533,75,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,,,,,,277
+1534,52,M,Cuba,Cuba,LH,Guanabacoa,Indeterminada,,Asintomático,4/26/2020,4/30/2020,,,,,,14
+1535,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,4/29/2020,4/29/2020,4/30/2020,,Fallecido,4/30/2020,,,277
+1536,43,M,Cuba,Cuba,LH,Habana del Este,Indeterminada,,4/18/2020,4/26/2020,4/30/2020,,,,,,18
+1537,78,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/27/2020,4/30/2020,,,,,,277
+1538,74,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/1/2020,,,,,,10
+1539,60,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/1/2020,,,,,,10
+1540,26,M,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,Asintomatico,4/25/2020,5/1/2020,Secundario,Cuidado,,,,8
+1541,43,M,Cuba,Cuba,VC,Sta Clara,Indeterminada,,26-Apr,4/27/2020,5/1/2020,Indeterminada,Cuidado,,,,15
+1542,73,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,4/30/2020,4/30/2020,5/1/2020,,,,,,29
+1543,30,F,Cuba,Cuba,MT,Cardenas,,,4/25/2020,4/28/2020,5/1/2020,Secundario,Secundario,,,,
+1544,26,F,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,Asintomatico,4/25/2020,5/2/2020,Secundario,Cuidado,,,,11
+1545,48,M,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-19,,4/25/2020,4/25/2020,5/1/2020,Secundario,Cuidado,,,,
+1546,56,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1547,61,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1548,77,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1549,54,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1550,60,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1551,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1552,64,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1553,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1554,70,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1555,69,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1556,65,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1557,63,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1558,55,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1559,57,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1560,57,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1561,63,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1562,50,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1563,63,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1564,48,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1565,50,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1566,73,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,4/30/2020,4/30/2020,5/1/2020,,,,,,27
+1567,87,M,Cuba,Cuba,HO,Holguin,Indeterminada,,4/18/2020,4/26/2020,5/1/2020,Indeterminada,Fallecido,5/1/2020,,,
+1568,36,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,Asintomatico,4/27/2020,5/1/2020,Secundario,Cuidado,,,,12
+1569,84,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1570,64,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1571,79,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1572,52,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1573,60,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1574,55,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1575,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1576,64,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1577,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1578,48,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1579,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1580,56,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1581,50,F,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1582,67,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1583,69,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1584,53,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,Fallecido,5/9/2020,,,27
+1585,58,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,Fallecido,5/2/2020,,,27
+1586,67,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1587,68,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1588,57,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1589,66,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1590,58,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1591,82,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1592,72,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1593,52,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1594,78,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1595,54,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1596,64,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1597,62,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1598,53,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1599,76,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1600,62,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1601,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1602,63,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/1/2020,,,,,,27
+1603,21,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,4/27/2020,4/28/2020,5/1/2020,,,,,,2
+1604,21,M,Cuba,Cuba,LH,San Miguel del Padrón,Indeterminada,,4/20/2020,4/28/2020,5/1/2020,,,,,,7
+1605,21,M,Cuba,Cuba,GR,Guisa,Indeterminada,,Asintomatico,5/1/2020,5/1/2020,Secundario,Alta,5/4/2020,,,16
+1606,20,F,Cuba,Cuba,GR,Guisa,Indeterminada,,Asintomatico,5/1/2020,5/1/2020,Primario ,Alta,5/4/2020,,,6
+1607,49,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/1/2020,,,,,1451,12
+1608,14,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/1/2020,,,,,1451,13
+1609,26,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/27/2020,5/1/2020,,,,,,15
+1610,39,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintomático,4/27/2020,5/1/2020,,,,,1373,9
+1611,38,F,Cuba,Cuba,GT,Baracoa,en estudio ,,4/17/2020,4/27/2020,5/1/2020,Indeterminada,Alta,5/7/2020,,,22
+1612,19,M,Cuba,Cuba,MT,Jovellanos,,,Asintomatico,5/2/2020,5/2/2020,Secundario,Secundario ,,,,29
+1613,12,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/18/2020,5/2/2020,,,,,1032,20
+1614,4,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomático,4/25/2020,5/2/2020,,,,,1379,9
+1615,57,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/2/2020,,,,,1454,5
+1616,29,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/18/2020,5/2/2020,,,,,1032,18
+1617,54,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/18/2020,5/2/2020,,,,,1032,17
+1618,31,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,1415,9
+1619,51,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/18/2020,5/2/2020,,,,,1032,15
+1620,1,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomático,4/25/2020,5/2/2020,,,,,1508,9
+1621,9,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,1392,8
+1622,45,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,,2
+1623,9,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-19,,Asintomático,4/27/2020,5/2/2020,,,,,1426,11
+1624,56,M,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,Asintomático,4/21/2020,5/2/2020,,,,,1187,8
+1625,32,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,Asintomático,4/21/2020,5/2/2020,,,,,1441,26
+1626,12,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,Asintomático,4/21/2020,5/2/2020,,,,,1187.138,4
+1627,75,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/20/2020,5/2/2020,,,,,,50
+1628,17,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomático,4/25/2020,5/2/2020,,,,,1508,11
+1629,74,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/2/2020,,,,,1427,8
+1630,62,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintomático,4/20/2020,5/2/2020,,,,,,50
+1631,76,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,Asintomático,4/20/2020,5/2/2020,,,,,,50
+1632,13,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,Asintomático,4/14/2020,5/2/2020,,Alta,5/2/2020,,783,20
+1633,24,F,Cuba,Cuba,LH,10 de octubre,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,1443,11
+1634,38,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,,12
+1635,12,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,1443,11
+1636,20,F,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,Asintomático,4/24/2020,5/2/2020,,,,,,5
+1637,21,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/28/2020,5/2/2020,,,,,,9
+1638,80,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/2/2020,,,,,1454,5
+1639,59,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,Fallecido,5/9/2020,,,50
+1640,57,F,Cuba,Cuba,MY,Batabano,Indeterminada,,Asintomatico,4/30/2020,5/2/2020,Indeterminada,Cuidado,,,,14
+1641,40,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintomático,5/2/2020,5/2/2020,,,,,,50
+1642,19,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomático,4/28/2020,5/2/2020,,,,,,12
+1643,35,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,Asintomático,4/18/2020,5/2/2020,,,,,1032,15
+1644,34,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,4/27/2020,4/27/2020,5/2/2020,,,,,,13
+1645,31,M,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-20,,Asintomático,4/26/2020,5/2/2020,,,,,1346,7
+1646,77,F,Cuba,Cuba,LH,Plaza,Indeterminada,,Asintomático,4/23/2020,5/2/2020,Indeterminada,Fallecido,5/7/2020,,,3
+1647,27,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/27/2020,5/2/2020,,,,,1373,7
+1648,1,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,4/27/2020,4/27/2020,5/2/2020,,,,,1373,7
+1649,4,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,4/27/2020,4/27/2020,5/2/2020,,,,,1373,7
+1650,28,F,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-20,,Asintomático,5/3/2020,5/3/2020,Secundario,Cuidado,,,,4
+1651,63,F,Cuba,Cuba,IJ,IJ,Cont-Cub-COVID-20,,Asintomático,4/29/2020,5/3/2020,Secundario,Cuidado,,,695,8
+1652,43,F,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,Asintomático,5/2/2020,5/3/2020,,,,,,3
+1653,35,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-20,,5/2/2020,5/2/2020,5/3/2020,,,,,,5
+1654,25,F,Cuba,Cuba,SC,Santiago de Cuba,Cont-Cub-COVID-20,,4/28/2020,4/29/2020,5/3/2020,Secundario,Alta,5/3/2020,,249,20
+1655,43,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/30/2020,5/3/2020,,,,,,9
+1656,74,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-20,,5/2/2020,5/3/2020,5/3/2020,,,,,,27
+1657,32,M,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-20,,Asintomático,4/29/2020,5/3/2020,,,,,,5
+1658,29,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-20,,Asintomático,4/30/2020,5/3/2020,,,,,,15
+1659,28,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/29/2020,5/3/2020,,,,,,6
+1660,59,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/29/2020,5/3/2020,,,,,,5
+1661,58,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/29/2020,5/3/2020,,,,,,20
+1662,26,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/29/2020,5/3/2020,,,,,,14
+1663,52,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/29/2020,5/3/2020,,,,,,4
+1664,47,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/29/2020,5/3/2020,,,,,1063,14
+1665,35,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/26/2020,5/3/2020,,,,,,9
+1666,20,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-20,,Asintomático,4/26/2020,5/3/2020,,,,,,9
+1667,21,F,Cuba,Cuba,LH,La Habana Vieja,Cont-Cub-COVID-20,,Asintomático,4/26/2020,5/3/2020,,,,,,13
+1668,54,M,Cuba,Venezuela,LH,Cerro,Exterior,,Asintomático,4/23/2020,5/3/2020,,,,,,45
+1669,94,M,Cuba,Cuba,SS,Sancti Spiritus,Indeterminada,,4/28/2020,5/1/2020,5/4/2020,Indeterminada,Fallecido,5/6/2020,,,7
+1670,20,M,Cuba,Cuba,CM,Camaguey,Indeterminada,,4/29/2020,5/2/2020,5/4/2020,Secundario,Cuidado,,,,46
+1671,16,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,5/1/2020,5/2/2020,5/4/2020,,,,,,7
+1672,67,M,Cuba,Cuba,LH ,Cotorro,Cont-Cub-COVID-19,,4/24/2020,4/27/2020,5/4/2020,,,,,,80
+1673,81,F,Cuba,Cuba,HO,Banes,Indeterminada,,4/22/2020,4/23/2020,5/4/2020,Indeterminada,Grave,,,,23
+1674,49,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-19,,Asintomático,5/4/2020,5/4/2020,,,,,,13
+1675,23,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintomático,4/29/2020,5/4/2020,,,,,,20
+1676,12,F,Cuba,Cuba,LH,Cerro,Indeterminada,,4/30/2020,4/30/2020,5/4/2020,,,,,,8
+1677,83,M,Cuba,Cuba,VC,Camajuani,Indeterminada,,4/30/2020,4/30/2020,5/4/2020,Indeterminada,Fallecido,5/6/2020,,,12
+1678,59,M,Cuba,Cuba,VC,Santa Clara,Indeterminada,,4/29/2020,4/30/2020,5/4/2020,Indeterminada,Cuidado,,,,24
+1679,70,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,Asintomático,5/1/2020,5/4/2020,,,,,,8
+1680,47,M,Cuba,Cuba,HO,Banes,Indeterminada,,Asintomático,4/29/2020,5/4/2020,Secundario,Cuidado,,,,7
+1681,48,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,Asintomático,4/29/2020,5/4/2020,,,,,,5
+1682,70,F,Cuba,Cuba,MY,San Jose,Cont-Cub-COVID-19,,Asintomático,5/2/2020,5/4/2020,Secundario,Cuidado,,,,5
+1683,51,F,Cuba,Cuba,LH,La Lisa,Cont-Cub-COVID-19,,Asintomático,4/30/2020,5/4/2020,,,,,,29
+1684,51,F,Cuba,Cuba,LH,San Miguel del Padrón ,Indeterminada,,Asintomático,5/1/2020,5/4/2020,,,,,,6
+1685,51,F,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,4/30/2020,5/1/2020,5/4/2020,,,,,,36
+1686,64,M,Cuba,Cuba,CA,Moron,Cont-Cub-COVID-19,,Asintomatico,5/1/2020,5/5/2020,Secundario,Cuidado,,,,10
+1687,30,F,Cuba,Mexico,CM,Nuevitas,Exterior,4/29/2020,4/29/2020,5/2/2020,5/5/2020,Primario ,Cuidado,,,,14
+1688,52,F,Cuba,Ecuador,SS,Taguasco,Exterior,5/2/2020,Asintomático,5/3/2020,5/5/2020,Primario ,Cuidado,,,,6
+1689,54,M,Cuba,Ecuador,SS,Taguasco,Exterior,5/2/2020,Asintomático,5/3/2020,5/5/2020,Primario ,Cuidado,,,,6
+1690,30,F,Cuba,Cuba,CA,Ciego de Avila,,,Asintomatico,5/1/2020,5/5/2020,Secundario,Cuidado,,,,8
+1691,53,F,Cuba,Cuba,LH,Marianao,,,Asintomatico,5/5/2020,5/5/2020,Secundario,Cuidado,,,,10
+1692,50,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,Asintomatico,4/27/2020,5/5/2020,Secundario,Cuidado,,,,16
+1693,48,M,Cuba,Cuba,HO,Holguin,Cont-Cub-COVID-19,,Asintomatico,4/28/2020,5/5/2020,Secundario,Cuidado,,,,18
+1694,55,F,Cuba,Cuba,LH,Plaza,,,Asintomatico,5/2/2020,5/5/2020,Secundario,Cuidado,,,,10
+1695,59,M,Cuba,Cuba,LH,San Miguel del Padrón,,,Asintomatico,5/2/2020,5/5/2020,Secundario,Cuidado,,,,10
+1696,43,F,Cuba,Cuba,LH,San Miguel del Padrón,,,Asintomatico,4/28/2020,5/5/2020,Secundario,Cuidado,,,,18
+1697,58,F,Cuba,Cuba,LH,Lisa,,,Asintomatico,4/28/2020,5/5/2020,Secundario,Cuidado,,,,12
+1698,85,F,Cuba,Cuba,LH,10-Oct,,,Asintomatico,5/1/2020,5/5/2020,Secundario,Cuidado,,,,16
+1699,14,F,Cuba,Cuba,LH,Marianao,,,Asintomatico,4/28/2020,5/5/2020,Secundario,Cuidado,,,,11
+1700,85,F,Cuba,Cuba,MY,San Jose,,,Asintomatico,5/4/2020,5/5/2020,Secundario,Cuidado,,,,14
+1701,71,M,Cuba,Cuba,VC,Sta Clara,Indeterminada,,4/29/2020,5/1/2020,5/5/2020,Indeterminada,Cuidado,,,,14
+1702,27,M,Cuba,Cuba,VC,Sta Clara,Indeterminada,,5/1/2020,5/3/2020,5/5/2020,Indeterminada,Cuidado,,,,29
+1703,52,M,Cuba,Cuba,LH,San Miguel del Padron,,,4/27/2020,5/3/2020,5/5/2020,Indeterminada,Cuidado,,,,8
+1704,23,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,4/29/2020,5/4/2020,5/6/2020,secundario,Cuidado,,,767,14
+1705,39,M,Cuba,Cuba,AR,Caimito,Indeterminada,,4/30/2020,5/1/2020,5/6/2020,Indeterminada,Cuidado,,,,6
+1706,35,M,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-19,,Asintomatico,5/5/2020,5/6/2020,Secundario,Cuidado,,,1667,11
+1707,1,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,14
+1708,43,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,30
+1709,27,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,32
+1710,51,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,14
+1711,28,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,9
+1712,85,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,33
+1713,54,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,5/5/2020,5/4/2020,5/6/2020,Secundario,Cuidado,,,,3
+1714,33,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,14
+1715,86,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,5
+1716,62,M,Cuba,Cuba,CA,Ciego de Ávila,Indeterminada,,4/29/2020,4/30/2020,5/6/2020,Primario ,Cuidado,,,,2
+1717,27,M,cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,5/2/2020,5/3/2020,5/6/2020,Secundario,Cuidado,,,,11
+1718,92,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-19,,5/1/2020,5/2/2020,5/6/2020,Secundario,Fallecido,5/6/2020,,,7
+1719,20,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico,5/6/2020,5/6/2020,Secundario,Cuidado,,,,10
+1720,48,F,cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico,5/6/2020,5/6/2020,Secundario,Cuidado,,,,8
+1721,21,M,Cuba,Cuba,LH,Marianao,Cont-Cub-COVID-19,,Asintomatico,5/6/2020,5/6/2020,Secundario,Cuidado,,,,3
+1722,32,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico,5/6/2020,5/6/2020,Secundario,Cuidado,,,,5
+1723,55,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,4/29/2020,5/4/2020,5/6/2020,Primario ,Cuidado,,,,13
+1724,19,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,4/29/2020,4/29/2020,5/6/2020,Secundario,Cuidado,,,,3
+1725,21,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico,5/3/2020,5/6/2020,Secundario,Cuidado,,,,19
+1726,42,M,Cuba,Cuba,LH,Marianao,Indeterminada,,4/4/2020,4/4/2020,5/6/2020,Primario ,Cuidado,,,,2
+1727,70,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintomatico,5/3/2020,5/6/2020,Secundario,Cuidado,,,,9
+1728,79,M,Cuba,Cuba,LH,Guanabacoa,Cont-Cub-COVID-19,,5/1/2020,5/4/2020,5/6/2020,Secundario,Fallecido,5/6/2020,,,10
+1729,47,F,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/4/2020,5/6/2020,Transmisión local,Cuidado,,,,19
+1730,27,F,Cuba,Cuba,MT,Cardenas,Cont-Cub-COVID-20,,Asintomatico,5/7/2020,5/7/2020,Secundario,Cuidado,,,,10
+1731,50,F,Cuba,Cuba,LH,San Miguel del Padrón,Cont-Cub-COVID-21,,Asintomatico,5/2/2020,5/7/2020,Secundario,Cuidado,,,,10
+1732,69,M,Cuba,Cuba,LT,Amancio Rodríguez,Indeterminada,,5/1/2020,5/3/2020,5/7/2020,Indeterminada,Cuidado,,,,12
+1733,57,F,Cuba,Cuba,VC,Corralillo,Cont-Cub-COVID-19,,Asintomatico,5/7/2020,5/7/2020,Secundario,Cuidado,,,,
+1734,47,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,4/30/2020,5/4/2020,5/7/2020,Transmisión local,Cuidado,,,,33
+1735,53,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-19,,Asintomatico,5/7/2020,5/7/2020,Transmisión local,Cuidado,,,,7
+1736,50,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-20,,4/30/2020,5/2/2020,5/7/2020,Secundario,Cuidado,,,,12
+1737,76,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-21,,Aintomatico,5/7/2020,5/7/2020,Secundario,Cuidado,,,,32
+1738,24,F,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-22,,Aintomatico,4/30/2020,5/7/2020,Secundario,Cuidado,,,,19
+1739,26,M,Cuba,Cuba,CA,Morón,Cont-Cub-COVID-23,,Aintomatico,5/1/2020,5/7/2020,Secundario,Cuidado,,,,11
+1740,54,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Aintomatico,5/7/2020,5/7/2020,Indeterminada,Cuidado,,,,15
+1741,34,F,Cuba,Cuba,CM,Camagüey,Cont-Cub-COVID-19,,Asintom,5/7/2020,5/7/2020,Secundario,Cuidado,,,,
+1742,21,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,5/2/2020,5/4/2020,5/8/2020,Indeterminada,Cuidado,,,,18
+1743,55,F,Cuba,Cuba,MT,Matanzas,Indeterminada,,5/3/2020,5/4/2020,5/8/2020,Indeterminada,Cuidado,,,,13
+1744,47,M,Mexico,Cuba,PR,Pinar del Río,Exterior,4/29/2020,Asintom,5/8/2020,5/8/2020,Primario ,Cuidado,,,,27
+1745,55,F,Cuba,Cuba,LH,Centro Habana,Indeterminada,,Asintom,4/28/2020,5/8/2020,Indeterminada,Cuidado,,,,14
+1746,25,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-21,,Asintom,5/7/2020,5/8/2020,Secundario,Cuidado,,,,9
+1747,34,F,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-22,,Asintom,5/5/2020,5/8/2020,Secundario,Cuidado,,,,9
+1748,32,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-23,,Asintom,5/7/2020,5/8/2020,Secundario,Cuidado,,,,17
+1749,55,F,Cuba,Cuba,LH,Boyeros,Indeterminada,,Asintom,5/8/2020,5/8/2020,Indeterminada,Cuidado,,,,14
+1750,52,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-23,,Asintom,5/8/2020,5/8/2020,Secundario,Cuidado,,,,10
+1751,65,M,Cuba,Cuba,CA,Venezuela,Indeterminada,,4/24/2020,5/4/2020,5/8/2020,Indeterminada,Fallecido,5/9/2020,,,10
+1752,22,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-23,,5/5/2020,5/5/2020,5/8/2020,Secundario,Cuidado,,,,7
+1753,51,M,Cuba,Cuba,LH,10 de Octubre,Indeterminada,,Asintom,5/8/2020,5/8/2020,Indeterminada,Cuidado,,,,18
+1754,59,F,Cuba,Cuba,LH,Plaza de la Revolucion,Cont-Cub-COVID-23,,Asintom,5/8/2020,5/8/2020,Secundario,Cuidado,,,,9
+1755,17,M,Cuba,Cuba,LH,Playa,Indeterminada,,5/4/2020,5/4/2020,5/9/2020,Indeterminada,Cuidado,,,,11
+1756,59,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-23,,5/5/2020,5/5/2020,5/9/2020,Secundario,Cuidado,,,,8
+1757,44,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-24,,5/5/2020,5/6/2020,5/9/2020,Secundario,Cuidado,,,,17
+1758,31,F,Cubana,cuba,LH,Plaza,Cont-Cub-COVID-25,,5/4/2020,5/5/2020,5/9/2020,Secundario,Cuidado,,,,3
+1759,20,F,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-26,,5/4/2020,5/4/2020,5/9/2020,Secundario,Cuidado,,,,14
+1760,67,M,Cuba,Cuba,VC,Santa Clara,Cont-Cub-COVID-27,,Asintom,5/8/2020,5/9/2020,Secundario,Cuidado,,,,19
+1761,34,F,Cuba,Cuba,SS,Sancti Spiritus,Cont-Cub-COVID-27,,Asintom,5/5/2020,5/9/2020,Secundario,Cuidado,,,,8
+1762,66,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-28,,Asintom,5/9/2020,5/9/2020,Secundario,Cuidado,,,,1
+1763,55,M,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-29,,Asintom,5/6/2020,5/9/2020,Secundario,Cuidado,,,,6
+1764,78,M,Cuba,Cuba,LH,Plaza,Indeterminada,,5/5/2020,5/6/2020,5/9/2020,Indeterminada,Cuidado,,,,1
+1765,6,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-29,,5/6/2020,5/7/2020,5/9/2020,Secundario,Cuidado,,,,7
+1766,85,F,Cuba,Cuba,AR,Bauta,Indeterminada,,4/28/2020,4/29/2020,5/9/2020,Indeterminada,Fallecido,5/12/2020,,,10
+1767,75,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-20,,5/1/2020,5/6/2020,5/10/2020,Secundario,Cuidado,,,,69
+1768,52,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-20,,5/6/2020,5/6/2020,5/10/2020,Secundario,Cuidado,,,,70
+1769,52,F,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-20,,Asintom,5/9/2020,5/10/2020,Secundario,Cuidado,,,,11
+1770,38,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-20,,Asintom,5/9/2020,5/10/2020,Secundario,Cuidado,,,,8
+1771,27,M,Cuba,Cuba,LH,Regla,Cont-Cub-COVID-20,,Asintom,5/9/2020,5/10/2020,Secundario,Cuidado,,,,12
+1772,25,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-21,,Asintom,5/6/2020,5/10/2020,Secundario,Cuidado,,,,8
+1773,25,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-22,,Asintom,4/30/2020,5/10/2020,Secundario,fallecido,5/10/2020,,,8
+1774,8 m,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,8
+1775,47,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,4/30/2020,5/10/2020,Secundario,Cuidado,,,,33
+1776,40,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,22
+1777,21,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,6
+1778,13,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,17
+1779,34,F,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,22
+1780,68,M,Cuba,Cuba,CM,Camaguey,Cont-Cub-COVID-20,,Asintom,5/7/2020,5/10/2020,Secundario,Cuidado,,,,13
+1781,46,F,Cuba,Cuba,VC,Sta Clara,Cont-Cub-COVID-20,,Asintom,5/9/2020,5/10/2020,Secundario,Cuidado,,,,13
+1782,43,F,Cuba,Cuba,LH,Habana Vieja,Cont-Cub-COVID-20,,Asintom,5/10/2020,5/10/2020,Secundario,Cuidado,,,,14
+1783,56,M,Cuba,Cuba,CM,Florida,Indeterminada,,Asintom,5/10/2020,5/10/2020,Indeterminada,Cuidado,,,,25
+1784,55,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,43957,43957,43962,secundario,Cuidado,,,,18
+1785,38,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,43956,43957,43962,secundario,Cuidado,,,,12
+1786,38,F,Cuba,Cuba,CA,Ciego de Avila,Cont-Cub-COVID-19,,Asintom,43956,43962,secundario,Cuidado,,,,10
+1787,55,M,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintom,43950,43962,secundario,Cuidado,,,,9
+1788,40,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43958,43962,secundario,Cuidado,,,,119
+1789,59,M,Cuba,Cuba,LH,Lisa,Cont-Cub-COVID-19,,Asintom,43946,43962,secundario,Cuidado,,,,6
+1790,67,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,Asintom,43958,43962,secundario,Cuidado,,,,11
+1791,85,M,Cuba,Cuba,LH,Centro Habana,Indeterminada,,43954,43955,43962,Indeterminada,Cuidado,,,,6
+1792,55,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintom,43951,43962,secundario,Cuidado,,,,5
+1793,59,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintom,43958,43962,secundario,Cuidado,,,,7
+1794,45,M,Cuba,Cuba,LH,Habana del Este,Cont-Cub-COVID-19,,Asintom,43957,43962,secundario,Cuidado,,,,7
+1795,25,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1796,53,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1797,27,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1798,38,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1799,9 m,M,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1800,34,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1801,38,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,63
+1802,23,F,Cuba,Cuba,LH,,Cont-Cub-COVID-19,,43959,43959,43962,secundario,Cuidado,,,,14
+1803,73,M,Cuba,Cuba,LH,Cotorro,Cont-Cub-COVID-19,,Asintom,43962,43962,secundario,Cuidado,,,,18
+1804,52,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43960,43962,secundario,Cuidado,,,,63
+1805,53,M,Cuba,Cuba,LH,Cerro,Cont-Cub-COVID-19,,43957,43960,43963,secundario,Cuidado,,,,17
+1806,25,F,Cuba,Cuba,LH,Plaza,Cont-Cub-COVID-19,,Asintom,43950,43963,secundario,Cuidado,,,,7
+1807,31,M,Cuba,Cuba,LH,Lisa,Cont-Cub-COVID-19,,Asintom,43951,43963,secundario,Cuidado,,,,32
+1808,39,M,Cuba,Cuba,CA,Bolivia,Cont-Cub-COVID-19,,Asintom,43959,43963,secundario,Cuidado,,,,35
+1809,40,M,Cuba,Mexico,LH,San Miguel Padron,Exterior,43950,Asintom,43950,43963,Primario ,Cuidado,,,,8
+1810,68,F,Cuba,Mexico,LH,Arroyo Naranjo,Indeterminada,,43953,43960,43963,Indeterminada,Cuidado,,,,8
+1811,27,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,9
+1812,6,M,Cuba,Cuba,LH,San Miguel del Padron,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,9
+1813,56,F,Cuba,Cuba,LH,Playa,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,7
+1814,57,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintom,43958,43964,secundario,Cuidado,,,,10
+1815,39,F,Cuba,Cuba,LH,Centro Habana,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,4
+1816,37,F,Cuba,Cuba,LH,San Miguel Padron,Cont-Cub-COVID-19,,Asintom,43958,43964,secundario,Cuidado,,,,21
+1817,56,M,Cuba,Cuba,LH,Boyeros,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,11
+1818,46,M,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintom,43964,43964,secundario,Cuidado,,,,6
+1819,44,F,Cuba,Cuba,LH,Arroyo Naranjo,Cont-Cub-COVID-19,,Asintom,43964,43964,secundario,Cuidado,,,,15
+1820,35,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,10
+1821,41,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,7
+1822,25,M,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,10
+1823,25,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43959,43964,secundario,Cuidado,,,,10
+1824,38,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,7
+1825,45,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,7
+1826,59,F,Cuba,Cuba,MT,Limonar,Cont-Cub-COVID-19,,43963,43964,43964,secundario,Cuidado,,,,11
+1827,46,F,Cuba,Cuba,MT,Matanzas,Cont-Cub-COVID-19,,43960,43960,43964,secundario,Cuidado,,,,14
+1828,35,M,Cuba,Cuba,MT,Jovellanos,Cont-Cub-COVID-19,,Asintom,43964,43964,secundario,Cuidado,,,,4
+1829,28,F,Cuba,Cuba,MT,Arabos,Indeterminada,,43958,43959,43964,Indeterminada,Cuidado,,,,11
+1830,24,M,Cuba,Cuba,LH,Lisa,Cont-Cub-COVID-19,,Asintom,43960,43964,secundario,Cuidado,,,,6

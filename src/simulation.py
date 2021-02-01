@@ -399,7 +399,7 @@ class Simulation:
 
             for _ in range(people):
                 p = region.spawn(random.randint(20, 80))
-                p.set_state(region.states["F"])
+                p.set_state(region.states["Viajero"])
 
 
     def _apply_interventions(self, region: Region):
@@ -428,11 +428,11 @@ class Simulation:
         connections = self._eval_connections(ind)
 
         for other in connections:
-            if other.state != self.state_machine["S"]:
+            if other.state != self.state_machine["Persona"]:
                 continue
 
             if self._eval_infections(ind):
-                other.set_state(self.state_machine["L"])
+                other.set_state(self.state_machine["Contagiado"])
 
 
     def _eval_connections(
