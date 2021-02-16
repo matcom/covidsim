@@ -1,0 +1,7 @@
+{
+    "days": 90,
+    "foreigner_arrivals": 10,
+    "chance_of_infection": 0.01,
+    "initial_infected": 0,
+    "working_population": 0.25
+}

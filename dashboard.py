@@ -1,7 +1,6 @@
-from src import interventions
 import streamlit as st
 import pandas as pd
-
+import json
 from pathlib import Path
 
 
@@ -64,13 +63,31 @@ def main():
                 st.success("💾 Data was saved to `data/transitions.csv`. Clear cache and reload.")
 
 
+    available_params = [f.name for f in (Path(__file__).parent / "params").glob("*.json")]
+
+    default_values = {}
+
+    if available_params:
+        params_name = st.sidebar.selectbox("Parámetros", available_params)
+        
+        with open(f"/src/params/{params_name}") as fp:
+            default_values = json.load(fp)        
+
     parameters = SimulationParameters(
-        days=st.sidebar.number_input("Días a simular", 1, 1000, 90),
-        foreigner_arrivals=st.sidebar.number_input("Llegada de extranjeros", 0, 10000, 10),
-        chance_of_infection=st.sidebar.number_input("Probabilidad de infección", 0.0, 1.0, 0.01),
-        initial_infected=st.sidebar.number_input("Infectados iniciales", 0, 1000, 0),
-        working_population=st.sidebar.slider("Población laboral", 0.0, 1.0, 0.25),
+        days=st.sidebar.number_input("Días a simular", 1, 1000, default_values.get("days", 90)),
+        foreigner_arrivals=st.sidebar.number_input("Llegada de extranjeros", 0, 10000, default_values.get("foreigner_arrivals", 10)),
+        chance_of_infection=st.sidebar.number_input("Probabilidad de infección", 0.0, 1.0, default_values.get("change_of_infection", 0.01)),
+        initial_infected=st.sidebar.number_input("Infectados iniciales", 0, 1000, default_values.get("initial_infected", 0)),
+        working_population=st.sidebar.slider("Población laboral", 0.0, 1.0, default_values.get("working_population", 0.25)),
     )
+
+    save_params_as = st.sidebar.text_input("Salvar parámetros (nombre)")
+    
+    if save_params_as and st.sidebar.button("💾 Salvar"):
+        with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
+            json.dump(parameters.__dict__, fp, indent=4)
+
+        st.sidebar.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
 
 
     with main_container:
