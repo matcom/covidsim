@@ -81,13 +81,14 @@ def main():
         working_population=st.sidebar.slider("Población laboral", 0.0, 1.0, default_values.get("working_population", 0.25)),
     )
 
-    save_params_as = st.sidebar.text_input("Salvar parámetros (nombre)")
-    
-    if save_params_as and st.sidebar.button("💾 Salvar"):
-        with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
-            json.dump(parameters.__dict__, fp, indent=4)
+    with st.sidebar.beta_expander("Salvar parámetros"):
+        save_params_as = st.text_input("Salvar parámetros (nombre)")
+        
+        if st.button("💾 Salvar") and save_params_as:
+            with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
+                json.dump(parameters.__dict__, fp, indent=4)
 
-        st.sidebar.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
+            st.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
 
 
     with main_container:
