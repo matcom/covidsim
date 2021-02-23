@@ -3,6 +3,7 @@ import collections
 import random
 from dataclasses import dataclass
 from typing import Dict, Iterable, List
+import time
 
 import altair as alt
 import numpy as np
@@ -182,8 +183,11 @@ class StreamlitCallback(SimulationCallback):
         self.progress = st.progress(0)
         self.progress_person = st.progress(0)
         self.day = st.empty()
+        self.speed = st.empty()
         self.sick_count = st.empty()
         self.all_count = st.empty()
+        self.total_individuals = 0
+        self.start_iter_time = time.time()
 
         self.chart = st.altair_chart(
             alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
@@ -197,17 +201,20 @@ class StreamlitCallback(SimulationCallback):
         )
 
     def on_day_begin(self, day: int, total_days:int):
-        self.total_individuals = 0
         self.by_state = collections.defaultdict(lambda: 0)
+        self.current_day_total = 0
 
     def on_person(self, person: Person, total_people:int):
         self.total_individuals += 1
-        self.progress_person.progress(self.total_individuals / total_people)
+        self.current_day_total += 1
+        self.progress_person.progress(self.current_day_total / total_people)
         self.by_state[person.state.label] += 1
+        speed = self.total_individuals / (time.time() - self.start_iter_time)
+        self.speed.markdown(f"#### Velocidad: *{speed:0.2f}* ind/s")
+        self.sick_count.markdown(f"#### Individuos simulados: {self.total_individuals}")
 
     def on_day_end(self, day:int, total_days:int):
         self.progress.progress((day + 1) / total_days)
-        self.sick_count.markdown(f"#### Individuos simulados: {self.total_individuals}")
         self.all_count.code(dict(self.by_state))
         self.day.markdown(f"#### Día: {day+1}")
 
@@ -357,7 +364,7 @@ class Simulation:
             other_ages = social[social['location']=='work'][["other", "value"]]
 
             for age, lam in other_ages.itertuples(index=False):
-                people = np.random.poisson(lam * p_work)
+                people = np.random.poisson(lam)
 
                 for i in range(people):
                     yield person.region.spawn(age)
