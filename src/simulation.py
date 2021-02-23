@@ -1,13 +1,15 @@
+import abc
 import collections
 import random
-from typing import Dict, Iterable, List
 from dataclasses import dataclass
-from .data import *
+from typing import Dict, Iterable, List
 
 import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+
+from .data import *
 
 
 class TransitionEstimator:
@@ -163,6 +165,57 @@ class SimulationParameters:
         return SimulationParameters(**self.__dict__)
 
 
+class SimulationCallback:
+    def on_day_begin(self, day:int, total_days:int):
+        pass
+
+    def on_day_end(self, day:int, total_days:int):
+        pass
+
+    def on_person(self, person: Person, total_people:int):
+        pass
+
+
+class StreamlitCallback(SimulationCallback):
+    def __init__(self) -> None:
+        # estadísticas de la simulación
+        self.progress = st.progress(0)
+        self.progress_person = st.progress(0)
+        self.day = st.empty()
+        self.sick_count = st.empty()
+        self.all_count = st.empty()
+
+        self.chart = st.altair_chart(
+            alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
+            .mark_line()
+            .encode(
+                y=alt.Y("personas:Q", title="Individuos"),
+                x=alt.X("dia:Q", title="Días"),
+                color=alt.Color("estado:N", title="Estado"),
+            ),
+            use_container_width=True,
+        )
+
+    def on_day_begin(self, day: int, total_days:int):
+        self.total_individuals = 0
+        self.by_state = collections.defaultdict(lambda: 0)
+
+    def on_person(self, person: Person, total_people:int):
+        self.total_individuals += 1
+        self.progress_person.progress(self.total_individuals / total_people)
+        self.by_state[person.state.label] += 1
+
+    def on_day_end(self, day:int, total_days:int):
+        self.progress.progress((day + 1) / total_days)
+        self.sick_count.markdown(f"#### Individuos simulados: {self.total_individuals}")
+        self.all_count.code(dict(self.by_state))
+        self.day.markdown(f"#### Día: {day+1}")
+
+        self.chart.add_rows(
+            [dict(dia=day + 1, personas=v, estado=k) for k, v in self.by_state.items()]
+        )
+
+
 class Simulation:
     def __init__(
         self, 
@@ -180,36 +233,19 @@ class Simulation:
         self.state_machine = state_machine
         self.interventions = interventions
 
-    def run(self):
+    def run(self, callback:SimulationCallback=None):
         simulation_time = self.parameters.days
 
-        # estadísticas de la simulación
-        progress = st.progress(0)
-        progress_person = st.progress(0)
-        day = st.empty()
-        sick_count = st.empty()
-        all_count = st.empty()
-
-        chart = st.altair_chart(
-            alt.Chart(pd.DataFrame(columns=["personas", "dia", "estado"]))
-            .mark_line()
-            .encode(
-                y=alt.Y("personas:Q", title="Individuos"),
-                x=alt.X("dia:Q", title="Días"),
-                color=alt.Color("estado:N", title="Estado"),
-            ),
-            use_container_width=True,
-        )
+        if callable is None:
+            callback = SimulationCallback()
 
         # por cada paso de la simulación
-        for i in range(simulation_time):
-
-            total_individuals = 0
-            by_state = collections.defaultdict(lambda: 0)
+        for day in range(simulation_time):
+            callback.on_day_begin(day, simulation_time)
 
             # por cada región
             for region in self.regions:
-                parameters, contact = self._apply_interventions(region, self.parameters, self.contact, i)
+                parameters, contact = self._apply_interventions(region, self.parameters, self.contact, day)
                 
                 # llegadas del estranjero
                 self._simulate_arrivals(region, parameters)
@@ -222,9 +258,7 @@ class Simulation:
                     if ind.is_infectious:
                         self._simulate_spread(ind, parameters, contact)
 
-                    progress_person.progress((j+1) / len(individuals))
-                    total_individuals += 1
-                    by_state[ind.state.label] += 1
+                    callback.on_person(ind, len(individuals))
 
                 # movimientos
                 for n_region in self.regions:
@@ -232,14 +266,7 @@ class Simulation:
                         # calcular personas que se mueven de una region a otras
                         self._simulate_transportation(region, n_region)
 
-            progress.progress((i + 1) / simulation_time)
-            sick_count.markdown(f"#### Individuos simulados: {total_individuals}")
-            all_count.code(dict(by_state))
-            day.markdown(f"#### Día: {i+1}")
-
-            chart.add_rows(
-                [dict(dia=i + 1, personas=v, estado=k) for k, v in by_state.items()]
-            )
+            callback.on_day_end(day, simulation_time)
 
 
     def _simulate_arrivals(self, region: Region, parameters: SimulationParameters):

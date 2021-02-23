@@ -9,7 +9,7 @@ st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide'
 
 from src import data
 from src.interventions import INTERVENTIONS
-from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine
+from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine, StreamlitCallback
 
 
 def main():
@@ -96,7 +96,7 @@ def main():
         sim = Simulation([region], contact, parameters, transitions, state_machine, interventions)
 
         if st.button("🚀 Simular"):
-            sim.run()
+            sim.run(StreamlitCallback())
 
 
 if __name__ == "__main__":
