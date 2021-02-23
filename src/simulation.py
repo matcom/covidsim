@@ -13,10 +13,17 @@ import streamlit as st
 from .data import *
 
 
+
+def _dummy_cache(f):
+    return f
+cache = _dummy_cache
+
+
 class TransitionEstimator:
     def __init__(self):
         self.data = load_disease_transition()
 
+    @cache
     def transition(self, from_state, age, sex):
         age = (age // 5) * 5
         df = self.data[(self.data["age"] == age) & (self.data["from_state"] == from_state) & (self.data["sex"] == sex)]
@@ -316,7 +323,6 @@ class Simulation:
 
             if self._eval_infections(ind, parameters):
                 other.set_state(self.state_machine["Contagiado"])
-
 
     def _eval_connections(
         # social: Dict[str, Dict[int, Dict[int, float]]], person: "Person"
