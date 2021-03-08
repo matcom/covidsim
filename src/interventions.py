@@ -46,7 +46,7 @@ class CloseAirports(Intervention):
     
     @classmethod
     def description(cls):
-        return "Cerrar aeropuertos"
+        return "✈️ Cerrar aeropuertos"
 
 
 class CloseSchools(Intervention):
@@ -58,7 +58,7 @@ class CloseSchools(Intervention):
 
     @classmethod
     def description(cls):
-        return "Cerrar escuelas"
+        return "🏫 Cerrar escuelas"
 
 
 class StayAtHome(Intervention):
@@ -74,7 +74,7 @@ class StayAtHome(Intervention):
 
     @classmethod
     def description(cls):
-        return "Aislarse en casa"
+        return "🏠 Aislarse en casa"
 
 
 class WearMask(Intervention):
@@ -90,7 +90,7 @@ class WearMask(Intervention):
 
     @classmethod
     def description(cls):
-        return "Usar máscarillas"
+        return "😷 Usar máscarillas"
 
 
 INTERVENTIONS = [CloseAirports, CloseSchools, StayAtHome, WearMask]

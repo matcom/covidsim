@@ -207,6 +207,16 @@ class StreamlitCallback(SimulationCallback):
             use_container_width=True,
         )
 
+        self.deaths_chart = st.altair_chart(
+            alt.Chart(pd.DataFrame(columns=["gender", "age"]))
+            .mark_bar().
+            encode(
+                x="age:O",
+                y="count()",
+                color="gender",
+            )
+        )
+
     def on_day_begin(self, day: int, total_days:int):
         self.by_state = collections.defaultdict(lambda: 0)
         self.current_day_total = 0
@@ -219,6 +229,11 @@ class StreamlitCallback(SimulationCallback):
         speed = self.total_individuals / (time.time() - self.start_iter_time)
         self.speed.markdown(f"#### Velocidad: *{speed:0.2f}* ind/s")
         self.sick_count.markdown(f"#### Individuos simulados: {self.total_individuals}")
+
+        if person.state.label == "Fallecido":
+            self.deaths_chart.add_rows([
+                dict(age=(person.age//5)*5, gender=person.sex)
+            ])
 
     def on_day_end(self, day:int, total_days:int):
         self.progress.progress((day + 1) / total_days)
@@ -248,20 +263,18 @@ class Simulation:
         self.interventions = interventions
 
     def run(self, callback:SimulationCallback=None):
-        simulation_time = self.parameters.days
-
-        if callable is None:
+        if callback is None:
             callback = SimulationCallback()
 
         # por cada paso de la simulación
-        for day in range(simulation_time):
-            callback.on_day_begin(day, simulation_time)
+        for day in range(self.parameters.days):
+            callback.on_day_begin(day, self.parameters.days)
 
             # por cada región
             for region in self.regions:
                 parameters, contact = self._apply_interventions(region, self.parameters, self.contact, day)
                 
-                # llegadas del estranjero
+                # llegadas del extranjero
                 self._simulate_arrivals(region, parameters)
                 
                 # por cada persona
@@ -280,7 +293,7 @@ class Simulation:
                         # calcular personas que se mueven de una region a otras
                         self._simulate_transportation(region, n_region)
 
-            callback.on_day_end(day, simulation_time)
+            callback.on_day_end(day, self.parameters.days)
 
 
     def _simulate_arrivals(self, region: Region, parameters: SimulationParameters):

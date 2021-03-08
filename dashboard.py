@@ -71,6 +71,9 @@ def main():
             transitions = TransitionEstimator()
             st.write(transitions.data)
 
+            df = transitions.data
+            st.write(df.groupby(["age", "sex", "from_state"]))
+
         with st.beta_expander("⚗️ Estimar transiciones"):
             model = st.selectbox("Modelo", ["MultinomialNB", "LogisticRegression"])
 
