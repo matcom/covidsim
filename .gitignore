@@ -1,4 +1,7 @@
 *.pyc
-streamlist.docker
+*.docker
 data/base cierre 2020 para microsimulaciones.csv
 data/measures.txt
+data/covid19-cuba.json
+data/covid19-casos.csv
+scripts/covid19-cuba.json

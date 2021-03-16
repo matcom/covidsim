@@ -105,7 +105,7 @@ def main():
 
             if st.button("🧙‍♂️ Estimar"):
                 def simulation_factory(p):
-                    region = Region(1000, transitions, state_machine, parameters.initial_infected)
+                    region = Region(1000, state_machine, parameters.initial_infected)
                     return Simulation([region], contact, p, transitions, state_machine, interventions)
 
                 estimate_parameter("chance_of_infection", history, parameters, simulation_factory, **kwargs)
