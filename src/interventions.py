@@ -4,7 +4,7 @@ import inspect
 import pandas as pd
 
 
-from .simulation import SimulationParameters
+from .simulation import Person, SimulationParameters
 
 
 class Intervention(abc.ABC):
@@ -15,9 +15,14 @@ class Intervention(abc.ABC):
     def is_active(self, current_day:int):
         return self.start_day <= current_day <= self.end_day
 
-    @abc.abstractmethod
+    def applies_to(self, person: Person):
+        return True
+
     def apply(self, parameters: SimulationParameters, contact: pd.DataFrame):
-        pass
+        return parameters, contact
+
+    def apply_individual(self, data):
+        return data
 
     @abc.abstractclassmethod
     def description(cls):

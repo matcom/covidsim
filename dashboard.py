@@ -71,9 +71,6 @@ def main():
             transitions = TransitionEstimator()
             st.write(transitions.data)
 
-            df = transitions.data
-            st.write(df.groupby(["age", "sex", "from_state"]))
-
         with st.beta_expander("⚗️ Estimar transiciones"):
             model = st.selectbox("Modelo", ["MultinomialNB", "LogisticRegression"])
 
@@ -114,7 +111,7 @@ def main():
                 estimate_parameter("chance_of_infection", history, parameters, simulation_factory, **kwargs)
 
     with main_container:
-        region = Region(1000, transitions, state_machine, parameters.initial_infected)
+        region = Region(1000, state_machine, parameters.initial_infected)
         sim = Simulation([region], contact, parameters, transitions, state_machine, interventions)
 
         if st.button("🚀 Simular"):
