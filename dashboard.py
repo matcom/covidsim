@@ -28,6 +28,7 @@ def main():
 
     parameters = SimulationParameters(
         days=st.sidebar.number_input("📆 Días a simular", 1, 1000, default_values.get("days", 90)),
+        total_population=st.sidebar.number_input("🙆 Población total", value=default_values.get("total_population", 1000)),
         foreigner_arrivals=st.sidebar.number_input("✈️ Llegada de extranjeros", 0, 10000, default_values.get("foreigner_arrivals", 10)),
         chance_of_infection=st.sidebar.number_input("🤢 Probabilidad de infección", 0.0, 1.0, default_values.get("change_of_infection", 0.01)),
         initial_infected=st.sidebar.number_input("🤒 Infectados iniciales", 0, 1000, default_values.get("initial_infected", 0)),
@@ -111,10 +112,9 @@ def main():
                 estimate_parameter("chance_of_infection", history, parameters, simulation_factory, **kwargs)
 
     with main_container:
-        region = Region(1000, state_machine, parameters.initial_infected)
-        sim = Simulation([region], contact, parameters, transitions, state_machine, interventions)
-
         if st.button("🚀 Simular"):
+            region = Region(parameters.total_population, state_machine, parameters.initial_infected)
+            sim = Simulation([region], contact, parameters, transitions, state_machine, interventions)
             sim.run(StreamlitCallback())
         else:
             st.info("Presione el botón `Simular` para ejecutar la simulación con los parámetros actuales.")

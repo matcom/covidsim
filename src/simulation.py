@@ -121,6 +121,9 @@ class Person:
         self.next_state = state
         self.steps_remaining = 0
 
+        if self.is_infectious:
+            self.region._infectious.add(self)
+
     def _evaluate_transition(self, transition_data):
         """Computa a qué estado pasar dado el estado actual y los valores de la tabla.
         """
@@ -137,34 +140,41 @@ class Person:
 
 
 class Region:
-    def __init__(self, population, states: StateMachine, initial_infected:int):
-        self._recovered = 0
+    def __init__(self, population:int, states: StateMachine, initial_infected:int):
         self._population = population
-        self._death = 0
-        self._simulations = 0
         self.states = states
         self._individuals = []
+        self._infectious = set()
+        self._by_age = collections.defaultdict(list)
 
-        for i in range(initial_infected):
-            p = Person(self, random.randint(20, 80), random.choice(["M", "F"]), states)
+        for _ in range(population):
+            self.add(random.randint(20, 80), random.choice(["M", "F"]), states.start)
+
+        for p in random.sample(self._individuals, initial_infected):
             p.set_state(states["Contagiado"])
-            self._individuals.append(p)
+
+    def add(self, age:int, sex:str, state:str):
+        p = Person(self, age, sex, self.states)
+        p.set_state(state)
+
+        self._individuals.append(p)
+        self._by_age[p.age].append(p)
+
+        if p.is_infectious:
+            self._infectious.add(p)
+
+        return p
+
+    def sample(self, age:int, k:int=1):
+        pop = self._by_age[age]
+        return random.sample(pop, min(k, len(pop)))
 
     def __len__(self):
         return len(self._individuals)
 
     def __iter__(self) -> Iterable[Person]:
-        for i in list(self._individuals):
-            if i.state != self.states.start:
-                yield i
-
-    def spawn(self, age) -> Person:
-        p = Person(self, age, random.choice(["M", "F"]), self.states)
-        self._individuals.append(p)
-        return p
-
-    def prune(self, states):
-        self._individuals = [p for p in self._individuals if p.state.label not in states]
+        for i in list(self._infectious):
+            yield i
 
 
 @dataclass
@@ -173,6 +183,7 @@ class SimulationParameters:
     foreigner_arrivals:float
     chance_of_infection:float
     initial_infected:int
+    total_population:int
     working_population:float
 
     def clone(self) -> "SimulationParameters":
@@ -338,8 +349,6 @@ class Simulation:
 
                     callback.on_person(ind, len(individuals))
 
-                region.prune(['Persona'])
-
                 # movimientos
                 for n_region in self.regions:
                     if n_region != region:
@@ -353,8 +362,7 @@ class Simulation:
         people = np.random.poisson(parameters.foreigner_arrivals)
 
         for _ in range(people):
-            p = region.spawn(random.randint(20, 80))
-            p.set_state(region.states["Viajero"])
+            region.add(random.randint(20, 80), random.choice(['M', 'F']), region.states["Contagiado"])
 
 
     def _apply_interventions(self, region: Region, parameters:SimulationParameters, contact, day:int):
@@ -427,8 +435,8 @@ class Simulation:
         for age, lam in other_ages.itertuples(index=False):
             people = np.random.poisson(lam)
 
-            for i in range(people):
-                yield person.region.spawn(age)
+            for p in person.region.sample(age):
+                yield p
 
         # contactos en la escuela
         other_ages = social[social['location']=='school'][["other", "value"]]
@@ -436,8 +444,8 @@ class Simulation:
         for age, lam in other_ages.itertuples(index=False):
             people = np.random.poisson(lam)
 
-            for i in range(people):
-                yield person.region.spawn(age)
+            for p in person.region.sample(age, people):
+                yield p
 
         # contactos en el trabajo
         if the_age < 18:
@@ -451,8 +459,8 @@ class Simulation:
             for age, lam in other_ages.itertuples(index=False):
                 people = np.random.poisson(lam)
 
-                for i in range(people):
-                    yield person.region.spawn(age)
+                for p in person.region.sample(age):
+                    yield p
 
 
     def _eval_infections(self, person:Person, parameters:SimulationParameters) -> bool:

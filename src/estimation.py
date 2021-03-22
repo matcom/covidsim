@@ -17,6 +17,7 @@ class EstimationCallback(SimulationCallback):
 
     def on_day_begin(self, day: int, total_days: int):
         self.progress.progress((day+1) / total_days)
+        self.info.markdown("---")
         self.info.markdown(f"**Día: {day+1}**: `{dict(self.day_history)}`")
         self.day_history = collections.defaultdict(lambda: 0)
 
@@ -70,13 +71,14 @@ def estimate_parameter(
         error = _compute_curve_error(callback.history, history, start_day, end_day)
         st.write(f"**Error = `{error}`**")
         
-        X.append([x])
+        X.append([1, x, x*x])
         y.append(error)
 
     regressor = ElasticNet(positive=True)
     regressor.fit(X, y)
 
     X = np.linspace(x_min, x_max, 100 * steps).reshape(-1,1)
+    X = np.hstack((np.ones_like(X), X, X*X))    
     y = regressor.predict(X)
     st.write(X, y)
 
