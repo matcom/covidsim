@@ -9,7 +9,7 @@ st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide'
 
 from src import data
 from src.interventions import INTERVENTIONS
-from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine, StreamlitCallback
+from src.simulation import Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine, StreamlitCallback, VaccinationParameters
 from src.estimation import estimate_parameter
 
 
@@ -45,7 +45,17 @@ def main():
             st.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
 
     with side_container:
-        with st.beta_expander("💉 Intervenciones"):
+        with st.beta_expander("💉 Vacunación", True):
+            vaccination = VaccinationParameters(
+                start_day=st.slider("📆 Inicio", 0, parameters.days, 0),    
+                immunity_growth=st.number_input("📈 Crecimiento immunidad", 0, value=15),
+                immunity_last=st.number_input("📉 Duración immunidad", 0, value=180),
+                vaccinated_per_day=st.number_input("💉 Vacunados diarios", 0, value=100),
+                maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, 0.9),
+                age_bracket=(st.number_input("👶 Edad mínima", 0,90,20, step=5),st.number_input("👶 Edad máxima", 0,90,70, step=5))
+            )
+
+        with st.beta_expander("⚕️ Intervenciones"):
             interventions = []
             total_interventions = st.number_input("Total de intervenciones a aplicar en el período", 0, 100, 0)
             interventions_names = {} #{"-": None}
@@ -114,11 +124,12 @@ def main():
     with main_container:
         if st.button("🚀 Simular"):
             region = Region(parameters.total_population, state_machine, parameters.initial_infected)
-            sim = Simulation([region], contact, parameters, transitions, state_machine, interventions)
+            sim = Simulation([region], contact, parameters, vaccination, transitions, state_machine, interventions)
             sim.run(StreamlitCallback())
         else:
-            st.info("Presione el botón `Simular` para ejecutar la simulación con los parámetros actuales.")
-            st.write(parameters.__dict__)
+            st.info("Presione el botón **🚀 Simular** para ejecutar la simulación con los parámetros actuales.")
+            st.write("Parámetros", parameters.__dict__)
+            st.write("Vacunación", vaccination.__dict__)
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ import abc
 import collections
 import random
 from dataclasses import dataclass
-from typing import Dict, Iterable, List
+from typing import Dict, Iterable, List, Tuple
 import time
 
 import altair as alt
@@ -81,6 +81,8 @@ class Person:
         self.next_state = None
         self.steps_remaining = None
         self.infected = 0
+        self.vaccinated = False
+        self.vaccinated_day = None
 
         # la persona conoce la region a la que pertenece
         self.region = region
@@ -302,12 +304,30 @@ class StreamlitCallback(SimulationCallback):
             dict(day=day, infected=sum(self.infections.values()))
         ])
 
+
+@dataclass
+class VaccinationParameters:    
+    start_day: int
+    vaccinated_per_day: int
+    maximum_immunity: float
+    immunity_growth: int
+    immunity_last: int
+    age_bracket: Tuple[int]
+
+    def evaluate_immunity(self, p: Person, chance_of_infection: float):
+        if p.vaccinated:
+            return chance_of_infection * (1 - self.maximum_immunity)
+
+        return chance_of_infection
+
+
 class Simulation:
     def __init__(
         self, 
         regions:List[Region], 
         contact, 
         parameters: SimulationParameters, 
+        vaccination: VaccinationParameters,
         transitions: TransitionEstimator, 
         state_machine: StateMachine,
         interventions,
@@ -318,6 +338,7 @@ class Simulation:
         self.transitions = transitions
         self.state_machine = state_machine
         self.interventions = interventions
+        self.vaccination = vaccination
 
     def run(self, callback:SimulationCallback=None):
         if callback is None:
@@ -337,7 +358,7 @@ class Simulation:
                 
                 # por cada persona
                 individuals = list(region)
-                for j, ind in enumerate(individuals):
+                for ind in individuals:
                     # aplicar intervenciones a nivel de individuo
                     data = self._apply_individual_interventions(ind, day, self.transitions.data)
 
@@ -349,6 +370,9 @@ class Simulation:
 
                     callback.on_person(ind, len(individuals))
 
+                # vacunación
+                self._simulate_vaccination(day, region)
+
                 # movimientos
                 for n_region in self.regions:
                     if n_region != region:
@@ -356,6 +380,13 @@ class Simulation:
                         self._simulate_transportation(region, n_region)
 
             callback.on_day_end(day, self.parameters.days)
+
+        
+    def _simulate_vaccination(self, day, region: Region):
+        if day >= self.vaccination.start_day:
+            for p in random.sample(region._individuals, self.vaccination.vaccinated_per_day):
+                p.vaccinated = True
+                p.vaccinated_day= day
 
 
     def _simulate_arrivals(self, region: Region, parameters: SimulationParameters):
@@ -407,7 +438,7 @@ class Simulation:
             if other.state != self.state_machine["Persona"]:
                 continue
 
-            if self._eval_infections(ind, parameters):
+            if self._eval_infections(ind, other, parameters):
                 callback.on_infection(ind, other)
                 other.set_state(self.state_machine["Contagiado"])
 
@@ -463,13 +494,18 @@ class Simulation:
                     yield p
 
 
-    def _eval_infections(self, person:Person, parameters:SimulationParameters) -> bool:
+    def _eval_infections(self, person:Person, other:Person, parameters:SimulationParameters) -> bool:
         """Determina si una persona cualquiera se infesta o no, dado que se cruza con "person". 
 
         En general depende del estado en el que se encuentra person y las probabilidades de ese estado
         """
 
-        if random.uniform(0, 1) < parameters.chance_of_infection:
+        # Parámetro de infección original
+        p = parameters.chance_of_infection
+        # Parámetro de infección nuevo
+        p = self.vaccination.evaluate_immunity(other, p)
+
+        if random.uniform(0, 1) < p:
             person.infected += 1
             return True
 
