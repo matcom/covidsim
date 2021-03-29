@@ -14,7 +14,7 @@ from src.estimation import estimate_parameter
 
 
 def main():
-    main_container, side_container = st.beta_columns([2,1])
+    main_container, side_container = st.beta_columns([3,1])
 
     available_params = [f.name for f in (Path(__file__).parent / "params").glob("*.json")]
 
@@ -35,25 +35,27 @@ def main():
         working_population=st.sidebar.slider("🧑‍🏭 Población laboral", 0.0, 1.0, default_values.get("working_population", 0.25)),
     )
 
-    with st.sidebar.beta_expander("Salvar parámetros"):
-        save_params_as = st.text_input("Salvar parámetros (nombre)")
-        
-        if st.button("💾 Salvar") and save_params_as:
-            with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
-                json.dump(parameters.__dict__, fp, indent=4)
-
-            st.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
-
     with side_container:
         with st.beta_expander("💉 Vacunación", True):
-            vaccination = VaccinationParameters(
-                start_day=st.slider("📆 Inicio", 0, parameters.days, 0),    
-                immunity_growth=st.number_input("📈 Crecimiento immunidad", 0, value=15),
-                immunity_last=st.number_input("📉 Duración immunidad", 0, value=180),
-                vaccinated_per_day=st.number_input("💉 Vacunados diarios", 0, value=100),
-                maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, 0.9),
-                age_bracket=(st.number_input("👶 Edad mínima", 0,90,20, step=5),st.number_input("👶 Edad máxima", 0,90,70, step=5))
-            )
+            vaccination_data = default_values.get("vaccines", [])
+            vaccination_list = []
+            vaccination_total = st.number_input("Vacunas", 0, 10, len(vaccination_data))
+
+            for i in range(vaccination_total):
+                if i < len(vaccination_data):
+                    vaccination_params = vaccination_data[i]
+                else:
+                    vaccination_params = {}
+
+                vaccination = VaccinationParameters(
+                    start_day=st.slider("📆 Inicio", 0, parameters.days, value=vaccination_params.get("start_day", 0), key=f"vaccination{i}_start"),    
+                    immunity_growth=st.number_input("📈 Crecimiento immunidad", 0, value=vaccination_params.get("immunity_growth", 15), key=f"vaccination{i}_growth"),
+                    immunity_last=st.number_input("📉 Duración immunidad", 0, value=vaccination_params.get("immunity_last", 180), key=f"vaccination{i}_last"),
+                    vaccinated_per_day=st.number_input("💉 Vacunados diarios", 0, value=vaccination_params.get("vaccinated_per_day", 100), key=f"vaccination{i}_per_day"),
+                    maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, vaccination_params.get("maximum_immunity", 0.9), key=f"vaccination{i}_immunity"),
+                    age_bracket=(st.number_input("👶 Edad mínima", 0,90,vaccination_params.get("age_bracket", [20,70])[0], step=5, key=f"vaccination{i}_age_min"),st.number_input("👴 Edad máxima", 0,90,vaccination_params.get("age_bracket", [20,70])[0], step=5, key=f"vaccination{i}_age_max"))
+                )
+                vaccination_list.append(vaccination)
 
         with st.beta_expander("⚕️ Intervenciones"):
             interventions = []
@@ -121,15 +123,26 @@ def main():
 
                 estimate_parameter("chance_of_infection", history, parameters, simulation_factory, **kwargs)
 
+    with st.sidebar.beta_expander("Salvar parámetros"):
+        save_params_as = st.text_input("Salvar parámetros (nombre)")
+        params = dict(parameters.__dict__)
+        params["vaccines"] = [v.__dict__ for v in vaccination_list]
+        
+        if st.button("💾 Salvar") and save_params_as:
+            with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
+                json.dump(params, fp, indent=4)
+
+            st.success(f"🥳 Parámetros salvados en `params/{save_params_as}.json`")
+
+
     with main_container:
         if st.button("🚀 Simular"):
             region = Region(parameters.total_population, state_machine, parameters.initial_infected)
-            sim = Simulation([region], contact, parameters, vaccination, transitions, state_machine, interventions)
+            sim = Simulation([region], contact, parameters, vaccination_list, transitions, state_machine, interventions)
             sim.run(StreamlitCallback())
         else:
             st.info("Presione el botón **🚀 Simular** para ejecutar la simulación con los parámetros actuales.")
-            st.write("Parámetros", parameters.__dict__)
-            st.write("Vacunación", vaccination.__dict__)
+            st.write(params)
 
 
 if __name__ == "__main__":

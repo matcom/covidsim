@@ -83,6 +83,7 @@ class Person:
         self.infected = 0
         self.vaccinated = False
         self.vaccinated_day = None
+        self.vaccine = None
 
         # la persona conoce la region a la que pertenece
         self.region = region
@@ -258,7 +259,8 @@ class StreamlitCallback(SimulationCallback):
             .encode(
                 x="day:N",
                 y="mean(rate):Q"
-            )
+            ),
+            use_container_width=True,
         )
 
     def on_day_begin(self, day: int, total_days:int):
@@ -314,11 +316,11 @@ class VaccinationParameters:
     immunity_last: int
     age_bracket: Tuple[int]
 
-    def evaluate_immunity(self, p: Person, chance_of_infection: float):
-        if p.vaccinated:
-            return chance_of_infection * (1 - self.maximum_immunity)
+    def evaluate_immunity(self, p: Person, chance_of_infection: float, day:int):
+        immunity_per_day = self.maximum_immunity / self.immunity_growth
+        immunity = (day - p.vaccinated_day) * immunity_per_day
 
-        return chance_of_infection
+        return chance_of_infection * (1 - immunity)
 
 
 class Simulation:
@@ -327,7 +329,7 @@ class Simulation:
         regions:List[Region], 
         contact, 
         parameters: SimulationParameters, 
-        vaccination: VaccinationParameters,
+        vaccination: List[VaccinationParameters],
         transitions: TransitionEstimator, 
         state_machine: StateMachine,
         interventions,
@@ -366,7 +368,7 @@ class Simulation:
                     ind.next_step(data)
 
                     if ind.is_infectious:
-                        self._simulate_spread(ind, parameters, contact, callback)
+                        self._simulate_spread(ind, parameters, contact, callback, day)
 
                     callback.on_person(ind, len(individuals))
 
@@ -383,11 +385,19 @@ class Simulation:
 
         
     def _simulate_vaccination(self, day, region: Region):
-        if day >= self.vaccination.start_day:
-            for p in random.sample(region._individuals, self.vaccination.vaccinated_per_day):
-                p.vaccinated = True
-                p.vaccinated_day= day
+        for vaccine in self.vaccination:
+            if day >= vaccine.start_day:
+                age_min, age_max = vaccine.age_bracket
+                pool = [p for p in region._individuals if age_min <= p.age <= age_max and not p.vaccinated]
+                
+                if len(pool) > vaccine.vaccinated_per_day:
+                    pool = random.sample(pool, vaccine.vaccinated_per_day)
 
+                for p in pool:
+                    p.vaccinated = True
+                    p.vaccinated_day = day
+                    p.vaccine = vaccine
+            
 
     def _simulate_arrivals(self, region: Region, parameters: SimulationParameters):
         people = np.random.poisson(parameters.foreigner_arrivals)
@@ -429,7 +439,7 @@ class Simulation:
         pass
 
 
-    def _simulate_spread(self, ind, parameters, contact, callback):
+    def _simulate_spread(self, ind, parameters, contact, callback, day):
         """Calcula que personas serán infectadas por 'ind' en el paso actual de la simulación.
         """
         connections = self._eval_connections(ind, parameters, contact)
@@ -438,7 +448,7 @@ class Simulation:
             if other.state != self.state_machine["Persona"]:
                 continue
 
-            if self._eval_infections(ind, other, parameters):
+            if self._eval_infections(ind, other, parameters, day):
                 callback.on_infection(ind, other)
                 other.set_state(self.state_machine["Contagiado"])
 
@@ -494,7 +504,7 @@ class Simulation:
                     yield p
 
 
-    def _eval_infections(self, person:Person, other:Person, parameters:SimulationParameters) -> bool:
+    def _eval_infections(self, person:Person, other:Person, parameters:SimulationParameters, day) -> bool:
         """Determina si una persona cualquiera se infesta o no, dado que se cruza con "person". 
 
         En general depende del estado en el que se encuentra person y las probabilidades de ese estado
@@ -502,8 +512,10 @@ class Simulation:
 
         # Parámetro de infección original
         p = parameters.chance_of_infection
+        
         # Parámetro de infección nuevo
-        p = self.vaccination.evaluate_immunity(other, p)
+        if other.vaccinated:
+            p = other.vaccine.evaluate_immunity(other, p, day)
 
         if random.uniform(0, 1) < p:
             person.infected += 1

@@ -3,6 +3,19 @@
     "foreigner_arrivals": 10,
     "chance_of_infection": 0.01,
     "initial_infected": 0,
+    "total_population": 1000,
     "working_population": 0.25,
-    "total_population": 1000
+    "vaccines": [
+        {
+            "start_day": 0,
+            "vaccinated_per_day": 100,
+            "maximum_immunity": 0.9,
+            "immunity_growth": 15,
+            "immunity_last": 180,
+            "age_bracket": [
+                20,
+                20
+            ]
+        }
+    ]
 }
