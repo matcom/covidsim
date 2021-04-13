@@ -222,7 +222,7 @@ class SimulationCallback:
         event = f"on_{event}"
 
         if not hasattr(self, event):
-            pass
+            return
 
         getattr(self, event)(**kwds)
 

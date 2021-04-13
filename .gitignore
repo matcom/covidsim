@@ -5,3 +5,4 @@ data/measures.txt
 data/covid19-cuba.json
 data/covid19-casos.csv
 scripts/covid19-cuba.json
+*.jsonl
