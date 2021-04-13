@@ -55,8 +55,9 @@ def main():
                     shots=st.number_input("🧴 Número de dosis", value=vaccination_params.get("shots", 1), key=f"vaccination_{i}_shots"),
                     shots_every=st.number_input("⌛ Dosis", value=vaccination_params.get("shots_every", 10), key=f"vaccination_{i}_shots_every"),
                     maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, vaccination_params.get("maximum_immunity", 0.9), key=f"vaccination{i}_immunity"),
-                    immunity_growth=st.number_input("📈 Crecimiento immunidad", 0, value=vaccination_params.get("immunity_growth", 15), key=f"vaccination{i}_growth"),
-                    immunity_last=st.number_input("📉 Duración immunidad", 0, value=vaccination_params.get("immunity_last", 180), key=f"vaccination{i}_last"),
+                    symptom_reduction=st.slider("🤧 Reducción de síntomas", 0.0, 1.0, vaccination_params.get("symptom_reduction", 0.9), key=f"vaccination{i}_symptom"),
+                    effect_growth=st.number_input("📈 Crecimiento del efecto", 0, value=vaccination_params.get("effect_growth", 15), key=f"vaccination{i}_growth"),
+                    effect_duration=st.number_input("📉 Duración del efecto", 0, value=vaccination_params.get("effect_duration", 180), key=f"vaccination{i}_last"),
                     vaccinated_per_day=st.number_input("💉 Vacunados diarios", 0, value=vaccination_params.get("vaccinated_per_day", 100), key=f"vaccination{i}_per_day"),
                 )
                 vaccination_list.append(vaccination)

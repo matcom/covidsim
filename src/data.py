@@ -74,7 +74,7 @@ def process_events(df: pd.DataFrame):
 
             # Aquí es detectado
             events.append(
-                dict(id=row["Cons"], from_state="Viajero", to_state="Detectado", days=days, age=age, sex=sex)
+                dict(id=row["Cons"], from_state="Viajero", to_state="Contagiado", days=days, age=age, sex=sex)
             )
         elif not pd.isna(symptoms):
             # es contagiado interno
@@ -85,19 +85,25 @@ def process_events(df: pd.DataFrame):
 
             # Aquí es detectado
             events.append(
-                dict(id=row["Cons"], from_state="Contagiado", to_state="Detectado", days=days, age=age, sex=sex)
+                dict(id=row["Cons"], from_state="Persona", to_state="Contagiado", days=days, age=age, sex=sex)
             )
 
         # Aquí se decide si es asintomático o sintomático
         # Como los datos están sucios, a veces dice 'asint' o 'Asintomático', con o sin tilde
         if isinstance(row['FIS'], str) and row['FIS'].lower().startswith("asint"):
-            to_state = "Detec.Asint."
+            to_state = "Asintomático"
         else:
-            to_state = "Detec.Sint."
+            to_state = "Sintomático"
         
         events.append(
-            dict(id=row["Cons"], from_state="Detectado", to_state=to_state, days=0, age=age, sex=sex),
+            dict(id=row["Cons"], from_state="Contagiado", to_state=to_state, days=0, age=age, sex=sex),
         )
+
+        if to_state == 'Sintomático':
+            events.append(
+                dict(id=row["Cons"], from_state=to_state, to_state="Hospitalizado", days=0, age=age, sex=sex),
+            )
+            to_state = "Hospitalizado"
 
         # Aquí se decide el resultado final
         release = pd.to_datetime(row["Fecha Alta"], errors='coerce')

@@ -10,8 +10,8 @@
             "start_day": 0,
             "vaccinated_per_day": 100,
             "maximum_immunity": 0.9,
-            "immunity_growth": 15,
-            "immunity_last": 180,
+            "effect_growth": 15,
+            "effect_duration": 180,
             "age_bracket": [
                 20,
                 70

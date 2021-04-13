@@ -1,14 +1,10 @@
 label,starting,susceptible,testeable,infectious,temporal,final
 Persona,yes,yes,no,no,no,no
-Sospechoso,no,yes,yes,no,no,no
 Viajero,no,no,yes,yes,yes,no
 Contagiado,no,no,yes,yes,yes,no
-Detectado,no,no,no,yes,yes,no
-No-detectado,no,no,no,yes,no,no
-Detec.Asint.,no,no,no,yes,yes,no
-Detec.Sint.,no,no,no,yes,yes,no
-Hosp.Asint,no,no,no,no,yes,no
-Hosp.Sint,no,no,no,no,yes,no
+Asintomático,no,no,no,yes,yes,no
+Sintomático,no,no,no,yes,yes,no
+Hospitalizado,no,no,no,no,yes,no
 UCI,no,no,no,no,yes,no
 Recuperado,no,no,no,no,no,yes
 Fallecido,no,no,no,no,no,yes

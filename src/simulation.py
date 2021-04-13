@@ -374,10 +374,11 @@ class VaccinationParameters:
     start_day: int
     vaccinated_per_day: int
     maximum_immunity: float
-    immunity_growth: int
+    symptom_reduction: float
+    effect_growth: int
     shots: int
     shots_every: int
-    immunity_last: int
+    effect_duration: int
     strategy: str
     age_bracket: Tuple[int]
 
@@ -385,10 +386,10 @@ class VaccinationParameters:
         return self.__dict__
 
     def evaluate_immunity(self, p: Person, chance_of_infection: float, day:int):
-        immunity_per_day = self.maximum_immunity / self.immunity_growth
+        immunity_per_day = self.maximum_immunity / self.effect_growth
         immunity = (day - p.vaccinated_day) * immunity_per_day
 
-        if day > p.vaccinated_day + self.immunity_last:
+        if day > p.vaccinated_day + self.effect_duration:
             return chance_of_infection
 
         return chance_of_infection * (1 - immunity)
