@@ -1,10 +1,11 @@
 import abc
 import collections
+from io import FileIO
 import random
 from dataclasses import dataclass
 from typing import Dict, Iterable, List, Tuple
 import time
-
+import json
 import altair as alt
 import numpy as np
 import pandas as pd
@@ -75,6 +76,7 @@ class Person:
     def __init__(self, region: "Region", age:int, sex:str,  states: StateMachine):
         """Crea una nueva persona que por defecto está en el estado de susceptible al virus.
         """
+        self.id = Person.total
         Person.total += 1
         self.state_machine = states
         self.state = self.state_machine.start
@@ -83,7 +85,7 @@ class Person:
         self.infected = 0
         self.vaccinated = False
         self.vaccinated_day = None
-        self.vaccine = None
+        self.vaccine: VaccinationParameters = None
 
         # la persona conoce la region a la que pertenece
         self.region = region
@@ -95,6 +97,18 @@ class Person:
         self.set_state(states.start)
 
         assert self.state is not None, "individual state is None"
+
+    def to_json(self):
+        return dict(
+            id=self.id,
+            age=self.age,
+            sex=self.sex,
+            state=self.state.label,
+            infected=self.infected,
+            vaccinated=self.vaccinated,
+            vaccinated_day=self.vaccinated_day,
+            vaccine=self.vaccine.name if self.vaccine else None,
+        )
 
     @property
     def is_infectious(self):
@@ -126,6 +140,9 @@ class Person:
 
         if self.is_infectious:
             self.region._infectious.add(self)
+        else:
+            if self in self.region._infectious:
+                self.region._infectious.remove(self)
 
     def _evaluate_transition(self, transition_data):
         """Computa a qué estado pasar dado el estado actual y los valores de la tabla.
@@ -194,17 +211,45 @@ class SimulationParameters:
 
 
 class SimulationCallback:
-    def on_day_begin(self, day:int, total_days:int):
-        pass
+    def __call__(self, event: str, **kwds):
+        self._on_event(event, **kwds)
 
-    def on_day_end(self, day:int, total_days:int):
-        pass
+    def _on_event(self, event: str, **kwds):
+        event = f"on_{event}"
 
-    def on_person(self, person: Person, total_people:int):
-        pass
+        if not hasattr(self, event):
+            pass
 
-    def on_infection(self, from_person: Person, to_person: Person):
-        pass
+        getattr(self, event)(**kwds)
+
+
+class JsonCallback(SimulationCallback):
+    def __init__(self, fp: FileIO) -> None:
+        self.fp = fp
+
+    def to_json(self, v):
+        if hasattr(v, "to_json"):
+            return v.to_json()
+
+        return v
+
+    def _on_event(self, event: str, **kwds):
+        data = dict(
+            event=event,
+            params={ k:self.to_json(v) for k,v in kwds.items() }
+        )
+
+        self.fp.write(json.dumps(data))
+        self.fp.write("\n")
+
+
+class MultiCallback(SimulationCallback):
+    def __init__(self, callbacks: List[SimulationCallback]) -> None:
+        self.callbacks = callbacks
+
+    def _on_event(self, event: str, **kwds):
+        for callback in self.callbacks:
+            callback._on_event(event, **kwds)
 
 
 class StreamlitCallback(SimulationCallback):
@@ -263,6 +308,22 @@ class StreamlitCallback(SimulationCallback):
             use_container_width=True,
         )
 
+        self.vaccinated_chart = st.altair_chart(
+            alt.Chart(pd.DataFrame(columns=["vacuna", "dia"]), title="Vacunados")
+            .mark_bar()
+            .encode(
+                y=alt.Y("count():Q", title="Vacunados"),
+                x=alt.X("dia:N", title="Días"),
+                color=alt.Color("vacuna:N", title="Estado"),
+            ),
+            use_container_width=True,
+        )
+    
+    def on_vaccine(self, vaccine: str, day:int):
+        self.vaccinated_chart.add_rows([
+            dict(vacuna=vaccine, dia=self.current_day)
+        ])
+
     def on_day_begin(self, day: int, total_days:int):
         self.by_state = collections.defaultdict(lambda: 0)
         self.current_day_total = 0
@@ -309,16 +370,25 @@ class StreamlitCallback(SimulationCallback):
 
 @dataclass
 class VaccinationParameters:    
+    name: str
     start_day: int
     vaccinated_per_day: int
     maximum_immunity: float
     immunity_growth: int
+    shots: int
+    shots_every: int
     immunity_last: int
     age_bracket: Tuple[int]
+
+    def to_json(self):
+        return self.__dict__
 
     def evaluate_immunity(self, p: Person, chance_of_infection: float, day:int):
         immunity_per_day = self.maximum_immunity / self.immunity_growth
         immunity = (day - p.vaccinated_day) * immunity_per_day
+
+        if day > p.vaccinated_day + self.immunity_last:
+            return chance_of_infection
 
         return chance_of_infection * (1 - immunity)
 
@@ -346,9 +416,12 @@ class Simulation:
         if callback is None:
             callback = SimulationCallback()
 
+        for vaccine in self.vaccination:
+            vaccine._vaccination_pool = [vaccine.vaccinated_per_day] * self.parameters.days
+
         # por cada paso de la simulación
         for day in range(self.parameters.days):
-            callback.on_day_begin(day, self.parameters.days)
+            callback("day_begin", day=day, total_days=self.parameters.days)
 
             # por cada región
             for region in self.regions:
@@ -370,10 +443,10 @@ class Simulation:
                     if ind.is_infectious:
                         self._simulate_spread(ind, parameters, contact, callback, day)
 
-                    callback.on_person(ind, len(individuals))
+                    callback("person", person=ind, total_people=len(individuals))
 
                 # vacunación
-                self._simulate_vaccination(day, region)
+                self._simulate_vaccination(day, region, callback)
 
                 # movimientos
                 for n_region in self.regions:
@@ -381,24 +454,35 @@ class Simulation:
                         # calcular personas que se mueven de una region a otras
                         self._simulate_transportation(region, n_region)
 
-            callback.on_day_end(day, self.parameters.days)
+            callback("day_end", day=day, total_days=self.parameters.days)
 
         
-    def _simulate_vaccination(self, day, region: Region):
+    def _simulate_vaccination(self, day, region: Region, callback):
         for vaccine in self.vaccination:
             if day >= vaccine.start_day:
                 age_min, age_max = vaccine.age_bracket
                 pool = [p for p in region._individuals if age_min <= p.age <= age_max and not p.vaccinated]
                 
-                if len(pool) > vaccine.vaccinated_per_day:
-                    pool = random.sample(pool, vaccine.vaccinated_per_day)
+                if len(pool) > vaccine._vaccination_pool[day]:
+                    pool = random.sample(pool, vaccine._vaccination_pool[day])
 
                 for p in pool:
                     p.vaccinated = True
                     p.vaccinated_day = day
                     p.vaccine = vaccine
-            
 
+                    callback("vaccine", vaccine=vaccine.name, day=day)
+
+                    if vaccine.shots == 1:
+                        continue
+
+                    for i in range(1, vaccine.shots):
+                        next_vaccination = day + i * vaccine.shots_every
+
+                        if next_vaccination < len(vaccine._vaccination_pool):
+                            vaccine._vaccination_pool[next_vaccination] -= 1
+
+            
     def _simulate_arrivals(self, region: Region, parameters: SimulationParameters):
         people = np.random.poisson(parameters.foreigner_arrivals)
 
@@ -449,7 +533,7 @@ class Simulation:
                 continue
 
             if self._eval_infections(ind, other, parameters, day):
-                callback.on_infection(ind, other)
+                callback("infection", from_person=ind, to_person=other)
                 other.set_state(self.state_machine["Contagiado"])
 
     def _eval_connections(
