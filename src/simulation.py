@@ -163,7 +163,7 @@ class Region:
     def __init__(self, population:int, states: StateMachine, initial_infected:int):
         self._population = population
         self.states = states
-        self._individuals = []
+        self._individuals: List[Person] = []
         self._infectious = set()
         self._by_age = collections.defaultdict(list)
 
@@ -378,6 +378,7 @@ class VaccinationParameters:
     shots: int
     shots_every: int
     immunity_last: int
+    strategy: str
     age_bracket: Tuple[int]
 
     def to_json(self):
@@ -461,10 +462,15 @@ class Simulation:
         for vaccine in self.vaccination:
             if day >= vaccine.start_day:
                 age_min, age_max = vaccine.age_bracket
-                pool = [p for p in region._individuals if age_min <= p.age <= age_max and not p.vaccinated]
+                pool = [p for p in region._individuals if age_min <= p.age <= age_max and not p.vaccinated and not p.is_infectious]
                 
                 if len(pool) > vaccine._vaccination_pool[day]:
-                    pool = random.sample(pool, vaccine._vaccination_pool[day])
+                    if vaccine.strategy == "random":
+                        pool = random.sample(pool, vaccine._vaccination_pool[day])
+                    elif vaccine.strategy == "bottom-up":
+                        pool = sorted(pool, key=lambda p: p.age)[:vaccine._vaccination_pool[day]]
+                    elif vaccine.strategy == "top-down":
+                        pool = sorted(pool, key=lambda p: p.age)[-vaccine._vaccination_pool[day]:]
 
                 for p in pool:
                     p.vaccinated = True

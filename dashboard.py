@@ -50,13 +50,14 @@ def main():
                 vaccination = VaccinationParameters(
                     start_day=st.slider("📆 Inicio", 0, parameters.days, value=vaccination_params.get("start_day", 0), key=f"vaccination{i}_start"),    
                     name=st.text_input("🏷️ Nombre", value=vaccination_params.get("name", f"Vacuna {i+1}"), key=f"vaccination_{i}_name"),
-                    shots=st.number_input("🧴 Dosis", value=vaccination_params.get("shots", 1), key=f"vaccination_{i}_shots"),
+                    strategy=st.selectbox("⚙️ Estrategia", ["random", "bottom-up", "top-down"], index=["random", "bottom-up", "top-down"].index(vaccination_params.get("strategy", f"random")), key=f"vaccination_{i}_strategy"),
+                    age_bracket=(st.number_input("👶 Edad mínima", 0,90,vaccination_params.get("age_bracket", [20,70])[0], step=5, key=f"vaccination{i}_age_min"),st.number_input("👴 Edad máxima", 0,90,vaccination_params.get("age_bracket", [20,70])[1], step=5, key=f"vaccination{i}_age_max")),
+                    shots=st.number_input("🧴 Número de dosis", value=vaccination_params.get("shots", 1), key=f"vaccination_{i}_shots"),
                     shots_every=st.number_input("⌛ Dosis", value=vaccination_params.get("shots_every", 10), key=f"vaccination_{i}_shots_every"),
+                    maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, vaccination_params.get("maximum_immunity", 0.9), key=f"vaccination{i}_immunity"),
                     immunity_growth=st.number_input("📈 Crecimiento immunidad", 0, value=vaccination_params.get("immunity_growth", 15), key=f"vaccination{i}_growth"),
                     immunity_last=st.number_input("📉 Duración immunidad", 0, value=vaccination_params.get("immunity_last", 180), key=f"vaccination{i}_last"),
                     vaccinated_per_day=st.number_input("💉 Vacunados diarios", 0, value=vaccination_params.get("vaccinated_per_day", 100), key=f"vaccination{i}_per_day"),
-                    maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, vaccination_params.get("maximum_immunity", 0.9), key=f"vaccination{i}_immunity"),
-                    age_bracket=(st.number_input("👶 Edad mínima", 0,90,vaccination_params.get("age_bracket", [20,70])[0], step=5, key=f"vaccination{i}_age_min"),st.number_input("👴 Edad máxima", 0,90,vaccination_params.get("age_bracket", [20,70])[1], step=5, key=f"vaccination{i}_age_max"))
                 )
                 vaccination_list.append(vaccination)
 
