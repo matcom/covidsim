@@ -319,7 +319,7 @@ class StreamlitCallback(SimulationCallback):
             use_container_width=True,
         )
     
-    def on_vaccine(self, vaccine: str, day:int):
+    def on_vaccine(self, vaccine: str, day:int, person:Person):
         self.vaccinated_chart.add_rows([
             dict(vacuna=vaccine, dia=self.current_day)
         ])
@@ -471,7 +471,7 @@ class Simulation:
                     p.vaccinated_day = day
                     p.vaccine = vaccine
 
-                    callback("vaccine", vaccine=vaccine.name, day=day)
+                    callback("vaccine", vaccine=vaccine.name, day=day, person=p)
 
                     if vaccine.shots == 1:
                         continue
