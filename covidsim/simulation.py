@@ -10,6 +10,7 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
+import argparse
 
 from .data import *
 
@@ -121,14 +122,17 @@ class Person:
             # actualizar state
             self.state = self.next_state
             self.next_state, self.steps_remaining = self._evaluate_transition(transition_data)
+
+            if self.is_infectious:
+                self.region._infectious.add(self)
         else:
             # decrementar los steps que faltan para cambiar de estado
-            self.steps_remaining = self.steps_remaining - 1
+            self.steps_remaining = self.steps_remaining - 1      
 
         return True
 
     def __repr__(self):
-        return f"Person(age={self.age}, sex={self.sex}, state={self.state}, steps_remaining={self.steps_remaining})"
+        return f"Person(age={self.age}, sex={self.sex}, state={self.state}"
 
     def set_state(self, state):
         if state is None:
@@ -168,7 +172,7 @@ class Region:
         self._by_age = collections.defaultdict(list)
 
         for _ in range(population):
-            self.add(random.randint(20, 80), random.choice(["M", "F"]), states.start)
+            self.add(random.randint(0, 100) // 5 * 5, random.choice(["M", "F"]), states.start)
 
         for p in random.sample(self._individuals, initial_infected):
             p.set_state(states["Contagiado"])
@@ -394,6 +398,11 @@ class VaccinationParameters:
 
         return chance_of_infection * (1 - immunity)
 
+    def evaluate_symptoms_reduction(self, p:Person, day: int):
+        symptom_per_date = self.symptom_reduction / self.effect_growth
+        symptom_reduction = (day - p.vaccinated_day) * symptom_per_date
+        return (1 - symptom_reduction)
+
 
 class Simulation:
     def __init__(
@@ -494,7 +503,7 @@ class Simulation:
         people = np.random.poisson(parameters.foreigner_arrivals)
 
         for _ in range(people):
-            region.add(random.randint(20, 80), random.choice(['M', 'F']), region.states["Contagiado"])
+            region.add(random.randint(20, 80), random.choice(['M', 'F']), region.states["Viajero"])
 
 
     def _apply_interventions(self, region: Region, parameters:SimulationParameters, contact, day:int):
@@ -520,6 +529,12 @@ class Simulation:
                 continue
 
             data = intervention.apply_individual(data)
+
+        # Apply vaccination intervention
+        # TODO: Can this be made more generally?
+        if person.vaccinated:
+            data = data.copy()
+            data.loc[data["to_state"]=="Sintomático","chance"] *= person.vaccine.evaluate_symptoms_reduction(person, day)
 
         return data
 

@@ -7,15 +7,27 @@
     "working_population": 0.25,
     "vaccines": [
         {
+            "name": "Vacuna 1",
             "start_day": 0,
             "vaccinated_per_day": 100,
             "maximum_immunity": 0.9,
+            "symptom_reduction": 0.9,
             "effect_growth": 15,
+            "shots": 1,
+            "shots_every": 10,
             "effect_duration": 180,
+            "strategy": "random",
             "age_bracket": [
                 20,
-                70
+                80
             ]
+        }
+    ],
+    "interventions": [
+        {
+            "start_day": 0,
+            "end_day": 10,
+            "type": "\u2708\ufe0f Cerrar aeropuertos"
         }
     ]
 }

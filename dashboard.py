@@ -7,10 +7,10 @@ import datetime
 st.set_page_config(page_title="COVID Simulator", page_icon="😷", layout='wide', initial_sidebar_state='auto')
 
 
-from src import data
-from src.interventions import INTERVENTIONS
-from src.simulation import JsonCallback, MultiCallback, Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine, StreamlitCallback, VaccinationParameters
-from src.estimation import estimate_parameter
+from covidsim import data
+from covidsim.interventions import INTERVENTIONS
+from covidsim.simulation import JsonCallback, MultiCallback, Simulation, SimulationParameters, Region, TransitionEstimator, StateMachine, StreamlitCallback, VaccinationParameters
+from covidsim.estimation import estimate_parameter
 
 
 def main():
@@ -30,7 +30,7 @@ def main():
         days=st.sidebar.number_input("📆 Días a simular", 1, 1000, default_values.get("days", 90)),
         total_population=st.sidebar.number_input("🙆 Población total", value=default_values.get("total_population", 1000)),
         foreigner_arrivals=st.sidebar.number_input("✈️ Llegada de extranjeros", 0, 10000, default_values.get("foreigner_arrivals", 10)),
-        chance_of_infection=st.sidebar.number_input("🤢 Probabilidad de infección", 0.0, 1.0, default_values.get("change_of_infection", 0.01)),
+        chance_of_infection=st.sidebar.number_input("🤢 Probabilidad de infección", 0.0, 1.0, default_values.get("chance_of_infection", 0.01)),
         initial_infected=st.sidebar.number_input("🤒 Infectados iniciales", 0, 1000, default_values.get("initial_infected", 0)),
         working_population=st.sidebar.slider("🧑‍🏭 Población laboral", 0.0, 1.0, default_values.get("working_population", 0.25)),
     )
@@ -51,7 +51,7 @@ def main():
                     start_day=st.slider("📆 Inicio", 0, parameters.days, value=vaccination_params.get("start_day", 0), key=f"vaccination{i}_start"),    
                     name=st.text_input("🏷️ Nombre", value=vaccination_params.get("name", f"Vacuna {i+1}"), key=f"vaccination_{i}_name"),
                     strategy=st.selectbox("⚙️ Estrategia", ["random", "bottom-up", "top-down"], index=["random", "bottom-up", "top-down"].index(vaccination_params.get("strategy", f"random")), key=f"vaccination_{i}_strategy"),
-                    age_bracket=(st.number_input("👶 Edad mínima", 0,90,vaccination_params.get("age_bracket", [20,70])[0], step=5, key=f"vaccination{i}_age_min"),st.number_input("👴 Edad máxima", 0,90,vaccination_params.get("age_bracket", [20,70])[1], step=5, key=f"vaccination{i}_age_max")),
+                    age_bracket=(st.slider("👶 Edad mínima - máxima 🧓", 0, 100, value=vaccination_params.get("age_bracket", [20,80]), step=5, key=f"vaccination{i}_age")),
                     shots=st.number_input("🧴 Número de dosis", value=vaccination_params.get("shots", 1), key=f"vaccination_{i}_shots"),
                     shots_every=st.number_input("⌛ Dosis", value=vaccination_params.get("shots_every", 10), key=f"vaccination_{i}_shots_every"),
                     maximum_immunity=st.slider("💖 Máxima immunidad", 0.0, 1.0, vaccination_params.get("maximum_immunity", 0.9), key=f"vaccination{i}_immunity"),
@@ -63,19 +63,23 @@ def main():
                 vaccination_list.append(vaccination)
 
         with st.beta_expander("⚕️ Intervenciones"):
+            intervention_data = default_values.get("interventions", [])
             interventions = []
-            total_interventions = st.number_input("Total de intervenciones a aplicar en el período", 0, 100, 0)
+            total_interventions = st.number_input("Total de intervenciones a aplicar en el período", 0, 100, len(intervention_data))
             interventions_names = {} #{"-": None}
             for cls in INTERVENTIONS:
                 interventions_names[cls.description()] = cls
 
             for i in range(total_interventions):
-                cls = interventions_names[st.selectbox("Tipo de intervención", list(interventions_names), key=f"intervention_{i}_type")]
+                intervention_params = intervention_data[i] if i < len(intervention_data) else dict(type=list(interventions_names)[0])
+                cls = interventions_names[st.selectbox("Tipo de intervención", list(interventions_names), 
+                    index=list(interventions_names).index(intervention_params["type"]), 
+                    key=f"intervention_{i}_type")]
                 
                 if cls is None:
                     continue
 
-                interventions.append(cls.build(i))   
+                interventions.append(cls.build(i, **intervention_params))
 
         with st.beta_expander("🧑‍🤝‍🧑 Matrices de contacto"):
             contact = data.load_contact_matrices()
@@ -132,6 +136,7 @@ def main():
         save_params_as = st.text_input("Salvar parámetros (nombre)")
         params = dict(parameters.__dict__)
         params["vaccines"] = [v.__dict__ for v in vaccination_list]
+        params["interventions"] = [dict(i.__dict__, type=i.description()) for i in interventions]
         
         if st.button("💾 Salvar") and save_params_as:
             with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:

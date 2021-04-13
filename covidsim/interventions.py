@@ -29,15 +29,15 @@ class Intervention(abc.ABC):
         pass
 
     @classmethod
-    def build(cls, key):
+    def build(cls, key, **kwargs):
         args = inspect.signature(cls.__init__)
         values = {}
 
         for arg, param in args.parameters.items():
             if param.annotation == int:
-                values[arg] = st.number_input(f"{cls.__name__}.{arg}", value=0, key=f"intervention_{key}_{arg}")
+                values[arg] = st.number_input(f"{cls.__name__}.{arg}", value=kwargs.get(arg, 0), key=f"intervention_{key}_{arg}")
             if param.annotation == float:
-                values[arg] = st.slider(f"{cls.__name__}.{arg}", 0.0, 1.0, key=f"intervention_{key}_{arg}")
+                values[arg] = st.slider(f"{cls.__name__}.{arg}", 0.0, 1.0, value=kwargs.get(arg, 0.0), key=f"intervention_{key}_{arg}")
 
         return cls(**values)
 

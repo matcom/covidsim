@@ -5,7 +5,7 @@ from sklearn.linear_model import ElasticNet
 import numpy as np
 from typing import Callable, List, Dict
 
-from src.simulation import SimulationParameters, Simulation, StreamlitCallback, SimulationCallback, Person
+from .simulation import SimulationParameters, Simulation, StreamlitCallback, SimulationCallback, Person
 
 
 class EstimationCallback(SimulationCallback):
