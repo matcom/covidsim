@@ -83,7 +83,7 @@ if __name__ == "__main__":
         kwargs = { k:v for k,v in zip(keys, permutation) }
         config = generate_config(**kwargs)
 
-        with open(f"params/experiment/simulation_{i+1}.json", "w") as fp:
+        with open(f"params/experiment/config_{i+1:-04}.json", "w") as fp:
             json.dump(config, fp, indent=4)
 
     print(f"Done. Generated {i+1} configs.")
