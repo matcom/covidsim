@@ -1,0 +1,50 @@
+{
+    "days": 180,
+    "foreigner_arrivals": 10,
+    "chance_of_infection": 0.2,
+    "initial_infected": 0,
+    "total_population": 1500000,
+    "working_population": 0.2,
+    "vaccines": [
+        {
+            "name": "Soberana",
+            "start_day": 0,
+            "vaccinated_per_day": 1000,
+            "maximum_immunity": 0.9,
+            "symptom_reduction": 0.7,
+            "effect_growth": 50,
+            "shots": 3,
+            "shots_every": 28,
+            "effect_duration": 180,
+            "strategy": "bottom-up",
+            "age_bracket": [
+                20,
+                80
+            ]
+        },
+        {
+            "name": "Abdala",
+            "start_day": 0,
+            "vaccinated_per_day": 1000,
+            "maximum_immunity": 0.9,
+            "symptom_reduction": 0.8,
+            "effect_growth": 50,
+            "shots": 3,
+            "shots_every": 14,
+            "effect_duration": 180,
+            "strategy": "bottom-up",
+            "age_bracket": [
+                20,
+                80
+            ]
+        }
+    ],
+    "interventions": [
+        {
+            "start_day": 0,
+            "end_day": 180,
+            "effect": 0.2,
+            "type": "\ud83d\ude37 Usar m\u00e1scarillas"
+        }
+    ]
+}
