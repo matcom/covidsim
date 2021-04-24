@@ -1,7 +1,6 @@
-FROM python:3.8
+FROM centos:6.6 as build
 
-COPY requirements.txt /src/requirements.txt
-RUN pip install -r /src/requirements.txt
-WORKDIR /src
-COPY . /src
-CMD [ "streamlit", "run", "dashboard.py" ]
+WORKDIR /src/build
+COPY build/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
+
+RUN yum install gcc openssl-devel bzip2-devel sqlite-devel
