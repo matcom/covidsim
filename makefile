@@ -12,4 +12,5 @@ clean:
 
 .PHONY: build
 build:
-	docker-compose build
+	(cd build && docker build -t covidsim-builder -f base.dockerfile ..)
+	
