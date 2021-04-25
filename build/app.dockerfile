@@ -1,9 +1,7 @@
-FROM centos:6.6 as app
+FROM python:3.8
 
-COPY /build/environment.tar /build
-WORKDIR /build/anaconda3/bin
-RUN ./python3.8 --version
-
+COPY requirements.txt /src/requirements.txt
+RUN pip install -r /src/requirements.txt
 WORKDIR /src
 COPY . /src
 CMD [ "streamlit", "run", "dashboard.py" ]

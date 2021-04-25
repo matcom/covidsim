@@ -5,7 +5,6 @@ COPY build/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
 
 RUN yum install -y wget
 
-VOLUME ["/build"]
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b -p /build/anaconda3
 

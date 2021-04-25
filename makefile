@@ -13,4 +13,6 @@ clean:
 .PHONY: build
 build:
 	(cd build && docker build -t covidsim-builder -f base.dockerfile ..)
-	
+	docker create -ti --name dummy covidsim-builder bash
+	docker cp dummy:/build/anaconda3 `pwd`/build/anaconda3
+	docker rm -f dummy	

@@ -1,3 +1,3 @@
 # !/bin/bash
 
-python -m covidsim --config params/experiment --parallel --iterations 30
+./build/anaconda3/bin/python -m covidsim --config params/test --parallel --iterations 30

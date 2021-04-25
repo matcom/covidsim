@@ -1,12 +1,16 @@
 version: "3"
 
 services:
-  streamlit:
-    image: matcom/streamlit:latest
+  covidsim:
+    image: covidsim-streamlit
     container_name: covidsim
-    build: .
+    build: 
+      context: .
+      dockerfile: build/app.dockerfile
     ports:
       - 8501:8501
     volumes:
       - ./:/src
+      - ./build:/build
+    working_dir: "/src"
     command: ["streamlit", "run", "dashboard.py"]
