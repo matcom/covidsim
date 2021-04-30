@@ -1,4 +1,5 @@
 import argparse
+import uuid
 import time
 from covidsim.data import load_contact_matrices
 import json
@@ -53,10 +54,10 @@ def run_one(args):
     iteration, config, verbose, logdir, label = args
     print(f"Config: {config}, Iteration: {iteration}.")
 
-    with open(logdir / f"{label}_{config.stem}_{iteration}.jsonl", "w") as fp:
+    with open(logdir / f"{label}_{config.stem}_{iteration}_{uuid.uuid4()}.jsonl", "w") as fp:
         with open(config) as fp:
             config = json.load(fp)
-        
+
         simulation = build(config)
 
         callbacks = [JsonCallback(fp)]
@@ -97,8 +98,8 @@ def build(config: dict) -> Simulation:
 
     intervention_data = config.get("interventions", [])
     interventions = []
-    interventions_names = {} 
-    
+    interventions_names = {}
+
     for cls in INTERVENTIONS:
         interventions_names[cls.description()] = cls
 

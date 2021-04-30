@@ -8,3 +8,4 @@ scripts/covid19-cuba.json
 *.jsonl
 .venv
 covidsim.zip
+build/anaconda3.zip
