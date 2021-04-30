@@ -4,7 +4,7 @@ services:
   covidsim:
     image: covidsim-streamlit
     container_name: covidsim
-    build: 
+    build:
       context: .
       dockerfile: build/app.dockerfile
     ports:
@@ -14,3 +14,11 @@ services:
       - ./build:/build
     working_dir: "/src"
     command: ["streamlit", "run", "dashboard.py"]
+
+  centos:
+    image: centos:6.6
+    volumes:
+      - ./:/src
+      - ./build:/build
+    working_dir: /src
+    command: ["bash"]
