@@ -55,8 +55,8 @@ def run_one(args):
     print(f"Config: {config}, Iteration: {iteration}.")
 
     with open(logdir / f"{label}_{config.stem}_{iteration}_{uuid.uuid4()}.jsonl", "w") as fp:
-        with open(config) as fp:
-            config = json.load(fp)
+        with open(config) as cfp:
+            config = json.load(cfp)
 
         simulation = build(config)
 
