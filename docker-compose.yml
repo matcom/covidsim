@@ -19,6 +19,6 @@ services:
     image: centos:6.6
     volumes:
       - ./:/src
-      - ./build:/build
+      - ./build:/share/covidsim
     working_dir: /src
     command: ["bash"]
