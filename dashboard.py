@@ -22,9 +22,9 @@ def main():
 
     if available_params:
         params_name = st.sidebar.selectbox("💾 Parámetros", available_params)
-        
+
         with open(f"/src/params/{params_name}") as fp:
-            default_values = json.load(fp)        
+            default_values = json.load(fp)
 
     parameters = SimulationParameters(
         days=st.sidebar.number_input("📆 Días a simular", 1, 1000, default_values.get("days", 90)),
@@ -48,7 +48,7 @@ def main():
                     vaccination_params = {}
 
                 vaccination = VaccinationParameters(
-                    start_day=st.slider("📆 Inicio", 0, parameters.days, value=vaccination_params.get("start_day", 0), key=f"vaccination{i}_start"),    
+                    start_day=st.slider("📆 Inicio", 0, parameters.days, value=vaccination_params.get("start_day", 0), key=f"vaccination{i}_start"),
                     name=st.text_input("🏷️ Nombre", value=vaccination_params.get("name", f"Vacuna {i+1}"), key=f"vaccination_{i}_name"),
                     strategy=st.selectbox("⚙️ Estrategia", ["random", "bottom-up", "top-down"], index=["random", "bottom-up", "top-down"].index(vaccination_params.get("strategy", f"random")), key=f"vaccination_{i}_strategy"),
                     age_bracket=(st.slider("👶 Edad mínima - máxima 🧓", 0, 100, value=vaccination_params.get("age_bracket", [20,80]), step=5, key=f"vaccination{i}_age")),
@@ -72,10 +72,10 @@ def main():
 
             for i in range(total_interventions):
                 intervention_params = intervention_data[i] if i < len(intervention_data) else dict(type=list(interventions_names)[0])
-                cls = interventions_names[st.selectbox("Tipo de intervención", list(interventions_names), 
-                    index=list(interventions_names).index(intervention_params["type"]), 
+                cls = interventions_names[st.selectbox("Tipo de intervención", list(interventions_names),
+                    index=list(interventions_names).index(intervention_params["type"]),
                     key=f"intervention_{i}_type")]
-                
+
                 if cls is None:
                     continue
 
@@ -97,13 +97,14 @@ def main():
             model = st.selectbox("Modelo", ["MultinomialNB", "LogisticRegression"])
 
             if st.button("Estimar"):
-                real_data = data.load_real_data()
-                st.write(real_data)
+                # real_data = data.load_real_data()
+                # st.write(real_data)
 
-                processed_data = data.process_events(real_data)
-                st.write(processed_data)
-
-                df = data.estimate_transitions(processed_data, model)
+                # processed_data = data.process_events(real_data)
+                # st.write(processed_data)
+                events = data.load_events()
+                st.write(f"> Loaded {len(events)} events.")
+                df = data.estimate_transitions(events, model)
                 st.write(df)
 
                 df.to_csv(Path(__file__).parent / "data" / "transitions.csv", index=False)
@@ -137,7 +138,7 @@ def main():
         params = dict(parameters.__dict__)
         params["vaccines"] = [v.__dict__ for v in vaccination_list]
         params["interventions"] = [dict(i.__dict__, type=i.description()) for i in interventions]
-        
+
         if st.button("💾 Salvar") and save_params_as:
             with open(Path(__file__).parent / "params" / (save_params_as + ".json"), "w") as fp:
                 json.dump(params, fp, indent=4)

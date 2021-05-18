@@ -27,7 +27,7 @@ def load_contact_matrices():
 @st.cache
 def load_disease_transition():
     return pd.read_csv("./data/transitions.csv")
-    
+
 
 @st.cache
 def load_states():
@@ -94,7 +94,7 @@ def process_events(df: pd.DataFrame):
             to_state = "Asintomático"
         else:
             to_state = "Sintomático"
-        
+
         events.append(
             dict(id=row["Cons"], from_state="Contagiado", to_state=to_state, days=0, age=age, sex=sex),
         )
@@ -125,6 +125,11 @@ def process_events(df: pd.DataFrame):
     return pd.DataFrame(events)
 
 
+@st.cache
+def load_events():
+    return pd.read_csv("./data/events.csv")
+
+
 def estimate_transitions(events: pd.DataFrame, model:str):
     by_state = events.groupby("from_state")
 
@@ -134,7 +139,7 @@ def estimate_transitions(events: pd.DataFrame, model:str):
     models = {m.__class__.__name__: m for m in models}
 
     for key, group in by_state:
-        features = group[["age", "sex"]].to_dict('record')        
+        features = group[["age", "sex"]].to_dict('record')
         target = group["to_state"]
 
         ml = Pipeline(steps=[("vectorizer", DictVectorizer()), ('classifier', models[model])])
