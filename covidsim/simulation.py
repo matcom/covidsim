@@ -172,7 +172,7 @@ class Region:
             weights = population
 
         for _ in range(population):
-            self.add(random.choices(ages, weights=weights, k=1), random.choice(("M", "F")), states.start)
+            self.add(random.choices(ages, weights=weights, k=1)[0], random.choice(("M", "F")), states.start)
 
         for p in random.sample(self._individuals, initial_infected):
             p.set_state(states["Contagiado"])
@@ -569,11 +569,8 @@ class Simulation:
                 continue
 
             if self._eval_infections(ind, other, parameters, day):
-                callback("infection", from_person=ind, to_person=other)
+                callback("infection", from_person=ind, to_person=other, day=day)
                 other.set_state(self.state_machine["Contagiado"])
-
-            if ind.vaccinated_day <= day - 15: # TODO Este día no es real
-                return False
 
     def _eval_connections(
         self,

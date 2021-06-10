@@ -12,6 +12,7 @@ PARAMETERS = dict(
     mask_effect=[0.3, 0.2, 0.05],
     remove_mask=[0,1,2,3,4,5,6],
     open_schools=[0,1,2,3,4,5,6],
+    infected=[10, 20, 30, 40, 50],
 )
 
 
@@ -24,12 +25,13 @@ def generate_config(
     mask_effect: float,
     remove_mask: int,
     open_schools: int,
+    infected: int,
 ):
     params = SimulationParameters(
         days=180,
         foreigner_arrivals=0,
         chance_of_infection=0.2,
-        initial_infected=400,
+        initial_infected=infected,
         initial_recovered=7_000,
         total_population=715_000,
         working_population=0.65
@@ -87,7 +89,7 @@ if __name__ == "__main__":
         kwargs = { k:v for k,v in zip(keys, permutation) }
         config = generate_config(**kwargs)
 
-        with open(f"params/matanzas/config_{i+1:-04}.json", "w") as fp:
+        with open(f"params/matanzas/matanzas_{i+1:-05}.json", "w") as fp:
             print("\r", end="")
             print(i+1, end="")
             json.dump(config, fp, indent=4)

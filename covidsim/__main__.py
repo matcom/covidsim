@@ -75,6 +75,7 @@ def build(config: dict) -> Simulation:
         chance_of_infection=config["chance_of_infection"],
         initial_infected=config["initial_infected"],
         working_population=config["working_population"],
+        initial_recovered=config["initial_recovered"],
     )
 
     vaccination_data = config.get("vaccines", [])
