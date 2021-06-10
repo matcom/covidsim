@@ -157,18 +157,28 @@ class Person:
 
 
 class Region:
-    def __init__(self, population:int, states: StateMachine, initial_infected:int):
+    def __init__(self, population:int, states: StateMachine, initial_infected:int=0, initial_recovered:int=0):
         self._population = population
         self.states = states
         self._individuals: List[Person] = []
         self._infectious = set()
         self._by_age = collections.defaultdict(list)
 
+        ages = list(range(0, 100, 5))
+
+        if isinstance(population, int):
+            weights = [population] * len(ages)
+        elif isinstance(population, (list, tuple)):
+            weights = population
+
         for _ in range(population):
-            self.add(random.randint(0, 100) // 5 * 5, random.choice(["M", "F"]), states.start)
+            self.add(random.choices(ages, weights=weights, k=1), random.choice(("M", "F")), states.start)
 
         for p in random.sample(self._individuals, initial_infected):
             p.set_state(states["Contagiado"])
+
+        for p in random.sample(self._individuals, initial_recovered):
+            p.set_state(states["Recuperado"])
 
     def add(self, age:int, sex:str, state:str):
         p = Person(self, age, sex, self.states)
@@ -200,6 +210,7 @@ class SimulationParameters:
     foreigner_arrivals:float
     chance_of_infection:float
     initial_infected:int
+    initial_recovered: int
     total_population:int
     working_population:float
 
@@ -327,7 +338,7 @@ class StreamlitCallback(SimulationCallback):
         self.current_day = day
         self.infections = collections.defaultdict(lambda: 0)
 
-    def on_person(self, person: Person, total_people:int):
+    def on_person(self, person: Person, total_people:int, **kwargs):
         self.total_individuals += 1
         self.current_day_total += 1
         self.progress_person.progress(self.current_day_total / total_people)
@@ -406,7 +417,7 @@ class Simulation:
         vaccination: List[VaccinationParameters],
         transitions: TransitionEstimator,
         state_machine: StateMachine,
-        interventions,
+        interventions: List["Intervention"],
     ) -> None:
         self.regions = regions
         self.contact = contact
@@ -421,7 +432,15 @@ class Simulation:
             callback = SimulationCallback()
 
         for vaccine in self.vaccination:
-            vaccine._vaccination_pool = [vaccine.vaccinated_per_day] * self.parameters.days
+            vaccine._vaccination_pool = []
+
+            for _ in range(self.parameters.days):
+                if isinstance(vaccine.vaccinated_per_day, int):
+                    vaccinated = vaccine.vaccinated_per_day
+                else:
+                    vaccinated = random.randint(*vaccine.vaccinated_per_day)
+
+                vaccine._vaccination_pool.append(vaccinated)
 
         # por cada paso de la simulación
         for day in range(self.parameters.days):
@@ -475,6 +494,9 @@ class Simulation:
                         pool = sorted(pool, key=lambda p: p.age)[-vaccine._vaccination_pool[day]:]
 
                 for p in pool:
+                    if p.state.label != "Persona":
+                        continue
+
                     p.vaccinated = True
                     p.vaccinated_day = day
                     p.vaccine = vaccine
@@ -537,7 +559,7 @@ class Simulation:
         pass
 
 
-    def _simulate_spread(self, ind, parameters, contact, callback, day):
+    def _simulate_spread(self, ind: Person, parameters: SimulationParameters, contact, callback, day):
         """Calcula que personas serán infectadas por 'ind' en el paso actual de la simulación.
         """
         connections = self._eval_connections(ind, parameters, contact)
@@ -550,8 +572,10 @@ class Simulation:
                 callback("infection", from_person=ind, to_person=other)
                 other.set_state(self.state_machine["Contagiado"])
 
+            if ind.vaccinated_day <= day - 15: # TODO Este día no es real
+                return False
+
     def _eval_connections(
-        # social: Dict[str, Dict[int, Dict[int, float]]], person: "Person"
         self,
         person: Person,
         parameters: SimulationParameters,
@@ -587,7 +611,7 @@ class Simulation:
                 yield p
 
         # contactos en el trabajo
-        if the_age < 18:
+        if the_age < 18 or the_age > 65:
             return
 
         p_work = parameters.working_population

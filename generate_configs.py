@@ -1,51 +1,54 @@
 from covidsim.simulation import SimulationParameters, VaccinationParameters
-from covidsim.interventions import WearMask
+from covidsim.interventions import CloseSchools, WearMask
 
 import json
 import itertools
 
 
 PARAMETERS = dict(
-    soberana_inmunidad = [0.5, 0.6, 0.7, 0.8, 0.9],
-    soberana_reduccion = [0.9, 0.8, 0.7],
     abdala_inmunidad = [0.5, 0.6, 0.7, 0.8, 0.9],
     abdala_reduccion = [0.9, 0.8, 0.7],
     strategy=["bottom-up", "top-down"],
-    mask_effect=[0.3, 0.2, 0.05]
+    mask_effect=[0.3, 0.2, 0.05],
+    remove_mask=[0,1,2,3,4,5,6],
+    open_schools=[0,1,2,3,4,5,6],
 )
 
 
 def generate_config(
-    soberana_inmunidad: float,
-    soberana_reduccion: float,
+    # soberana_inmunidad: float,
+    # soberana_reduccion: float,
     abdala_inmunidad: float,
     abdala_reduccion: float,
     strategy: str,
     mask_effect: float,
+    remove_mask: int,
+    open_schools: int,
 ):
     params = SimulationParameters(
         days=180,
         foreigner_arrivals=0,
         chance_of_infection=0.2,
-        initial_infected=0,
-        total_population=500_000,
-        working_population=0.25
+        initial_infected=400,
+        initial_recovered=7_000,
+        total_population=715_000,
+        working_population=0.65
     )
 
     vaccines = [
-        VaccinationParameters(
-            name="Soberana",
-            start_day=0,
-            age_bracket=[20,80],
-            vaccinated_per_day=1000,
-            maximum_immunity=soberana_inmunidad,
-            symptom_reduction=soberana_reduccion,
-            effect_duration=180,
-            shots=3,
-            shots_every=28,
-            effect_growth=50,
-            strategy=strategy,
-        ),
+        # VaccinationParameters(
+        #     name="Soberana",
+        #     start_day=0,
+        #     age_bracket=[20,80],
+        #     vaccinated_per_day=1000,
+        #     maximum_immunity=soberana_inmunidad,
+        #     symptom_reduction=soberana_reduccion,
+        #     effect_duration=180,
+        #     shots=3,
+        #     shots_every=28,
+        #     effect_growth=50,
+        #     strategy=strategy,
+        # ),
         VaccinationParameters(
             name="Abdala",
             start_day=0,
@@ -62,7 +65,8 @@ def generate_config(
     ]
 
     interventions = [
-        WearMask(0, 180, mask_effect)
+        WearMask(0, 30*remove_mask, mask_effect),
+        CloseSchools(0, 30*open_schools),
     ]
 
     return dict(
@@ -84,6 +88,8 @@ if __name__ == "__main__":
         config = generate_config(**kwargs)
 
         with open(f"params/matanzas/config_{i+1:-04}.json", "w") as fp:
+            print("\r", end="")
+            print(i+1, end="")
             json.dump(config, fp, indent=4)
 
-    print(f"Done. Generated {i+1} configs.")
+    print(f"\nDone.")

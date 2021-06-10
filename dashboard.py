@@ -32,6 +32,7 @@ def main():
         foreigner_arrivals=st.sidebar.number_input("✈️ Llegada de extranjeros", 0, 10000, default_values.get("foreigner_arrivals", 10)),
         chance_of_infection=st.sidebar.number_input("🤢 Probabilidad de infección", 0.0, 1.0, default_values.get("chance_of_infection", 0.01)),
         initial_infected=st.sidebar.number_input("🤒 Infectados iniciales", 0, 1000, default_values.get("initial_infected", 0)),
+        initial_recovered=st.sidebar.number_input("😅 Recuperados iniciales", 0, 1000, default_values.get("initial_recovered", 0)),
         working_population=st.sidebar.slider("🧑‍🏭 Población laboral", 0.0, 1.0, default_values.get("working_population", 0.25)),
     )
 
