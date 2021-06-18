@@ -167,11 +167,11 @@ class Region:
         ages = list(range(0, 100, 5))
 
         if isinstance(population, int):
-            weights = [population] * len(ages)
+            weights = [population // len(ages)] * len(ages)
         elif isinstance(population, (list, tuple)):
             weights = population
 
-        for _ in range(population):
+        for _ in range(sum(weights)):
             self.add(random.choices(ages, weights=weights, k=1)[0], random.choice(("M", "F")), states.start)
 
         for p in random.sample(self._individuals, initial_infected):

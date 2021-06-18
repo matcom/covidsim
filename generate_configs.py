@@ -4,6 +4,30 @@ from covidsim.interventions import CloseSchools, WearMask
 import json
 import itertools
 
+CONSULTORIOS = 640
+
+POPULATION = [i*715_000 // 11_201_549 for i in [
+    586_000,
+    623_000,
+    572_000,
+    675_000,
+    691_000,
+    772_000,
+    766_000,
+    636_000,
+    729_000,
+    981_000,
+    1004_000,
+    856_000,
+    592_000,
+    492_000,
+    492_000,
+    270_000,
+    270_000,
+    95_000,
+    45_000,
+    45_000,
+]]
 
 PARAMETERS = dict(
     abdala_inmunidad = [0.5, 0.6, 0.7, 0.8, 0.9],
@@ -30,10 +54,10 @@ def generate_config(
     params = SimulationParameters(
         days=180,
         foreigner_arrivals=0,
-        chance_of_infection=0.2,
+        chance_of_infection=0.01,
         initial_infected=infected,
         initial_recovered=7_000,
-        total_population=715_000,
+        total_population=POPULATION,
         working_population=0.65
     )
 
@@ -55,13 +79,13 @@ def generate_config(
             name="Abdala",
             start_day=0,
             age_bracket=[20,80],
-            vaccinated_per_day=1000,
+            vaccinated_per_day=(50 * CONSULTORIOS, 150 * CONSULTORIOS),
             maximum_immunity=abdala_inmunidad,
             symptom_reduction=abdala_reduccion,
             effect_duration=180,
             shots=3,
             shots_every=14,
-            effect_growth=50,
+            effect_growth=30,
             strategy=strategy
         )
     ]
