@@ -1,10 +1,10 @@
 .PHONY: app
 app:
-	docker-compose up
+	docker compose up covidsim
 
 .PHONY: shell
 shell:
-	docker-compose run streamlit bash
+	docker compose run streamlit bash
 
 .PHONY: clean
 clean:
